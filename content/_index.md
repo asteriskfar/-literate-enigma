@@ -14,28 +14,30 @@ landing:
   spaceBetweenTitleText: 10
   buttons:
     - link: main
-      text: read more
-      color: grey
+      text: main site
 #  backgroundImage: /images/section/mountain.jpg
 #  height: 600
 
 footer:
   sections:
-    - title: General
+    - title: Sigchain Capital group
       links:
+        - title: sigchain
+          link: https://www.sigchain.com
         - title: sigcoin
           link: https://www.sigcoin.com
         - title: sigledger
           link: https://www.sigledger.com
+
+
+    - title: Partner projects
+      links:
         - title: autonomics
           link: https://www.autonomics.io/
-
-    - title: resources
-      links:
         - title: the 'meme of one' foundation
           link: https://www.memeofone.org
 
-    - title: Features
+    - title: Our lab
       links:
         - title: moneylabs
           link: https://www.moneylabs.io/
