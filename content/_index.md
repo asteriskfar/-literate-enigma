@@ -13,7 +13,7 @@ landing:
   textColor: 'grey'
   spaceBetweenTitleText: 10
   buttons:
-    - link: test
+    - link: main
       text: read more
       color: grey
 #  backgroundImage: /images/section/mountain.jpg
