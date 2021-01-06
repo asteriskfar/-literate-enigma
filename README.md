@@ -21,3 +21,25 @@ hugo server
 ```
 hugo mod vendor
 ```
+
+5. Make changes
+
+6. See status
+
+```
+git status
+```
+
+7. Add changes to staging
+
+```
+git add [...]
+```
+
+8. Commit changes
+
+```
+git commit -m "Meaningful commit message"
+```
+
+9. Push changes
