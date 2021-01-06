@@ -33,7 +33,7 @@ git status
 7. Add changes to staging
 
 ```
-git add [...]
+git add [individual files OR "." for all files]
 ```
 
 8. Commit changes
