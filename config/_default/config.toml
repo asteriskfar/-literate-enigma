@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "SigChain Capital"
+
+theme = "github.com/zzossig/hugo-theme-zdoc"
+
+pygmentsCodefences = true
+pygmentsCodeFencesGuesSsyntax = false
+pygmentsStyle = "monokai"
+pygmentsUseClasses = false
+
+[module]
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "static"
+  target = "static"
+
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
+[[module.mounts]]
+  source = "content"
+  target = "content"
+
+[[module.mounts]]
+  source = "archetypes"
+  target = "archetypes"
+
+[[module.mounts]]
+  source = "data"
+  target = "data"
