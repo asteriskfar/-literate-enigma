@@ -1,9 +1,9 @@
 ---
-title: "Two"
+title: "Information"
 date: 2020-12-11T10:14:37+10:00
 ---
 
-# Two
+# the right information is key to a new market behaviour
 
 
 The sigchain allows proper signing, establishment of identity, and therefore the ability to properly stake reputation .. that is, commensurate with real world market driven value.

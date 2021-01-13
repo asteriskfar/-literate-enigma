@@ -119,7 +119,7 @@ sections:
       description: "And here's why this is so fucking cool."
       color: 'grey'
 
-title: "Homepage"
+title: "The beginning"
 date: 2020-12-11T10:14:25+10:00
 ---
 

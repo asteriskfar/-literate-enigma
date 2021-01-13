@@ -1,9 +1,9 @@
 ---
-title: "Three"
+title: "Trading"
 date: 2020-12-11T10:14:42+10:00
 ---
 
-# Three
+# Trading intelligently is the new future
 
 A little introduction to this section ...
 

@@ -1,9 +1,9 @@
 ---
-title: "One"
+title: "Credit"
 date: 2020-12-11T10:14:33+10:00
 ---
 
-# One
+# Credit can mean trust
 
 ## Using good ol' markdown to edit actual website code .. ahh sweet relief.
 
