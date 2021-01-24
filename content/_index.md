@@ -14,7 +14,7 @@ landing:
   spaceBetweenTitleText: 10
   buttons:
     - link: main
-      text: main site
+      text: why we do what we do
 #  backgroundImage: /images/section/mountain.jpg
 #  height: 600
 
@@ -119,11 +119,11 @@ sections:
       description: "And here's why this is so fucking cool."
       color: 'grey'
 
-title: "The beginning"
+title: "Sigchain Capital"
 date: 2020-12-11T10:14:25+10:00
 ---
 
-# This is the homepage content.
+# This all started with ...
 
 Some filler text.
 
