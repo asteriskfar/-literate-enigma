@@ -3,7 +3,7 @@ description: Hugo zzo, zdoc theme documentation home page
 # updatesBanner: "Banner - &nbsp; [Hugo ZDoc theme](https://github.com/zzossig/hugo-theme-zdoc) &nbsp; just arrived"
 landing:
   height: 500
-  image: favicon/android-icon-192x192.png
+  image: images/mountains.jpg
   title:
     - sigchain capital
   text:
