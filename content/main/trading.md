@@ -1,6 +1,6 @@
 ---
 title: "Trading"
-date: 2020-12-11T10:14:42+10:00
+weight: "100"
 ---
 
 # Trading intelligently is the new future

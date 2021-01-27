@@ -1,6 +1,6 @@
 ---
 title: "Information"
-date: 2020-12-11T10:14:37+10:00
+weight: "200"
 ---
 
 # the right information is key to a new market behaviour

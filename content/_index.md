@@ -116,25 +116,9 @@ sections:
     body:
       subtitle: Extensible and customizable.
       subtitlePosition: left
-      description: "And here's why this is so fucking cool."
+      description: "And here's why this is so cool."
       color: 'grey'
 
 title: "Sigchain Capital"
 date: 2020-12-11T10:14:25+10:00
 ---
-
-# This all started with ...
-
-Some filler text.
-
-
-```
-Another code banner thing.
-```
-
-Et ullamco sint occaecat consectetur dolor minim ut in amet. Proident ut commodo ea voluptate ad veniam. Voluptate sint voluptate nisi dolor quis minim reprehenderit pariatur. Minim consectetur Lorem esse veniam deserunt ipsum incididunt elit exercitation in commodo nisi. Aute qui pariatur consequat exercitation ad non nostrud labore dolor duis elit. Non velit cillum eu ut commodo. Aliqua aute anim fugiat deserunt.
-
-
-```
-Groovy. Very fucking groovy.
-```

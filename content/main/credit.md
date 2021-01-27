@@ -1,6 +1,6 @@
 ---
 title: "Credit"
-date: 2020-12-11T10:14:33+10:00
+weight: "50"
 ---
 
 # Credit means trust
