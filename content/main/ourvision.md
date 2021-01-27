@@ -1,6 +1,5 @@
 ---
 title: "Our vision"
-date: 2020-12-11T10:14:37+10:00
 ---
 
 # Our vision and why we care
