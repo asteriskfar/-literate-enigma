@@ -1,5 +1,6 @@
 ---
 title: "Our vision"
+weight: 25
 ---
 
 # Our vision and why we care
@@ -15,6 +16,7 @@ the future is now
 
 We need not be divided my friend.
 
-## The algorithm is out of the dead-drop.
+## Our markets
 
-He has finally delivered the formula.
+Despite fundamental problems with !at currency, unstable markets and hundreds of trillions of dollars of debt, it’s actually an exciting time for money. The blockchain has started an important conversation about money, and now banks, regulators and technology companies are exploring cryptocurrency and new !ntech.
+Given much attention and investment, !ntech focus has been almost entirely on wallets, exchanges, cryptocurrencies, payment rails and settlement systems. Our increasingly globalised marketplace needs a fundamental design shift to overcome many of the world-scale economic challenges we face today. The blockchain may well have started an important conversation but it is simply one step in money’s evolution.
