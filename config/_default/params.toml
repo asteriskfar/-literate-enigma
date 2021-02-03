@@ -34,7 +34,7 @@ enableComment = false
 disqus_shortname = ""
 commento = false
 
-custom_css = ["css/custom.css"]
+custom_css = ["css/custom.css", "css/fonts.scss"]
 
 [gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
   owner = ""              # Your GitHub ID
