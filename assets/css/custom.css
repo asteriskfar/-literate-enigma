@@ -1,0 +1,9 @@
+
+
+nav.breadcrumb > ol > li:nth-child(2) > a {
+    color: #e260a1;
+}
+
+nav.breadcrumb > ol > li:nth-child(3) > span {
+    color: #00BCD4;
+}
