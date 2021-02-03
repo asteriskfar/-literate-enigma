@@ -9,6 +9,9 @@ pygmentsCodeFencesGuesSsyntax = false
 pygmentsStyle = "monokai"
 pygmentsUseClasses = false
 
+copyright = "This is my {} copyright text"
+
+
 [module]
 
 [[module.mounts]]
@@ -34,3 +37,17 @@ pygmentsUseClasses = false
 [[module.mounts]]
   source = "data"
   target = "data"
+
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+  section = ["HTML", "RSS", "SearchIndex"]
+  taxonomyTerm = ["HTML", "RSS", "SearchIndex"]
+  taxonomy = ["HTML", "RSS", "SearchIndex"]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
