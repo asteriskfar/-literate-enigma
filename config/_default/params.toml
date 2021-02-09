@@ -27,7 +27,7 @@ paginateWindow = 1
 taxoPaginate = 13
 taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
-github = "https://github.com/zzossig/hugo-theme-zdoc"
+#github = "https://github.com/zzossig/hugo-theme-zdoc"
 
 # comment
 enableComment = false
@@ -35,3 +35,6 @@ disqus_shortname = ""
 commento = false
 
 custom_css = ["css/custom.css", "css/fonts.scss"]
+
+
+# enableDarkSwitch = true
