@@ -1,3 +1,10 @@
+#####
+#####
+##### Overwrite from theme 
+##### Clear browser cache and restart Hugo server when changed 
+#####
+#####
+
 dark_active_font_color = "#aed581"
 dark_link_color = "#FFD866"
 dark_link_hover_color = "#FF6188"
