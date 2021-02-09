@@ -2,21 +2,24 @@
 description: Hugo zzo, zdoc theme documentation home page
 # updatesBanner: "Banner - &nbsp; [Hugo ZDoc theme](https://github.com/zzossig/hugo-theme-zdoc) &nbsp; just arrived"
 landing:
-  height: 500
-  image: images/mountains.jpg
+  height: 600
+#  image: images/mountains.jpg
   title:
     - sigchain capital
   text:
     - capital as technology
-  titleColor: 'white black'
+  titleColor: 'white'
 
-  textColor: 'grey'
+  textColor: 'white'
   spaceBetweenTitleText: 10
   buttons:
     - link: main
       text: why we do what we do
-#  backgroundImage: /images/section/mountain.jpg
-#  height: 600
+  #backgroundImage: 
+  #  src: /images/mesh.jpg
+  #  height: 600
+    # mesh.jpg: https://www.pexels.com/photo/blue-and-white-mesh-net-3653997/
+    # green-lights.jpg: https://www.pexels.com/photo/green-light-bokeh-1048049/
 
 footer:
   sections:
@@ -51,6 +54,5 @@ footer:
       Copyright © 2021. All rights reserved.
 
 
-title: "Sigchain Capital"
-date: 2020-12-11T10:14:25+10:00
+title: "Homepage"
 ---
