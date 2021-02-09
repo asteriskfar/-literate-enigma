@@ -41,9 +41,9 @@ copyright = "This is my {} copyright text"
 
 [outputs]
   home = ["HTML", "RSS", "SearchIndex"]
-  section = ["HTML", "RSS", "SearchIndex"]
-  taxonomyTerm = ["HTML", "RSS", "SearchIndex"]
-  taxonomy = ["HTML", "RSS", "SearchIndex"]
+  section = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
 
 [outputFormats]
   [outputFormats.SearchIndex]
