@@ -55,3 +55,5 @@ img.navbar__logo {
     height:30px;
     width: auto;
 }
+
+.theme__dark #list-main {background-color:darkgrey}
