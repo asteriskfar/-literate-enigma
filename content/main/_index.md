@@ -4,4 +4,6 @@ title: "Main"
 listChildren: false
 ---
 
-# blah blah
+# Welcome
+
+[Continue reading](/main/partners)

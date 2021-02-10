@@ -9,7 +9,7 @@ pygmentsCodeFencesGuesSsyntax = false
 pygmentsStyle = "monokai"
 pygmentsUseClasses = false
 
-copyright = "This is my {} copyright text"
+copyright = "Copyright Sigchain Capital 2021 All right reserved."
 
 
 [module]
