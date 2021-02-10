@@ -36,15 +36,18 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
 main {
     background-image:   radial-gradient(circle, rgba(0,0,0,0.4) 5%, rgba(0,0,0,0.6) 95%),
                         url('/images/green-lights.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
 
 .header__wrapper.bgcolor__header {
     background-image:   radial-gradient(circle, rgba(0,0,0,0.4) 5%, rgba(0,0,0,0.6) 95%),
-                            url('/images/mesh.jpg');
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
+                            url('/images/green-lights.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
