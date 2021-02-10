@@ -43,3 +43,23 @@ git commit -m "Meaningful commit message"
 ```
 
 9. Push changes
+
+---
+
+### Additional Configuration Options
+
+```
+# content/foo/_index.md
+listChildren: true
+```
+
+enables listing of child pages on list page (main/middle part, not sidenav)
+
+
+```
+# config/params.toml
+
+enableDarkSwitch = false
+```
+
+show/hide dark mode toggler
