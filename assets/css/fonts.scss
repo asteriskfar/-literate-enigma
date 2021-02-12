@@ -45,20 +45,20 @@ $body12: "Open Sans" ;
 
 
 body {
-    font-family: $body01;
-    font-weight: 400;
+    font-family: $body04;
+    font-weight: 300;
 }
 
 .header__wrapper .title {
-    font-family: $title01;
-    font-weight: 800;
+    font-family: $title04;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 4pt;
 }
 
 .theme__dark .single__contents {
     h1, h2, h3 {
-        font-family: $title01;
+        font-family: $title04;
         letter-spacing: 2pt;
     }
 }
