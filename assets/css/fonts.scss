@@ -53,7 +53,38 @@ body {
     font-family: $title01;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 4pt;
+    letter-spacing: 3pt;
+    
+}
+@media only screen and (max-width: 600px) {
+    .header__wrapper .title {
+        font-size: 2rem;
+        letter-spacing: 2pt;
+
+    }
+    .single__contents {
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+        }
+        
+        h4 {
+            font-size: 1.4rem;
+        }
+        
+        h5 {
+            font-size: 1.3rem;
+        }
+        
+        h6 {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 .theme__dark .single__contents {
