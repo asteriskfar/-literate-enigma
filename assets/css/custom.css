@@ -1,7 +1,7 @@
 
 
 nav.breadcrumb > ol > li:nth-child(2) > a {
-    color: #e260a1;
+    color: #ff64fe;
 }
 
 nav.breadcrumb > ol > li:nth-child(3) > span {
@@ -39,12 +39,13 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     }
 
 
 .header__wrapper.bgcolor__header {
     background-image:   radial-gradient(circle, rgba(0,0,0,0.4) 5%, rgba(0,0,0,0.6) 95%),
-                            url('/images/green-lights.jpg');
+                            url('/images/mesh.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,4 +57,35 @@ img.navbar__logo {
     width: auto;
 }
 
-.theme__dark #list-main {background-color:darkgrey}
+.theme__dark #list-main {
+    // background-color:darkgrey
+}
+
+.list-section {
+    margin: 1rem;
+}
+
+
+@media only screen and (min-width: 601px) {
+    .hide-desktop {
+        display: none;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hide-mobile {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+}
+
+/** Fixes overflow on firefox **/
+.search .input {
+    min-width: 0;
+}
