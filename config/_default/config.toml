@@ -51,3 +51,17 @@ copyright = "Copyright Sigchain Capital 2021 All right reserved."
     baseName = "index"
     isPlainText = true
     notAlternative = true
+
+
+[menu]
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/main"
+  weight = 1
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact"
+  weight = 2
