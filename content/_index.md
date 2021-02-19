@@ -14,13 +14,7 @@ landing:
   spaceBetweenTitleText: 10
   buttons:
     - link: main
-      text: why we do what we do
-  #backgroundImage:
-  #  src: /images/mesh.jpg
-  #  height: 600
-    # mesh.jpg: https://www.pexels.com/photo/blue-and-white-mesh-net-3653997/
-    # green-lights.jpg: https://www.pexels.com/photo/green-light-bokeh-1048049/
-
+      text: Learn More
 footer:
   sections:
     - title: Sigchain Capital group
@@ -54,5 +48,5 @@ footer:
       Copyright © 2021. All rights reserved.
 
 
-title: "Homepage"
+title: "Start"
 ---
