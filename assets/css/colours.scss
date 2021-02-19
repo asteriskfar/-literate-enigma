@@ -68,6 +68,19 @@ $yellow : #f1fa8c;
 // links 
 .theme__dark a {
     color: $yellow;
+    &:hover, &:active, &a:focus {
+        color: $cyan;
+
+    }
+}
+
+//footer links
+.theme__dark footer a {
+    color: $cyan;
+    &:hover, &:active, &a:focus {
+        color: $yellow;
+
+    }
 }
 
 nav.breadcrumb > ol > li {
