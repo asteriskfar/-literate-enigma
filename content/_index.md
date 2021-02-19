@@ -15,7 +15,7 @@ landing:
   buttons:
     - link: main
       text: why we do what we do
-  #backgroundImage: 
+  #backgroundImage:
   #  src: /images/mesh.jpg
   #  height: 600
     # mesh.jpg: https://www.pexels.com/photo/blue-and-white-mesh-net-3653997/
