@@ -83,18 +83,24 @@ $yellow : #f1fa8c;
     }
 }
 
+// nav / breadcrumb links
+.theme__dark .breadcrumb li a:hover, 
+.theme__dark .breadcrumb li a:active, 
+.theme__dark .breadcrumb li a:focus {
+    color: $cyan;
+
+}
+
 nav.breadcrumb > ol > li {
     font-weight: bold;
 }
 nav.breadcrumb > ol > li:nth-child(2) > a {
-    color: $yellow;
-    &:hover {
-        color: $orange;
-    }   
+    color: $orange;
+    
 }
 
 nav.breadcrumb > ol > li:nth-child(3) > span {
-    color: $orange;
+    color: $cyan;
 }
 
 .theme__dark .menu__title.active {
