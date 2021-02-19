@@ -1,5 +1,5 @@
 ---
-title: "Contact Me"
+title: "Contact"
 description: Contact page
 type: contact
 service: netlifyform
