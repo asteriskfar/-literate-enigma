@@ -1,6 +1,6 @@
 logo = true
 logoText = "sigchain capital"
-logoType = "long" # long, short
+logoType = "short" # long, short
 description = "The ZDoc theme for Hugo example site."
 
 themeOptions = ["dark", "light"]
@@ -9,7 +9,7 @@ useFaviconGenerator = true # https://www.favicon-generator.org/
 
 enableTocSwitch = true
 enableLandingBackground = true
-enableSearch = true
+enableSearch = false
 enableSearchHighlight = true
 enableLangChange = false
 enableDarkMode = true
@@ -34,7 +34,7 @@ enableComment = false
 disqus_shortname = ""
 commento = false
 
-custom_css = ["css/custom.css", "css/fonts.scss"]
+custom_css = ["css/custom.scss", "css/fonts.scss", "css/colours.scss"]
 
 
 # enableDarkSwitch = true

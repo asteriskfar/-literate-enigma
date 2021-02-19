@@ -1,61 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Coustard&family=Nixie+One&display=swap');
+$title01: "Source Sans Pro" ;
+$title02: "SouSrce Code Pro" ;
+$title03: "Space Mono" ;
+$title04: "Coustard" ;
+$title05: "Fira Mono" ;
+$title06: "JetBrains Mono" ;
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap');
-
-$title01: "Open Sans" ;
-$title02: "Roboto Condensed" ;
-$title03: "Raleway" ;
-$title04: "Assistant" ;
-$title05: "Lato" ;
-$title06: "Nixie One" ;
-$title07: "Anton" ;
-$title08: "Coustard" ;
-$title09: "Nixie One" ;
-$title10: "Coustard" ;
-$title11: "Open Sans" ;
-$title12: "Open Sans" ;
-
-$body01: "PT Sans" ;
-$body02: "Roboto Condensed" ;
-$body03: "Roboto Condensed" ;
-$body04: "Assistant" ;
-$body05: "Lato" ;
-$body06: "Nixie One" ;
-$body07: "Open Sans" ;
-$body08: "Nixie One" ;
-$body09: "Lato" ;
-$body10: "Open Sans" ;
-$body11: "Open Sans" ;
-$body12: "Open Sans" ;
+$body01: "Source Sans Pro" ;
 
 
 
 body {
-    font-family: $body04;
-    font-weight: 400;
+    font-family: $body01;
+    font-weight: 300;
+    font-size: 110%;
+    letter-spacing: .75pt;
 }
 
 .header__wrapper .title {
-    font-family: $title04;
+    font-family: $title03;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3pt;
-    
 }
+
+.home__landing--txt .title {
+    font-family: $title03;
+}
+
+.theme__dark .single__contents {
+    h1, h2, h3 {
+        font-family: $title06;
+        //letter-spacing: 3pt;
+    }
+}
+
+.navbar__menu--item>a {
+    font-size: 0.9rem;
+    
+    //font-weight: bold;;
+}
+
+.navbar__logo--text {
+    font-family: $title03;
+    vertical-align:baseline;
+}
+
+.home__landing button.button {
+    font-family: $title03;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-weight: 800;
+    //font-size: 110%;
+    letter-spacing: 1pt;
+
+}
+
+
 @media only screen and (max-width: 600px) {
     .header__wrapper .title {
         font-size: 2rem;
@@ -84,12 +95,5 @@ body {
         h6 {
             font-size: 1.2rem;
         }
-    }
-}
-
-.theme__dark .single__contents {
-    h1, h2, h3 {
-        font-family: $title04;
-        letter-spacing: 2pt;
     }
 }
