@@ -1,5 +1,5 @@
 ---
-title: "Information"
+title: "Information and data"
 weight: "200"
 ---
 
