@@ -34,7 +34,7 @@ enableComment = false
 disqus_shortname = ""
 commento = false
 
-custom_css = ["css/custom.scss", "css/fonts.scss", "css/colours.scss"]
+custom_css = ["css/custom.scss", "css/fonts.scss", "css/colours.scss", "css/form.scss"]
 
 
 # enableDarkSwitch = true
