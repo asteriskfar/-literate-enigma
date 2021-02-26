@@ -1,4 +1,4 @@
-baseURL = "https://sleepy-haibt-9110b8.netlify.app/"
+baseURL = "https://sigchain.netlify.app/"
 languageCode = "en-us"
 title = "SigChain Capital"
 
@@ -51,4 +51,3 @@ copyright = "Copyright Sigchain Capital 2021 All rights reserved."
     baseName = "index"
     isPlainText = true
     notAlternative = true
-
