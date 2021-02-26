@@ -1,6 +1,10 @@
 ---
 title: "About"
 
+type: Menu
+cascade:
+    type: Menu
+
 ## Set to true to display children pages at the end on middle section
 listchildren: false
 listchildrenmobile: false
