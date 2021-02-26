@@ -91,6 +91,14 @@ $yellow : #f1fa8c;
 
 }
 
+// menu mobile
+.theme__dark .navbar__menu--mobile-item:hover, 
+.theme__dark .navbar__menu--mobile-item:active,
+.theme__dark .navbar__menu--mobile-item:focus {
+    background-color: $dark2;
+
+}
+
 nav.breadcrumb > ol > li {
     font-weight: bold;
 }
@@ -105,6 +113,14 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
 
 .theme__dark .menu__title.active {
     color: $cyan;
+}
+
+.theme__dark .navbar__dropdown--title {
+    background-color: $dark1;
+}
+
+.theme__dark .navbar__collapse {
+    background-color: $dark1;
 }
 
 .theme__dark .menu__title {
