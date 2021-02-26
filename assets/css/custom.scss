@@ -1,3 +1,5 @@
+$blue : #6272a4;
+$title03: "Space Mono" ;
 
 .home__landing {
     display: flex;
@@ -79,4 +81,29 @@ img.navbar__logo {
 /** Fixes overflow on firefox **/
 .search .input {
     min-width: 0;
+}
+
+
+.button-wrapper {
+    //border: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .button {
+        margin: 30px auto;
+        background:$blue;
+        color: white;
+        width: 100%;
+        background:$blue;
+        border-radius:5px;
+        border:0;
+        cursor:pointer;
+        color:white;
+        font-size:24px;
+        padding: 10px 30px;
+        transition: all 0.3s;
+        font-family: $title03;
+        font-weight:700;
+        letter-spacing: 2pt;;
+    }
 }
