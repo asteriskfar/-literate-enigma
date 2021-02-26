@@ -14,7 +14,7 @@ landing:
   spaceBetweenTitleText: 10
   buttons:
     - link: main
-      text: Learn More
+      text: read more
 footer:
   sections:
     - title: Sigchain Capital group
