@@ -2,7 +2,7 @@
 title: "Contact"
 description: Contact page
 layout: contact
-type: Menu
+type: main
 service: netlifyform
 recaptcha: true
 redirect-after-submit: "/redirect"

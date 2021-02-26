@@ -1,15 +1,15 @@
 ---
 title: "About"
 
-type: Menu
-cascade:
-    type: Menu
+#type: Menu
+#cascade:
+#    type: Menu
 
 ## Set to true to display children pages at the end on middle section
 listchildren: false
 listchildrenmobile: false
 
-# enableMenu: false ## turns left sidenav menu on/off
+#enableMenu: true ## turns left sidenav menu on/off
 # type: about # this is the value used by navbar menu mobile view
 
 ---

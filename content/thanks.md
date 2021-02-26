@@ -4,7 +4,7 @@ _build:
   render: always
   list: false
 
-type: Menu
+type: main
 ---
 
 Thanks, we'll get in touch soon.
