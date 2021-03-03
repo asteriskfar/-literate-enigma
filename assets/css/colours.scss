@@ -147,7 +147,7 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
 
 
 .home__landing button.button {
-    background-color: $cyan;
+    background-color: rgba($cyan, 0.75);
 
     &:hover {
         background-color: lighten($cyan, 10%);
