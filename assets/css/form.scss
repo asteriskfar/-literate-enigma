@@ -51,19 +51,19 @@ textarea {
 $title03: "Space Mono" ;
 
 [type="submit"] {
-  font-family: $title03;
+  //font-family: $title03;
   width: 100%;
   background:$blue;
   border-radius:5px;
   border:0;
   cursor:pointer;
   color:white;
-  font-size:24px;
+  font-size: 18px;
   padding-top:10px;
   padding-bottom:10px;
   transition: all 0.3s;
   margin-top:-4px;
-  font-weight:700;
+  //font-weight:700;
   letter-spacing: 2pt;;
 }
 [type="submit"]:hover { background:$dark2; }
