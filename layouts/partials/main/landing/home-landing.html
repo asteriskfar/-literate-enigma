@@ -2,15 +2,11 @@
 {{ $landing := . }}
 <div class="divider">
   <div class="lmr">
-    <video id="hero-video" width="320" height="240" playsinline autoplay muted loop>
-      <source src="/videos/hero-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-  
+ 
     {{ with .backgroundImage }}
       <div style="background-image: url('{{ .src | relURL }}'); background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: -50px; left: 0; width: 100%; height: {{ .height }}px;"></div>
     {{ end }}
-    <div class="home__landing" style="height: {{ .height }}px;">
+    <div class="home__landing">
       {{ if .image }}
         <div class="home__landing--img">
           <img src="{{ .image | relURL }}" alt="Site Landing Page image">
@@ -73,6 +69,14 @@
         </div>
       {{ end }}
     </div>
+
+    <div class="hero-video-wrapper">
+      <video id="hero-video" playsinline autoplay muted loop>
+        <source src="/videos/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+
   </div>
 </div>
 {{ end }}
