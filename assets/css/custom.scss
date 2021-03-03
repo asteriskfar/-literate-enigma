@@ -21,7 +21,7 @@ $title03: "Space Mono" ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    min-height: 100vh;
     position: relative;
     background-color: rgba($dark1,0.4);
     //border: 10px solid red;
@@ -93,7 +93,10 @@ main {
     background-size: cover;
 }
 
+nav, .navbar-wrapper, .navbar-collapse {
+    z-index: 300;
 
+}
 img.navbar__logo {
     height:30px;
     width: auto;
