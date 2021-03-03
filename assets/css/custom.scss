@@ -23,6 +23,14 @@ $title03: "Space Mono" ;
     background-size: cover;
     height: 100%;
 }
+video#hero-video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
 
 .home__landing--txt {
@@ -112,11 +120,11 @@ img.navbar__logo {
         border:0;
         cursor:pointer;
         color:white;
-        font-size:24px;
         padding: 10px 30px;
         transition: all 0.3s;
-        font-family: $title03;
-        font-weight:700;
+        font-size:18px;
+        //font-family: $title03;
+        //font-weight:700;
         letter-spacing: 2pt;;
     }
 }
