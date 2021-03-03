@@ -21,7 +21,8 @@ $title03: "Space Mono" ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
+
     position: relative;
     background-color: rgba($dark1,0.4);
     //border: 10px solid red;
