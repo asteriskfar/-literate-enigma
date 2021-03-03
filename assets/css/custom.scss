@@ -34,8 +34,15 @@ $title03: "Space Mono" ;
 }
 
 .toc {
+    //border: 1px solid green;
+    height: 100%;
     padding: 0 0 0 0;
     margin: 0;
+    overflow: hidden;
+    video {
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .hero-video-wrapper {
     //border: 1px solid orange;
