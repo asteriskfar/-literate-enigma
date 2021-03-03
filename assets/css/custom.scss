@@ -22,16 +22,42 @@ $title03: "Space Mono" ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    position: relative;
+    background-color: rgba($dark1,0.4);
+    //border: 10px solid red;
+    button.button {
+        z-index: 200;
+        position: relative;
+        background-color:rgba($cyan, 0.5) ;
+    }
+}
+
+.toc {
+    padding: 0 0 0 0;
+    margin: 0;
+}
+.hero-video-wrapper {
+    //border: 1px solid orange;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 00;
+
 }
 video#hero-video {
+    //border: 1px solid cyan;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    //z-index: 1000;
   }
 
+  .bot {
+      z-index: 200 ;
+  }
 
 .home__landing--txt {
     display: flex;
@@ -146,3 +172,4 @@ img.navbar__logo {
         //font-weight: bold;
     }
 }
+
