@@ -94,8 +94,9 @@ main {
     background-size: cover;
 }
 
-nav, .navbar-wrapper, .navbar-collapse {
+nav, .navbar-wrapper, .navbar-collapse, #navMenuMobile {
     z-index: 300;
+    //border: 1px solid cyan;
 
 }
 img.navbar__logo {
@@ -177,3 +178,9 @@ img.navbar__logo {
     }
 }
 
+
+/** Breadcrumbs **/
+nav.breadcrumb {
+    z-index: 100;
+    //border: 1px solid pink;
+}
