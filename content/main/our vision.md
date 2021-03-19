@@ -1,6 +1,7 @@
 ---
 title: "Our vision"
 weight: 25
+enabletoc: true
 ---
 
 # Our vision and why we care

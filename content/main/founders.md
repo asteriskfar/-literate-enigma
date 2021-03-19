@@ -1,6 +1,7 @@
 ---
 title: "Founders"
 weight: "10"
+imageurl: "/images/mesh.jpg"
 ---
 
 # How we got here
