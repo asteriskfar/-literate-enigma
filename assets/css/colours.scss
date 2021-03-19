@@ -25,7 +25,7 @@ $yellow : #f1fa8c;
 
 // Header in main pages
 .theme__dark .bgcolor__header {
-    background-color: $dark3;
+    background-color: $dark1;
 }
 
 // Breadcrumb in main pages
@@ -36,7 +36,11 @@ $yellow : #f1fa8c;
 
 // left / right sidebar on main pages
 .theme__dark .mid {
-    background-color: $dark2;
+    background-color: $dark1;
+
+    #list-menu {
+        background-color: $dark1;
+    }
 }
 
 // middle section on main pages
