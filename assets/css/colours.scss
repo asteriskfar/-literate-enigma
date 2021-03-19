@@ -34,10 +34,11 @@ $yellow : #f1fa8c;
 
 }
 
-// left / right sidebar on main pages
+// base back color
 .theme__dark .mid {
     background-color: $dark1;
 
+    // this is the left sidebar block
     #list-menu {
         background-color: $dark1;
     }
