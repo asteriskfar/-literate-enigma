@@ -21,6 +21,10 @@ $svg: "{{ (resources.Get "svg/a/2.svg").Permalink }}" ;
 $svgtile: "{{ (resources.Get "svg/logotile2.svg").Permalink }}" ;
 $letterheight: 50px;
 
+
+$test1svg: $blue;
+$test2svg: $dark3;
+
 body.test1 {
     min-width: 100vh;
     min-height: 100vh;
@@ -39,7 +43,11 @@ body.test1 {
         //border: 1px solid blue;
         flex: 0 0 auto;
         z-index: 200;
-        
+        svg {
+            rect, path {
+                fill: $test1svg;
+            }
+        }
     }
     .landing-text {
         //border: 1px solid red;
@@ -76,7 +84,11 @@ body.test2 {
     .animation {
         //border: 1px solid blue;
         flex: 0 0 auto;
-        
+        svg {
+            rect, path {
+                fill: $test2svg;
+            }
+        }
     }
     .landing-text {
         //border: 1px solid red;
@@ -121,11 +133,7 @@ body.test2 {
 
 .animation {
     margin: 40px 0 ;
-    svg {
-        rect, path {
-            fill: $blue;
-        }
-    }
+
 }
 
 
