@@ -1,6 +1,6 @@
 {{ with .Params.landing }}
 {{ $landing := . }}
-<div class="divider">
+<div class="divider home">
   <div class="lmr">
  
     {{ with .backgroundImage }}
@@ -14,7 +14,7 @@
         <div class="home__landing--txt">
           {{ if .title }}
             {{ range .title }}
-              <div class="title" style="{{ with $landing.titleColor }}color:{{ . }}{{ end }};">
+              <div class="title">
                 {{ . }}
               </div>
             {{ end }}
@@ -42,7 +42,7 @@
         <div class="home__landing--txt">
           {{ if .title }}
             {{ range .title }}
-            <div class="title" style="{{ with $landing.titleColor }}color:{{ . }}{{ end }};">
+            <div class="title">
               {{ . }}
             </div>
             {{ end }}
@@ -52,7 +52,7 @@
             {{ end }}
           {{ if .text }}
             {{ range .text }}
-              <div class="text" style="{{ with $landing.textColor }}color:{{ . }}{{ end }};">
+              <div class="text">
                 {{ . }}
               </div>
             {{ end }}

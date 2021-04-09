@@ -1,5 +1,4 @@
 <div class="toc">
-  
   {{ if .Params.enabletoc }}
   <h6 class="toc__label">{{ i18n "toc-label" }}</h6>
   <div class="toc__body">
@@ -34,12 +33,14 @@
 
     {{ else }}
     <style>
-      #sideimg {
-        background-image: url('/images/green-lights.jpg');
+      #xsideimg {
+        {{/*  //background-image: url('/images/green-lights.jpg');  */}}
+        background-image: url("{{ (resources.Get "svg/a/2.svg").Permalink }}") ;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: -400px;
         height: 100%;
+        opacity: 25%;
       }
     </style>
   <div id="sideimg">

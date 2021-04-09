@@ -12,7 +12,6 @@
 
 
 $title01: "Source Sans Pro" ;
-$title02: "SouSrce Code Pro" ;
 $title03: "Space Mono" ;
 $title04: "Coustard" ;
 $title05: "Fira Mono" ;
@@ -20,6 +19,18 @@ $title06: "JetBrains Mono" ;
 
 $body01: "Source Sans Pro" ;
 
+$dark1 : #282a36;
+$dark2 : #44475a;
+$dark3 : #383A59;
+$light : #f8f8f2;
+$blue : #6272a4;
+$cyan : #8be9fd;
+$green : #50fa7b;
+$orange : #ffb86c;
+$pink : #ff79c6;
+$purple : #bd93f9;
+$red : #ff5555;
+$yellow : #f1fa8c;
 
 
 body {
@@ -35,7 +46,13 @@ body {
 }
 
 .home__landing--txt .title {
-    font-family: $title03;
+    font-family: $title05;
+    color: white;
+
+}
+.home__landing--txt .text {
+    color: white;
+    font-weight: bold;
 }
 
 .theme__dark .single__contents {

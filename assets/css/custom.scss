@@ -191,3 +191,24 @@ nav.breadcrumb {
     z-index: 100;
     //border: 1px solid pink;
 }
+
+nav.nav {
+    z-index: 400;
+}
+
+.mid .divider:not(.home){
+    &::before {
+        content: " ";
+        position: absolute;
+        //border: 5px solid yellow;
+        height: 100%;
+        width: 100%;
+        background-color: pink;
+        background: url('/svg/a/2.svg');
+        background-repeat: no-repeat;
+        background-position: 120% 100%;
+        background-size: 1000px;
+        background-attachment: fixed;
+        opacity: 15%;
+    }
+}

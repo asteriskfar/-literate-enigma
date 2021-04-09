@@ -4,8 +4,8 @@
 
 <div class="navbar__icons">
   {{ partial "navbar/icons/select-lang.html" . }}
+  {{ partial "navbar/icons/light-dark-toggle.html" . }}
   {{ if .Site.Params.enableDarkSwitch }}
-    {{ partial "navbar/icons/light-dark-toggle.html" . }}
   {{ end }}
   {{ if .Site.Params.github }}
   <div class="navbar__icons--icon">
