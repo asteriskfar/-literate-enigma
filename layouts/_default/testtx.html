@@ -1,0 +1,322 @@
+{{ define "main" }}
+<style>
+.tx {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 100px auto;
+    overflow: auto;
+    border: 1px solid rgba(0,0,0, 0.25);
+}
+.title-wrapper {
+    //border: 1px solid orange;
+    width: 100%;
+    display: flex;
+    margin: 10px 20px;
+}
+.tx-main {
+    display: flex;
+    flex-direction: row;
+    max-height: 700px;
+}
+.tx-settings {
+    flex: 0 0 auto;
+    width: 80px;
+    box-shadow: 0 10px 0px 0 rgb(0 0 0 / 15%);
+    background-color: rgba(0,0,0,0.15);
+    padding: 10px 0;
+    //border: 1px solid red;
+    position: sticky;
+}
+.tx-table-wrapper {
+    overflow: auto;
+    flex: 1 0 auto;
+}
+table {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+tr {
+    width: 100%;
+    padding: 4px 0;
+    //border: 1px solid blue;
+}
+th {
+    padding: 10px 20px;
+
+}
+td {
+    white-space: nowrap; 
+    text-overflow:ellipsis; 
+    overflow: hidden; 
+    width: 100%;
+    max-width:220px;
+    padding: 10px 20px;
+    
+}
+
+td:hover {
+    //max-width: 1000px;
+    width: auto;
+    //overflow: visible;
+    //background: red;
+    //display: block;
+    //text-overflow:unset; 
+
+}
+
+td:hover > span.s2 {
+    background-color: #eee;
+    z-index: 200;
+    width: 100%;
+}
+
+td.w1 {
+    max-width: 300px;
+}
+
+td.number {
+    text-align: right;
+}
+span.s2 {
+    color: #999;
+}
+
+.xspan.s2:hover {
+    color: blue;
+
+}
+
+.toptx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 ;
+    padding: 0px ;
+    background-color: rgba(0,0,0, 0.05);
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+
+.toptx .title {
+    align-self: center;
+    padding: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 140%;;
+    //border: 1px solid red;
+}
+.svg {
+    width: 40px;
+    height: 40px;
+}
+.svg svg {
+    width: 100%;
+    height: 100%;
+    fill: #CCCCCC;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.settings-svg svg {
+    color: #888;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.txnav {
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgba(0,0,0,0.15);
+    //border: 1px solid red;
+}
+
+.txnav-item {
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    //border: 1px solid pink;
+    font-weight: bold;
+    //flex: 1 0 auto;
+    text-align: center;
+}
+.txnav-item.usernavx {
+    padding: 0 30px;
+}
+.txnav-item.push-right {
+    align-self: end;
+    justify-self: end;
+    flex: 1 0 auto;
+    text-align: left;
+    //border: 1px solid red;
+}
+
+.txnav-item:not(.spacer):hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.theme__light .txnav {
+    background-color: rgba(0,0,0,0.05);
+
+    }
+.theme__light .tx {
+        background: #FFFFFF;
+}
+
+.theme__light .svg svg {
+    fill: #5e6264;
+}
+
+.theme__light .settings-svg svg {
+    color: #5e6264;
+}
+.spacer {
+    flex: 1 0 auto;
+}
+.hidden {
+    display: none;
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    //border: 5px solid orange;
+    align-items: center;
+}
+.user-info-name {
+    //border: 1px solid blue;
+    text-align: left;
+}
+.user-info-id {
+    color: #AAA;
+    max-width: 200px;
+    //border: 1px solid blueviolet;
+    white-space: nowrap; 
+    text-overflow:ellipsis; 
+    overflow: hidden; 
+}
+.user-info-icon {
+    width: 80px;
+}
+
+.user-svg {
+    background-color: rgba(0,0,0, 0.05);
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-svg svg {
+    //border: 1px solid yellow;
+    height: 70%;
+    width: 70%;
+    position: relative;
+    align-self: center;
+    margin: auto 0;
+}
+</style>
+
+{{ $data := site.Data.tx.data }}
+<div class="tx">
+    <div class="toptx">
+        <div class="title-wrapper">
+            {{ $a := resources.Get "svg/a/2.svg" }}
+            <div class="svg">{{ $a.Content | safeHTML }}</div>
+            <div class="svg hidden">
+                <img src="/logo.png">
+            </div>
+            <div class="title">
+                autonomics
+            </div>
+        </div>
+        <div class="txnav">
+            <div class="txnav-item">
+                Transactions
+            </div>
+            <div class="txnav-item">
+                Inventory
+            </div>
+            <div class="txnav-item">
+                Coin Explorer
+            </div>
+            <div class="txnav-item">
+                Global Economy
+            </div>
+            <div class="txnav-item spacer">
+            </div>
+            <div class="txnav-item usernav">
+                <div class="user-info">
+                    <div class="user-info-text">
+                    <div class="user-info-name">McKenzie-Satterfield</div>
+                    <div class="user-info-id">@80e045d6164b6cffbbd4b0fa5c944f8e5083889d</div>
+                    </div>
+                    <div class="user-info-icon">
+                        {{ $u := resources.Get "svg/user.svg" }}
+                        <div class="user-svg">{{ $u.Content | safeHTML }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tx-main">
+        <div class="tx-settings">
+            <div class="tx-settings-icon">
+                {{ $s := resources.Get "svg/settings.svg" }}
+                <div class="settings-svg">
+                    {{ $s.Content | safeHTML }}
+                </div>
+            </div>
+        </div>
+        <div class="tx-table-wrapper">
+            <table>
+                <tr>
+                    <th>Tx</th>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                </tr>
+                {{ range $data }}
+                <tr>
+                    <td  title="@{{.S1}}">%{{ .S1 }}</td>
+                    <td>{{ .date | dateFormat "Jan 02, 2006 3:04 PM" }}</td>
+                    <td class="w1"  title="@{{.S2}}">
+                        <span class="">{{ .from }}</span>
+                        <span class="s2">@{{ .S2}}</span>
+                    </td>
+                    <td class="w1" title="@{{.S2}}">
+                        <span class="">{{ .to }}</span>
+                        <span class="s2">@{{ .S2}}</span>
+                    </td>
+                    <td class="number">{{ .debit }}</td>
+                    <td class="number">{{ .credit }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{{ end }}

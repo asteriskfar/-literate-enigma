@@ -29,3 +29,9 @@
   url = "/contact"
   weight = 50
 
+
+[[main]]
+  identifier = "apptest"
+  name = "Apptest"
+  url = "/test-tx"
+  weight = 100
