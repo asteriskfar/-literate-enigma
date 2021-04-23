@@ -70,7 +70,7 @@ td:hover {
 }
 
 td:hover > span.s2 {
-    background-color: #eee;
+    background-color: rgba(151, 151, 151, 0.2);
     z-index: 200;
     width: 100%;
 }
@@ -212,7 +212,7 @@ span.s2 {
 }
 
 .user-svg {
-    background-color: rgba(0,0,0, 0.05);
+    background-color: rgba(255,255,255, 0.10);
     height: 60px;
     width: 60px;
     padding: 10px;
@@ -224,6 +224,10 @@ span.s2 {
     margin-left: 20px;
     display: flex;
     flex-direction: row;
+}
+
+.theme__light .user-svg {
+    background-color: rgba(0,0,0, 0.05);
 }
 
 .user-svg svg {
