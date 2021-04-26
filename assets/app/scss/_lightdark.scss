@@ -33,6 +33,14 @@
     .logo-svg-icon {
         background-color: $dark4;
     }
+
+    input {
+        color: $white
+    }
+    button {
+        background-color: rgba($blue, 0.5);
+        color: $white
+    }
 }
 
 button#toggleToLight{
