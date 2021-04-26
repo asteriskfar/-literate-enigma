@@ -1,29 +1,7 @@
 {{ define "main" }}
 {{ $data := site.Data.tx.data }}
 <div class="tx2-wrapper">
-    <div class="tx2-sidebar" id="drawer">
-        <div class="logo-svg-icon">
-            {{ partial "apptest/title.html" . }}
-
-        </div>
-
-        <div class="tx2-sidebar-body">
-        <div class="tx2-settings-icon">
-            <div class="settings-svg">
-                {{ $s := resources.Get "svg/settings.svg" }}
-                {{ $x := resources.Get "svg/x.svg" }}
-                <button onclick="opensidebar()">
-                    {{ $s.Content | safeHTML }}
-                    {{ $x.Content | safeHTML }}
-                </button>
-
-            </div>
-            <div class="themetoggle">
-                {{ partial "apptest/light-dark-toggle.html" . }}
-            </div>
-        </div>
-        </div>
-    </div>
+    {{ partial "apptest/fullsidebar" . }}
     <div class="tx2-body-wrapper">
     
         <div class="tx2-body">
@@ -65,12 +43,5 @@
         </div>
     </div>
 </div>
-<script>
 
-    let opensidebar = function () {
-        let drawer = document.getElementById("drawer");
-        drawer.classList.toggle("drawer-expand");
-    }
-
-</script>
 {{ end }}
