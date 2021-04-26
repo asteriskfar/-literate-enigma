@@ -6,7 +6,7 @@ html {
     overflow: hidden;
 }
 body.tx2 {
-    border: 1px solid blue;
+    // border: 1px solid blue;
     // //overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -232,7 +232,6 @@ body.tx2 {
             max-height: 80px;
             position: sticky;
             top: 0;
-            background-color: rgba(120, 120, 120, 0.15);
             z-index: 100;
             .tx2-txnav {
                 position: relative;

@@ -5,6 +5,9 @@
     button#toggleToDark{
         display: block;
     }
+    .tx2-top {
+        background-color: #EBEBEB;
+    }
 }
 
 .theme__dark {
@@ -15,6 +18,14 @@
     }
     button#toggleToLight{
         display: block;
+    }
+
+    .tx2-top {
+        background-color: #34353F;
+    }
+
+    .logo-svg svg {
+        fill:rgba($light, 0.5)
     }
 }
 
