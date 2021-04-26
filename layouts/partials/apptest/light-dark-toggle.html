@@ -1,0 +1,53 @@
+<script>
+  {{ $enableDarkMode := ($.Param "enableDarkMode") }}
+  var enableDarkMode = JSON.parse({{ $enableDarkMode | jsonify }});
+  var root = document.getElementById('root');
+  var toggleToLightBtn = document.getElementById('toggleToLight');
+  var toggleToDarkBtn = document.getElementById('toggleToDark');
+
+  if (!enableDarkMode) {
+    root.className = 'theme__light';
+    localStorage.setItem('theme', 'light');
+  }
+  
+  if (toggleToDarkBtn) {
+    toggleToDarkBtn.onclick = function (e) {
+      root.className = 'theme__dark';
+      localStorage.setItem('theme', 'dark');
+      toggleToLightBtn.className = 'navbar__icons--icon';
+      toggleToDarkBtn.className = 'hide';
+    }
+  }
+
+  if (toggleToLightBtn) {
+    toggleToLightBtn.onclick = function (e) {
+      root.className = 'theme__light';
+      localStorage.setItem('theme', 'light');
+      toggleToLightBtn.className = 'hide';
+      toggleToDarkBtn.className = 'navbar__icons--icon';
+    }
+  }
+</script>
+{{ if $.Param "enableDarkMode" }}
+
+
+<button id="toggleToDark" class="navbar__icons--icon" aria-label="Toggle to dark mode">
+  {{ partial "svgs/light-mode.svg" (dict "width" 20 "height" 20) }}
+</button>
+<button id="toggleToLight" class="navbar__icons--icon" aria-label="Toggle to light mode">
+  {{ partial "svgs/dark-mode.svg" (dict "width" 20 "height" 20) }}
+</button>
+<script>
+  var theme = localStorage.getItem('theme');
+  var toggleToLightBtn = document.getElementById('toggleToLight');
+  var toggleToDarkBtn = document.getElementById('toggleToDark');
+
+  if (theme && theme === 'dark') {
+    toggleToLightBtn.className = 'navbar__icons--icon';
+    toggleToDarkBtn.className = 'hide';
+  } else {
+    toggleToLightBtn.className = 'hide';
+    toggleToDarkBtn.className = 'navbar__icons--icon';
+  }
+</script>
+{{ end }}

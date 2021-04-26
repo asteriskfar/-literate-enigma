@@ -1,0 +1,71 @@
+$dark1 : #282a36;
+$dark2 : #44475a;
+$dark3 : #383A59;
+$light : #f8f8f2;
+$blue : #6272a4;
+$cyan : #8be9fd;
+$green : #50fa7b;
+$orange : #ffb86c;
+$pink : #ff79c6;
+$purple : #bd93f9;
+$red : #ff5555;
+$yellow : #f1fa8c;
+$white: #FFFFFF;
+
+.app-test {
+
+    .tx {
+        
+        display: flex;
+        flex-direction: column;
+        max-width: 1600px;
+        margin: 100px auto;
+        overflow: auto;
+        border: 1px solid rgba(0,0,0, 0.25);
+    }
+    
+    .tx-main {
+        display: flex;
+        flex-direction: row;
+        max-height: 700px;
+    }
+    .tx-settings {
+        flex: 0 0 auto;
+        width: 80px;
+        box-shadow: 0 10px 0px 0 rgba(0, 0, 0, 0.15);
+        background-color: rgba(0,0,0,0.15);
+        padding: 10px 0;
+        //border: 1px solid red;
+        position: sticky;
+    }
+    
+    
+    
+    
+    
+    button, .button {
+        border: none;
+        outline: none;
+        padding: 0.75rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+    
+    }
+    
+    button#toggleToLight{
+        background-color: rgba($dark1, 0.5);
+        color: $white;
+    }
+    
+    
+    
+    .theme__dark {
+        background-color: $dark1;
+        color: $white;   
+    }
+}

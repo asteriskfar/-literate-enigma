@@ -33,5 +33,5 @@
 [[main]]
   identifier = "apptest"
   name = "Apptest"
-  url = "/test-tx"
+  url = "/apptest/"
   weight = 100
