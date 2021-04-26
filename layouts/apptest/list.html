@@ -2,7 +2,14 @@
 {{ $data := site.Data.tx.data }}
 <div class="tx">
     <div class="toptx">
-        {{ partial "apptest/title.html" . }}
+        <div class="title-wrapper">
+            {{ partial "apptest/title.html" . }}
+            <div class="spacer"></div>
+            <div class="themetoggle">
+                {{ partial "apptest/light-dark-toggle.html" . }}
+            </div>
+        </div>
+        
         
         {{ partial "apptest/nav.html" . }}
     </div>

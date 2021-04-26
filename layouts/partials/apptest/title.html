@@ -1,16 +1,9 @@
-<div class="title-wrapper">
-    {{ $a := resources.Get "svg/a/2.svg" }}
-    <div class="svg">{{ $a.Content | safeHTML }}</div>
-    <div class="svg hidden">
-        <img src="/logo.png">
-    </div>
-    <div class="title">
-        autonomics
-        
-    </div>
-    <div class="spacer"></div>
-    <div class="themetoggle">
-        {{ partial "apptest/light-dark-toggle.html" . }}
-    </div>
+{{ $a := resources.Get "svg/a/2.svg" }}
+<div class="logo-svg">
+    <a href="/apptest/">
+    {{ $a.Content | safeHTML }}
+    </a>
 </div>
-
+<div class="logo-name">
+    autonomics
+</div>

@@ -8,6 +8,9 @@
     .tx2-top {
         background-color: #EBEBEB;
     }
+    .logo-svg-icon {
+        background-color: #EBEBEB;
+    }
 }
 
 .theme__dark {
@@ -19,13 +22,16 @@
     button#toggleToLight{
         display: block;
     }
-
+    
     .tx2-top {
-        background-color: #34353F;
+        background-color: $dark4;
     }
 
     .logo-svg svg {
         fill:rgba($light, 0.5)
+    }
+    .logo-svg-icon {
+        background-color: $dark4;
     }
 }
 

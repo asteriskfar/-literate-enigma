@@ -36,7 +36,6 @@ body.tx2 {
         flex: 0 0 auto;
         position: relative;
 
-        background-color: rgba(120, 120, 120, 0.15);
 
         box-shadow: 5px 80px 10px 0 rgba(0, 0, 0, 0.15);
         z-index: 200;
@@ -79,6 +78,7 @@ body.tx2 {
 
         .tx2-sidebar-body {
             //border: 1px solid violet;
+            background-color: rgba(120, 120, 120, 0.15);
 
             flex: 1 0 auto;
         }
