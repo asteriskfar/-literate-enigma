@@ -1,17 +1,3 @@
-$dark1 : #282a36;
-$dark2 : #44475a;
-$dark3 : #383A59;
-$light : #f8f8f2;
-$blue : #6272a4;
-$cyan : #8be9fd;
-$green : #50fa7b;
-$orange : #ffb86c;
-$pink : #ff79c6;
-$purple : #bd93f9;
-$red : #ff5555;
-$yellow : #f1fa8c;
-$white: #FFFFFF;
-
 .app-test {
 
     .tx {
@@ -43,29 +29,11 @@ $white: #FFFFFF;
     
     
     
-    button, .button {
-        border: none;
-        outline: none;
-        padding: 0.75rem;
-        border-radius: 0.25rem;
-        text-decoration: none;
-        cursor: pointer;
-    
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.15);
-        }
-    
-    }
-    
-    button#toggleToLight{
-        background-color: rgba($dark1, 0.5);
-        color: $white;
-    }
+
     
     
     
-    .theme__dark {
-        background-color: $dark1;
-        color: $white;   
-    }
+    
+    
+
 }

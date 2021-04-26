@@ -1,9 +1,9 @@
-html, body * {
+html,
+body * {
     box-sizing: border-box;
 }
 html {
     overflow: hidden;
-
 }
 body.tx2 {
     border: 1px solid blue;
@@ -22,8 +22,8 @@ body.tx2 {
     position: absolute;
     display: flex;
     flex-direction: row;
-    
-    width: 100%;;
+
+    width: 100%;
     height: 100%;
     flex-wrap: nowrap;
     justify-self: stretch;
@@ -31,12 +31,13 @@ body.tx2 {
     align-items: stretch;
     .tx2-sidebar {
         //border: 25px solid blue;
-        
+
         width: 52px;
         flex: 0 0 auto;
         position: relative;
-        
-        background-color: #eee;;
+
+        background-color: rgba(120, 120, 120, 0.15);
+
         box-shadow: 5px 80px 10px 0 rgba(0, 0, 0, 0.15);
         z-index: 200;
 
@@ -67,7 +68,6 @@ body.tx2 {
                     margin: 20px 5px;
                     padding: 6px 0;
                 }
-
             }
 
             .logo-name {
@@ -79,9 +79,8 @@ body.tx2 {
 
         .tx2-sidebar-body {
             //border: 1px solid violet;
-            
+
             flex: 1 0 auto;
-            
         }
         .tx2-settings-icon {
             align-self: flex-end;
@@ -90,11 +89,17 @@ body.tx2 {
             //border: 1px solid orange;
             background-color: rgba(0, 0, 0, 0.15);
             position: relative;
-            height: 50px;
+            height: 100px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            transition: 500ms;
+
             .settings-svg {
-            //border: 1px solid red;
-            margin: 0;
-            width: 50px;
+                //border: 1px solid red;
+                margin: 0;
+                width: 50px;
                 padding: 0;
                 flex: 0 0;
                 display: flex;
@@ -111,7 +116,7 @@ body.tx2 {
                     cursor: pointer;
                     margin: 0;
                     text-align: center;
-                    width: 100%;;
+                    width: 100%;
                     height: 100%;
                     background-color: unset;
                     &:hover {
@@ -135,8 +140,26 @@ body.tx2 {
                         max-height: 0px;
                         opacity: 0;
                     }
-                    
                 }
+            }
+        }
+
+        .themetoggle {
+            //border: 1px solid blue;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 50px;
+            margin: 1px;
+                transition: 500ms;
+                button {
+                border-radius: 0;
+                margin: 2px 0;
+                    &#toggleToDark, 
+                    &#toggleToLight {
+                        background-color: unset;
+                    }
             }
         }
 
@@ -146,6 +169,10 @@ body.tx2 {
 
             .tx2-settings-icon {
                 align-self: flex-end;
+                flex-direction: row;
+                align-items: flex-start;
+            transition: 500ms;
+            height: 50px;
             }
 
             .settings-svg {
@@ -164,10 +191,13 @@ body.tx2 {
                         max-height: 30px;
                         opacity: 100;
                     }
-                    
                 }
             }
-
+            .themetoggle {
+                top: 0;
+                right: 50px;
+                transition: 500ms;
+            }
         }
     }
     .tx2-body-wrapper {
@@ -176,7 +206,6 @@ body.tx2 {
         flex: 1 0;
         overflow-x: auto;
         overflow-y: visible;
-
     }
     .tx2-body {
         //border: 30px solid #ff0;
@@ -187,7 +216,7 @@ body.tx2 {
         flex: 1 0;
         height: 100%;
         width: auto;
-        
+
         .tx2-top {
             //border: 1px solid cyan;
             display: flex;
@@ -203,7 +232,7 @@ body.tx2 {
             max-height: 80px;
             position: sticky;
             top: 0;
-            background-color: #eee;;
+            background-color: rgba(120, 120, 120, 0.15);
             z-index: 100;
             .tx2-txnav {
                 position: relative;
@@ -214,7 +243,7 @@ body.tx2 {
                 flex-direction: row;
                 flex-wrap: nowrap;
                 width: 100%;
-                flex: 1 0 ;
+                flex: 1 0;
                 height: auto;
                 align-self: stretch;
                 .txnav-item {
@@ -256,7 +285,7 @@ body.tx2 {
                 min-width: 100%;
                 flex: 0 0 auto;
                 align-items: center;
-                padding-right: 50px;;
+                padding-right: 50px;
                 overflow: visible;
                 table.tx2-table {
                     //border: 10px solid red;
@@ -265,7 +294,7 @@ body.tx2 {
                     box-sizing: border-box;
                     position: relative;
                     width: auto;
-                    
+
                     min-width: calc(100vw - 450px);
                     position: relative;
                     height: calc(100vh - 130px);
@@ -273,7 +302,6 @@ body.tx2 {
                     td {
                         width: unset;
                     }
-                    
                 }
             }
         }

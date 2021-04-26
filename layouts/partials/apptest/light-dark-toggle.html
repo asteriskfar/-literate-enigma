@@ -1,53 +1,47 @@
-<script>
-  {{ $enableDarkMode := ($.Param "enableDarkMode") }}
-  var enableDarkMode = JSON.parse({{ $enableDarkMode | jsonify }});
-  var root = document.getElementById('root');
-  var toggleToLightBtn = document.getElementById('toggleToLight');
-  var toggleToDarkBtn = document.getElementById('toggleToDark');
-
-  if (!enableDarkMode) {
-    root.className = 'theme__light';
-    localStorage.setItem('theme', 'light');
-  }
-  
-  if (toggleToDarkBtn) {
-    toggleToDarkBtn.onclick = function (e) {
-      root.className = 'theme__dark';
-      localStorage.setItem('theme', 'dark');
-      toggleToLightBtn.className = 'navbar__icons--icon';
-      toggleToDarkBtn.className = 'hide';
-    }
-  }
-
-  if (toggleToLightBtn) {
-    toggleToLightBtn.onclick = function (e) {
-      root.className = 'theme__light';
-      localStorage.setItem('theme', 'light');
-      toggleToLightBtn.className = 'hide';
-      toggleToDarkBtn.className = 'navbar__icons--icon';
-    }
-  }
-</script>
-{{ if $.Param "enableDarkMode" }}
-
-
-<button id="toggleToDark" class="navbar__icons--icon" aria-label="Toggle to dark mode">
-  {{ partial "svgs/light-mode.svg" (dict "width" 20 "height" 20) }}
+<button id="toggleToDark" class="button" aria-label="Toggle to dark mode">
+  {{ $moon := resources.Get "svg/moon.svg" }}
+  {{ $moon.Content | safeHTML }}
 </button>
-<button id="toggleToLight" class="navbar__icons--icon" aria-label="Toggle to light mode">
-  {{ partial "svgs/dark-mode.svg" (dict "width" 20 "height" 20) }}
+<button id="toggleToLight" class="button" aria-label="Toggle to light mode">
+  {{ $light := resources.Get "svg/sun.svg" }}
+  {{ $light.Content | safeHTML }}
 </button>
 <script>
   var theme = localStorage.getItem('theme');
   var toggleToLightBtn = document.getElementById('toggleToLight');
   var toggleToDarkBtn = document.getElementById('toggleToDark');
-
+  var root = document.getElementById('root');
+  console.log(theme)
   if (theme && theme === 'dark') {
-    toggleToLightBtn.className = 'navbar__icons--icon';
     toggleToDarkBtn.className = 'hide';
   } else {
     toggleToLightBtn.className = 'hide';
-    toggleToDarkBtn.className = 'navbar__icons--icon';
+  }
+
+  if (toggleToDarkBtn) {
+    toggleToDarkBtn.onclick = function (e) {
+      console.log('toggle to dark')
+      root.classList.toggle = 'theme__dark';
+      if(!root.classList.contains('theme__dark')) {
+        root.classList.add('theme__dark')
+      }
+      if(root.classList.contains('theme__light')) {
+        root.classList.remove('theme__light')
+      }
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+  
+  if (toggleToLightBtn) {
+    toggleToLightBtn.onclick = function (e) {
+      console.log('toggle to light')
+      if(!root.classList.contains('theme__light')) {
+        root.classList.add('theme__light')
+      }
+      if(root.classList.contains('theme__dark')) {
+        root.classList.remove('theme__dark')
+      }
+      localStorage.setItem('theme', 'light');
+    }
   }
 </script>
-{{ end }}

@@ -1,0 +1,29 @@
+.theme__light {
+    button#toggleToLight{
+        display: none;
+    }
+    button#toggleToDark{
+        display: block;
+    }
+}
+
+.theme__dark {
+    background-color: $dark1;
+    color: $light;
+    button#toggleToDark{
+        display: none;
+    }
+    button#toggleToLight{
+        display: block;
+    }
+}
+
+button#toggleToLight{
+    background-color: rgba($dark1, 0.5);
+    color: $white;
+}
+
+button#toggleToDark{
+    background-color: rgba($light, 0.5);
+    color: $dark2;
+}
