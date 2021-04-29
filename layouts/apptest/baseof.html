@@ -12,7 +12,23 @@
 {{ $themeOptions := slice "light" "dark" }}
 <body id="root" class="theme__{{ index $themeOptions 0 }} {{print .Title|urlize| safeHTMLAttr}}">
     
-    {{ block "main" . }}{{ end }}
+            {{ block "tx2h" .}}
+            <div class="tx2-wrapper">
+                {{ partial "apptest/fullsidebar" . }}
+                <div class="tx2-body-wrapper">
+                    <div class="tx2-body">
+                        <div class="tx2-top">
+                            {{ partial "apptest/nav" . }}
+                        </div>
+            {{ end }}
+            
+            {{ block "main" . }}{{ end }}
+
+            {{ block "tx2f" . }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
 
 </body>
 
