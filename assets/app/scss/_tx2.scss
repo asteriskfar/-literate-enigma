@@ -5,6 +5,9 @@ body * {
 html {
     overflow: hidden;
 }
+body {
+    margin: 0;
+}
 body.tx2 {
     // border: 1px solid blue;
     // //overflow: hidden;
@@ -17,7 +20,7 @@ body.tx2 {
     overflow-y: visible;
 }
 .tx2-wrapper {
-    padding: 10px;
+    //padding: 10px;
     //border: 25px solid pink;
     position: absolute;
     display: flex;
@@ -29,177 +32,7 @@ body.tx2 {
     justify-self: stretch;
     justify-content: start;
     align-items: stretch;
-    .tx2-sidebar {
-        //border: 25px solid blue;
-
-        width: 52px;
-        flex: 0 0 auto;
-        position: relative;
-
-
-        box-shadow: 5px 80px 10px 0 rgba(0, 0, 0, 0.15);
-        z-index: 200;
-
-        display: flex;
-        flex-direction: column;
-        transition: 500ms;
-        overflow: hidden;
-        .logo-svg-icon {
-            margin: 0;
-            padding: 0;
-            //border: 1px solid red;
-            flex: 0 0;
-            padding: 0;
-            text-align: center;
-            width: auto;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            //background-color: ;
-            //border: 1px solid orange;
-            height: 80px;
-            div {
-            }
-            .logo-svg {
-                svg {
-                    width: 40px;
-                    height: auto;
-                    margin: 20px 5px;
-                    padding: 6px 0;
-                }
-            }
-
-            .logo-name {
-                margin-left: 8px;
-                font-weight: bold;
-                font-size: 150%;
-            }
-        }
-
-        .tx2-sidebar-body {
-            //border: 1px solid violet;
-            background-color: rgba(120, 120, 120, 0.15);
-
-            flex: 1 0 auto;
-        }
-        .tx2-settings-icon {
-            align-self: flex-end;
-            border: none;
-            width: 100%;
-            //border: 1px solid orange;
-            background-color: rgba(0, 0, 0, 0.15);
-            position: relative;
-            height: 100px;
-            flex-direction: column;
-            flex-wrap: wrap;
-            display: flex;
-            align-items: center;
-            transition: 500ms;
-
-            .settings-svg {
-                //border: 1px solid red;
-                margin: 0;
-                width: 50px;
-                padding: 0;
-                flex: 0 0;
-                display: flex;
-                flex-direction: row;
-                position: absolute;
-                right: 0;
-                button {
-                    align-self: flex-end;
-                    padding: 0px;
-                    border: none;
-                    outline: none;
-                    border-radius: 0;
-                    text-decoration: none;
-                    cursor: pointer;
-                    margin: 0;
-                    text-align: center;
-                    width: 100%;
-                    height: 100%;
-                    background-color: unset;
-                    &:hover {
-                        background-color: rgba(0, 0, 0, 0.15);
-                    }
-                    svg {
-                        margin: 8px 0;
-                        position: relative;
-                    }
-                    svg.feather.feather-settings {
-                        transition: 500ms;
-                        //border: 1px solid red;
-                        max-width: 30px;
-                        opacity: 100;
-                        max-height: 30px;
-                    }
-                    svg.feather.feather-x {
-                        transition: 500ms;
-                        //border: 1px solid blue;
-                        max-width: 0px;
-                        max-height: 0px;
-                        opacity: 0;
-                    }
-                }
-            }
-        }
-
-        .themetoggle {
-            //border: 1px solid blue;
-            height: 50px;
-            position: absolute;
-            top: 50px;
-            right: 0;
-            width: 50px;
-            margin: 1px;
-                transition: 500ms;
-                button {
-                border-radius: 0;
-                margin: 2px 0;
-                    &#toggleToDark, 
-                    &#toggleToLight {
-                        background-color: unset;
-                    }
-            }
-        }
-
-        &.drawer-expand {
-            width: 300px;
-            transition: 500ms;
-
-            .tx2-settings-icon {
-                align-self: flex-end;
-                flex-direction: row;
-                align-items: flex-start;
-            transition: 500ms;
-            height: 50px;
-            }
-
-            .settings-svg {
-                button {
-                    svg.feather.feather-settings {
-                        transition: 500ms;
-                        //border: 1px solid blue;
-                        max-width: 0px;
-                        max-height: 0px;
-                        opacity: 0;
-                    }
-                    svg.feather.feather-x {
-                        transition: 500ms;
-                        //border: 1px solid red;
-                        max-width: 30px;
-                        max-height: 30px;
-                        opacity: 100;
-                    }
-                }
-            }
-            .themetoggle {
-                top: 0;
-                right: 50px;
-                transition: 500ms;
-            }
-        }
-    }
+    
     .tx2-body-wrapper {
         position: relative;
         //border: 30px solid #f0f;

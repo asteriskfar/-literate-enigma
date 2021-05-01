@@ -4,22 +4,29 @@
 
     </div>
     <div class="txnav-item">
-        <a href="/apptest/inventory/">Inventory</a>
+        <a href="/apptest/inventory/">Wallet</a>
     </div>
     <div class="txnav-item">
-        Coin Explorer
+        <a href="/apptest/explorer/">Coin Viewer</a>
     </div>
     <div class="txnav-item">
-        Global Economy
+        <a href="/apptest/graphs/">Network Data</a>
+    </div>
+    <div class="txnav-item">
+        <a href="/apptest/graphs/">Graphs</a>
     </div>
     <div class="txnav-item spacer">
     </div>
     <div class="txnav-item usernav">
         <div class="user-info">
+            {{ $self := site.Data.tx.self }}
+
             <div class="user-info-text">
-                <div class="user-info-name">McKenzie-Satterfield</div>
-                <div class="user-info-id" title="@80e045d6164b6cffbbd4b0fa5c944f8e5083889d">
-                    @80e045d6164b6cffbbd4b0fa5c944f8e5083889d</div>
+                <div class="user-info-name">
+                    <a href="/apptest/user/">{{$self.name}} </a>
+                </div>
+                <div class="user-info-id" title="@{{$self.id}}">
+                    @{{$self.id}}</div>
             </div>
             <div class="user-info-icon">
                 {{ $u := resources.Get "svg/user.svg" }}

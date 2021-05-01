@@ -11,6 +11,9 @@
     .logo-svg-icon {
         background-color: #EBEBEB;
     }
+    .title {
+        color: $dark1
+    }
 }
 
 .theme__dark {
@@ -40,6 +43,9 @@
     button {
         background-color: rgba($blue, 0.5);
         color: $white
+    }
+    .title {
+        color: $light
     }
 }
 

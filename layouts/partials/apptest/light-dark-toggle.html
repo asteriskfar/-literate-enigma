@@ -11,37 +11,45 @@
   var toggleToLightBtn = document.getElementById('toggleToLight');
   var toggleToDarkBtn = document.getElementById('toggleToDark');
   var root = document.getElementById('root');
-  console.log(theme)
-  if (theme && theme === 'dark') {
-    toggleToDarkBtn.className = 'hide';
-  } else {
-    toggleToLightBtn.className = 'hide';
-  }
 
-  if (toggleToDarkBtn) {
-    toggleToDarkBtn.onclick = function (e) {
-      console.log('toggle to dark')
-      root.classList.toggle = 'theme__dark';
-      if(!root.classList.contains('theme__dark')) {
-        root.classList.add('theme__dark')
-      }
-      if(root.classList.contains('theme__light')) {
-        root.classList.remove('theme__light')
-      }
-      localStorage.setItem('theme', 'dark');
+  var makeDark = function (){
+    if(!root.classList.contains('theme__dark')) {
+      root.classList.add('theme__dark')
     }
+    if(root.classList.contains('theme__light')) {
+      root.classList.remove('theme__light')
+    }
+      localStorage.setItem('theme', 'dark');
   }
   
-  if (toggleToLightBtn) {
-    toggleToLightBtn.onclick = function (e) {
-      console.log('toggle to light')
-      if(!root.classList.contains('theme__light')) {
-        root.classList.add('theme__light')
-      }
-      if(root.classList.contains('theme__dark')) {
-        root.classList.remove('theme__dark')
-      }
-      localStorage.setItem('theme', 'light');
+
+  var makeLight = function(){
+    if(!root.classList.contains('theme__light')) {
+      root.classList.add('theme__light')
     }
+    if(root.classList.contains('theme__dark')) {
+      root.classList.remove('theme__dark')
+    }
+    localStorage.setItem('theme', 'light');
   }
+  
+
+  if (theme && theme === 'dark') {
+    makeDark()
+  } else {
+    makeLight()
+  }
+
+  
+  toggleToDarkBtn.addEventListener("click", function(){
+    console.log("todark")
+    makeDark();
+  })
+    
+  toggleToLightBtn.addEventListener("click", function(){
+    console.log("tolight")
+    makeLight()
+  })
+    
+  
 </script>
