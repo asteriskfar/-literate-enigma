@@ -1,4 +1,4 @@
-<div class="tx2-sidebar drawer-expand" id="drawer">
+<div class="tx2-sidebar" id="drawer">
     <div class="logo-svg-icon">
         {{ partial "apptest/title.html" . }}
 
@@ -82,10 +82,31 @@
 
 
 <script>
-
+    let drawerstatus = localStorage.getItem('drawer');
+    let drawer = document.getElementById("drawer");
+    
+    if (drawerstatus && drawerstatus == "open" ){
+        if(!drawer.classList.contains("drawer-expand")) {
+            drawer.classList.add("drawer-expand")
+        }
+    } else {
+        drawer.classList.remove("drawer-expand")
+    }
     let opensidebar = function () {
-        let drawer = document.getElementById("drawer");
         drawer.classList.toggle("drawer-expand");
+        
+        if (drawerstatus && drawerstatus == "open" ){
+          localStorage.setItem('drawer', 'open');
+        } else {
+          localStorage.setItem('drawer', 'close');
+        }
+
+        if(drawer.classList.contains("drawer-expand")) {
+            localStorage.setItem('drawer', 'open');
+        }
+        else {
+          localStorage.setItem('drawer', 'close');
+        }
     }
 
 
