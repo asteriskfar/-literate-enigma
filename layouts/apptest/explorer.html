@@ -12,8 +12,8 @@
                 coin %{{ $current.S2 }}
             </div>
             <div class="tx-explorer-qr-img">
-                {{ $qr := resources.Get "app/qr.png" }}
-                <img src="{{$qr.Permalink}}">
+                {{ $qr := resources.Get "app/qr.svg" }}
+                {{ $qr.Content | safeHTML }}
             </div>
             <div class="tx-explorer-qr-details">
                 <h2>4231</h2>

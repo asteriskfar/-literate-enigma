@@ -30,9 +30,11 @@
                 //border: 1px solid violet;
                 flex: 0 0;
                 align-self: flex-end;
-                img {
-                    width: 250px;
-                    height: 250px
+                svg {
+                    padding: 40px;
+                    width: 240px;
+                    height: 240px;
+                    fill : $blue;
                 }
             }
             .tx-explorer-qr-details {
