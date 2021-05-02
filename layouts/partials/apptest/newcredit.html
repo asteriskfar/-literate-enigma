@@ -1,5 +1,5 @@
 <div class="form-wrapper">
-    <h3>Issue new Credit</h3>
+    <h2>Issue new Credit</h2>
     <form>
         <div class="form-item">
         <label for="name">Account to issue new credit to: </label>
@@ -13,17 +13,46 @@
         </div>
 
         <div class="form-item form-submit" >
-            <button id="send">Send</button>
+            <button id="sendnewcredit" >Send</button>
         </div>
 
-        <div class="form-item">
-            <div class="form-status">
-                <span class="coin-amount">10000 sent to </span>
-                <span class="recipient-id">@4cff841918a5d14e84c29afbffbb25d4a13beead </span>
-                <span class="coin-label">as coin </span>
-            <span class="coin-id">%01a1fab9ab418108b4091082f1a081e7b834e812</span>
-            </div>
-        </div>
         
     </form>
+    
+    
 </div>
+<div class="form-status hidden" id="formstatus">
+    <div class="status-details">
+        <h2>Transaction Status:</h2>
+        <div class="coin-details">
+            <span class="coin-label">Coin amount</span> 
+            <span class="coin-amount">12500</span> 
+        </div>
+        <div class="recipient">
+            <span class="recipient-label">Recipient ID</span>
+            <span class="recipient-id">@4cff841918a5d14e84c29afbffbb25d4a13beead </span>
+        </div>
+        <div class="txn">
+            <span class="txn-label">Transaction ID</span>
+            <span class="txn-id">%01a1fab9ab418108b4091082f1a081e7b834e812</span>
+        </div>
+    </div>
+    <div class="status-qr">
+        {{ $qr := resources.Get "app/qr.svg" }}
+        {{ $qr.Content | safeHTML }}
+    </div>
+</div>
+
+<script>
+var b = document.getElementById("sendnewcredit")
+
+var sendnewcredit = function(){
+    var f = document.getElementById("formstatus")
+    f.classList.remove("hidden")
+}
+
+b.addEventListener("click", function(e){
+    e.preventDefault();
+    sendnewcredit();
+  })
+</script>

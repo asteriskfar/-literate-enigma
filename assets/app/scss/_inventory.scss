@@ -33,14 +33,17 @@
 
                 }
                 .tx-newcredit {
-                    //border-top: 1px solid $blue;
+                    //border: 10px solid cyan;
                     box-shadow: -10px 0px 10px 0 rgba(0, 0, 0, 0.15);
-
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 32px;
                     .form-wrapper {
                         //border: 1px solid blue;
-                        padding: 32px;
                         display: flex;
                         flex-direction: column;
+                        flex: 1 0 50%;
                         .form-item {
                             //border: 1px solid violet;
                             display: flex;
@@ -68,17 +71,69 @@
                                 text-align: right;
                                 //border: 1px solid cyan
                             }
-                            .form-status {
-                                
-                                span {
-                                    display: block;
-                                    //border: 1px solid cyan;
-                                }
-
-                            } 
 
                             button {
                                 width: 100%;;
+                            }
+                        }
+
+                        
+                    }
+                    .form-status {
+                        flex: 1 0 50%;
+
+                        //border: 1px solid cyan;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        &.hidden {
+                            display: none;;
+                        }
+                        .status-details {
+                            //border: 1px solid orange;
+                            flex: 1 0;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            .coin-details, .recipient, .txn {
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                //border: 5px solid green;
+                                width: 100%;;
+                                flex: 1 0 100%;
+                                display: flex;
+                                align-items: flex-start;
+                                align-content: flex-start;
+                                justify-content: flex-start;
+                            }
+                            .coin-label, .recipient-label, .txn-label {
+                                //border: 1px solid red;
+                                flex: 1 0 100%;
+                                width: 100%;
+                                justify-content: center;
+                                margin: 0;
+                            }
+                            .coin-amount, .recipient-id, .txn-id {
+                                width: 100%;
+                                //border: 1px solid yellow;
+                                font-size: 120%;;
+                                margin-bottom: 12px;;
+                            }
+                        }
+                        .status-qr {
+                            flex: 1 0;
+                            //border: 1px solid hotpink;
+                            justify-self: center;
+                            align-self: center;
+                            position: relative;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            svg {
+                                fill: $blue;
+                                margin: 0 auto;
+                                //border: 1px solid red;
+                                position: relative;
                             }
                         }
                     }

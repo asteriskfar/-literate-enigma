@@ -62,7 +62,7 @@
     button#toggleToLight{
         display: block;
     }
-    
+
     .tx2-top {
         background-color: mix(black, $dark3, 5%);
     }
@@ -82,7 +82,12 @@
     }
     button {
         background-color: rgba($blue, 0.5);
-        color: $white
+            transition: 500ms;
+            color: $white;
+        &:hover {
+            background-color: rgba($blue, 0.15);
+            transition: 500ms;
+        }
     }
     .title {
         color: $light
