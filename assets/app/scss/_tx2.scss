@@ -1,13 +1,4 @@
-html,
-body * {
-    box-sizing: border-box;
-}
-html {
-    overflow: hidden;
-}
-body {
-    margin: 0;
-}
+
 body.tx2 {
     // border: 1px solid blue;
     // //overflow: hidden;
@@ -57,11 +48,11 @@ body.tx2 {
             flex-direction: row;
             flex-wrap: nowrap;
             min-width: fit-content;
-            flex: 1 0;
+            flex: 1 0 auto;
             align-self: stretch;
             justify-self: stretch;
             width: 100%;
-            height: auto;
+            height: 80px;
             max-height: 80px;
             position: sticky;
             top: 0;
@@ -69,7 +60,7 @@ body.tx2 {
             .tx2-txnav {
                 position: relative;
                 //border: 1px solid rgba(0,0,0, 0.25);
-                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+                @include shadow;
                 //border: 10px solid orange;
                 display: flex;
                 flex-direction: row;
