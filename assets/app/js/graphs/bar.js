@@ -67,7 +67,7 @@ let colors = d3.scaleOrdinal()
     .domain(sorted.map(function (d) { return d.salesperson; }))
     .range(palette2);
 
-let interpolated = d3.quantize(d3.interpolateHclLong(palette[6], palette[2]), sorted.length);
+let interpolated = d3.quantize(d3.interpolateHclLong(palette[0], palette[2]), sorted.length);
 let colors2 = d3.scaleOrdinal()
                 .domain(sorted.map(function (d) { return d.salesperson; }))
                 .range(interpolated);

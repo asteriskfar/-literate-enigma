@@ -25,10 +25,10 @@ let display = function(d) {
     
     let u = [...new Set(data.map(d => d.group))];
     
-    let interpolated = d3.quantize(d3.interpolateHclLong(palette[3], palette[0]), u.length);
+    let interpolated = d3.quantize(d3.interpolateHcl(palette[0], palette[4]), u.length);
     console.log(u)
     let colors2 = d3.scaleOrdinal()
-                    .domain(data.map(d => d.group))
+                    .domain(data.map(d => d.r))
                     .range(palette);
 
     let colors3 = d3.scaleOrdinal()
@@ -36,7 +36,7 @@ let display = function(d) {
                     .range(interpolated);
     
     //let color = defaultcolor;
-    let color = colors2;
+    let color = colors3;
 
     const root = pack(data);
     
@@ -55,7 +55,7 @@ let display = function(d) {
     leaf.append("circle")
         .attr("r", d => d.r)
         .attr("fill-opacity", 0.7)
-        .attr("fill", d => color(d.data.group));
+        .attr("fill", d => color(d.r));
     
 }
 
