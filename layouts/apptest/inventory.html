@@ -1,19 +1,26 @@
 {{ define "main" }}
 {{ $data := site.Data.tx.data }}
+{{ $current := index $data 2 }}
+{{ $issued := index $data 3 }}
 <div class="tx2-main">
     <div class="tx-table-wrapper">
         <table class="tx2-table">
 
             <tr>
-                <th>Tx</th>
+                <td></td>
+                <th>Coin ID</th>
                 <th>Date</th>
                 <th>From</th>
                 <th>To</th>
-                <th>Debit</th>
-                <th>Credit</th>
+                <th>Amount</th>
             </tr>
-            {{ range first 10 $data }}
+            {{ range $i, $e := first 10 $data }}
             <tr>
+                <td class="expand">
+                    <button data-open="details-{{$i}}" onclick="opendetails(this)">
+                        {{ (resources.Get "svg/chevron-down.svg").Content | safeHTML }}
+                    </button>
+                </td>
                 <td title="@{{.S1}}">%{{ .S1 }}</td>
                 <td>{{ .date | dateFormat "Jan 02, 2006 3:04 PM" }}</td>
                 <td class="w1" title="@{{.S2}}">
@@ -24,8 +31,42 @@
                     <span class="">{{ .to }}</span>
                     <span class="s2">@{{ .S2}}</span>
                 </td>
-                <td class="number">{{ .debit }}</td>
-                <td class="number">{{ .credit }}</td>
+                <td class="number">{{ cond (gt .debit 0) .debit .credit }}</td>
+            </tr>
+            <tr class="details" id="details-{{$i}}">
+                <td></td>
+                <td colspan="5">
+                    <div class="tx-inventory-details">
+                        <h2>99999</h2>
+                        <div class="info">
+                            <div class="info-photo">
+                                {{ $u := resources.Get "svg/user.svg" }}
+                                {{ $u.Content | safeHTML }}
+                            </div>
+                            <div class="info-details">
+                                <div class="on">
+                                    Issued on {{ $issued.date | dateFormat "Jan 02, 2006 3:04 PM" }} 
+                                    by
+                                </div>
+                                <div class="info-name">{{$issued.from}} </div>
+                                <div class="info-uid">@{{$issued.S1}} </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="info-photo">
+                                {{ $u.Content | safeHTML }}
+                            </div>
+                            <div class="info-details">
+                                <div class="on">
+                                    Currently owned by
+                                </div>
+                                <div class="info-name">{{$current.from}} </div>
+                                <div class="info-uid">@{{$current.S1}} </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
             </tr>
             {{ end }}
 
@@ -36,5 +77,13 @@
     </div>
 </div>
 
+<script>
+let opendetails = function(b){
+    let target = document.getElementById(b.dataset.open);
+    target.classList.toggle("open")
+    b.classList.toggle("open")
+    
+}
+</script>
 
 {{ end }}

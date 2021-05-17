@@ -29,6 +29,60 @@
                         min-height: calc(100vh - 500px);
                         max-height: 100vh;;
                         height: fit-content;
+                        td {
+                            padding: 10px;
+                        }
+                        td.expand {
+                            padding: 0 0 0 5px;
+                            button {
+                                padding: 2px;
+                                svg {
+                                    transition: .5s;
+                                    transform: rotate(-90deg);
+                                }
+                                &.open {
+                                    svg {
+                                        transform: rotate(0deg);
+                                        transition: .5s;
+                                    }
+                                }
+                            }
+                        }
+
+                        tr.details {
+                            td {
+                                padding: 0;
+                            }
+                            .tx-inventory-details {
+                                //border: 1px solid red;
+                                max-height: 0;
+                                height: 100%;
+                                overflow: hidden;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                transition: 500ms;
+
+                                h2 {
+                                    width: 100%;;
+                                }
+                                .info {
+                                    flex: 1 1;
+                                }
+                            }
+                            
+                            &.open {
+                                
+                            
+                                .tx-inventory-details {
+
+                                    //border: 1px solid blue;
+                                    max-height: 1000px;
+                                    padding-bottom: 50px;
+                                    transition: 500ms;
+                                }
+                            }
+                        }
                     }
 
                 }
