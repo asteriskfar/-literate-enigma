@@ -89,6 +89,12 @@
             transition: 500ms;
         }
     }
+    select {
+        color: $white;
+    }
+    option {
+        background-color: $dark2;
+    }
     .title {
         color: $light
     }
