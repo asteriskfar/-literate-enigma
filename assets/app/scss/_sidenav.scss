@@ -273,25 +273,28 @@
 }
 
 .drawer-expand {
-    .sidebar-settings {
+    .sidebar-settings-wrapper {
         width: 350px;
     top: 200px;
     left: 0px;
     transition: left 500ms ease;
 }
 }
-.sidebar-settings {
+.sidebar-settings-wrapper {
     width: 350px;
     transition: left 500ms ease;
+    position: absolute;
     
     //border: 1px solid red;
-    position: absolute;
     top: 200px;
     left: -350px;
     padding: 12px;
+
+}
+.sidebar-settings {
     max-height: auto;;
 
-
+    margin: 24px 0;
     /* Style the buttons that are used to open and close the accordion panel */
     .accordion-btn {
         cursor: pointer;
@@ -351,6 +354,11 @@
         padding: 0 18px;
         display: none;
         overflow: hidden;
+    }
+
+    .sidebar-divider {
+        height: 2px;
+        margin: 12px 0;
     }
 
 }
