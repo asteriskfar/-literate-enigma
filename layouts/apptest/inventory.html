@@ -39,7 +39,7 @@
                 <td></td>
                 <td colspan="5">
                     <div class="tx-inventory-details">
-                        <h2>99999</h2>
+                        <h2>{{(cond (gt .debit 0) .debit .credit)}}</h2>
                         <div class="info">
                             <div class="info-photo">
                                 {{ $u := resources.Get "svg/user.svg" }}
