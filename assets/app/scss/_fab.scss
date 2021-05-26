@@ -80,11 +80,12 @@
     [tooltip]:before {
         bottom: 25%;
         font-weight: 600;
+        font-size: 100%;
         border-radius: 2px;
-        //background: #585858;
+        background: rgba($dark2, 0.5);
+        text-transform: uppercase;
         //color: #fff;
         content: attr(tooltip);
-        font-size: 12px;
         visibility: hidden;
         opacity: 0;
         padding: 5px 7px;

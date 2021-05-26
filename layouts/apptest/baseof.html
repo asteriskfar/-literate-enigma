@@ -29,7 +29,9 @@
                 </div>
             </div>
             {{ end }}
-{{ partial "apptest/fab" . }}
+            {{ if not .IsNode }}
+                {{ partial "apptest/fab" . }}
+            {{ end }}
 </body>
 
 </html>
