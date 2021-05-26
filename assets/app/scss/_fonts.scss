@@ -23,3 +23,7 @@ body {
     font-size: 110%;
     letter-spacing: .75pt;
 }
+
+button, input, select, textarea {
+    font-family: $body01;
+}
