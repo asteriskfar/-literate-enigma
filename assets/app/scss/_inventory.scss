@@ -48,7 +48,13 @@
                                 }
                             }
                         }
-                        
+                        tr.balance {
+                            text-align: left;
+                            
+                            .balance-amount {
+                                text-align: right;
+                            }
+                        }
                         tr.details {
                             td {
                                 padding: 0;

@@ -14,7 +14,9 @@
                 <th>To</th>
                 <th>Amount</th>
             </tr>
+            {{ $balance := 0 }}
             {{ range $i, $e := first 10 $data }}
+            {{ $balance = add $balance (cond (gt .debit 0) .debit .credit) }}
             <tr>
                 <td class="expand">
                     <button data-open="details-{{$i}}" onclick="opendetails(this)">
@@ -66,7 +68,11 @@
                 </td>
             </tr>
             {{ end }}
-
+            <tr class="balance">
+                <td></td>
+                <th colspan="4">Balance</th>
+                <td class="balance-amount">{{$balance}}</td>
+            </tr>
         </table>
     </div>
     <!-- <div class="tx-newcredit"> -->
