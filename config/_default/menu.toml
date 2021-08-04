@@ -30,8 +30,3 @@
   weight = 50
 
 
-[[main]]
-  identifier = "apptest"
-  name = "Apptest"
-  url = "/apptest/"
-  weight = 100
