@@ -1,9 +1,15 @@
 ---
 title: "Autonomics"
 weight: "125"
+imageurl: /images/screenshot01.png
+videourl: /videos/test-screencast02.mov
 ---
 
 # Autonomics
+
+begin video:
+
+![Screenshot](/images/screenshot01.png)
 
 ## a meme of one
 
