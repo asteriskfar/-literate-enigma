@@ -7,6 +7,8 @@ videourl: /videos/test-screencast02.mov
 
 # Sigchain
 
+![logo](/logo-dark.svg)
+
 ## a meme of one
 
 A meme is “an idea, behavior, or style that spreads from person to person within a culture”.
