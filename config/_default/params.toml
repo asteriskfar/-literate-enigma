@@ -1,6 +1,6 @@
 logo = true
 logoText = "sigchain capital"
-logoType = "short" # long, short
+logoType = "long" # long, short
 description = "The ZDoc theme for Hugo example site."
 
 themeOptions = ["dark", "light"]

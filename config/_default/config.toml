@@ -11,6 +11,11 @@ pygmentsUseClasses = false
 
 copyright = "Copyright Sigchain Capital 2021 All rights reserved."
 
+[markup]
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xhtml = false
 
 [module]
 
