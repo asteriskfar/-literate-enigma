@@ -12,11 +12,21 @@ $purple : #bd93f9;
 $red : #ff5555;
 $yellow : #f1fa8c;
 
+$bop1: #525574;
+$bop2: #5b6094;
+$bop3: #ABB0DE;
+$bop4: #CED3F4;
 
+$bg: #282a36;
+$bg0: #282A36;
+$bg1: #2C2E3B;
+$bg2: #30323F;
+$bg3: #343643;
+$bg4: #383A47;
 
 .theme__dark .main
 {
-    background-color: $dark3;
+    background-color: $bg1;
 }
 
 .theme__dark #container {
@@ -36,18 +46,18 @@ $yellow : #f1fa8c;
 
 // base back color
 .theme__dark .mid {
-    background-color: $dark1;
+    background-color: $bg1;
 
     // this is the left sidebar block
     #list-menu {
-        background-color: $dark1;
+        background-color: $bg1;
+        
     }
 }
 
 // middle section on main pages
 .theme__dark #list-main {
-    background-color: $dark1;
-
+    background-color: $bg0;
 }
 
 // navbar 
@@ -63,27 +73,35 @@ $yellow : #f1fa8c;
 
 
 // h colours
-.theme__dark .single__contents {
+.theme__light .single__contents {
     h1, h2, h3, h4, h5, h6 {
-        color: $cyan;
+        color: $bop2;
+    }
+}
+.theme__dark .single__contents
+{
+    h1, h2, h3, h4, h5, h6 {
+        color: $bop3;
     }
 }
 
 
 // links 
 .theme__dark a {
-    color: $yellow;
-    &:hover, &:active, &a:focus {
-        color: $cyan;
+    color: $bop4;
+    transition: .5s;
 
+    &:hover, &:active, &a:focus {
+        color: $bop3;
+        transition: .5s;
     }
 }
 
 //footer links
 .theme__dark footer a {
-    color: $cyan;
+    color: $bop4;
     &:hover, &:active, &a:focus {
-        color: $yellow;
+        color: $bop3;
 
     }
 }
@@ -108,12 +126,13 @@ nav.breadcrumb > ol > li {
     font-weight: bold;
 }
 nav.breadcrumb > ol > li:nth-child(2) > a {
-    color: $orange;
+    font-weight: bold;
+    // color: $orange;
     
 }
 
 nav.breadcrumb > ol > li:nth-child(3) > span {
-    color: $cyan;
+    // color: $cyan;
 }
 
 .theme__dark .menu__title.active {
@@ -137,24 +156,26 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
 .theme__dark .navbar__menu--item a {
     color: $light;
     &:hover {
-        color: $yellow;
+        color: $bop3;
     }
 }
 .theme__dark .navbar__menu--item.active a {
-        color: $cyan;
+        color: $bop4;
 }
 
 .theme__dark .toc a:hover, 
 .theme__dark .toc a:active, 
 .theme__dark .toc a:focus {
-    color: $cyan;
+    color: $bop4;
 }
 
 
 .home__landing button.button {
-    background-color: rgba($cyan, 0.75);
-
+    background-color: rgba($bop2, 1);
+    border-radius: 0;
+    color: white;
+    text-transform: uppercase;
     &:hover {
-        background-color: lighten($cyan, 10%);
+        background-color: lighten($bop2, 10%);
     }
 }

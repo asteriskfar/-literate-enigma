@@ -13,9 +13,9 @@ dark_nav_menu_color = "#FCFCFA"
 dark_nav_icon_color = "#ccc"
 
 
-light_active_font_color = "#007d9c"
-light_link_color = "#007d9c"
-light_link_hover_color = "#00ACD7"
+light_active_font_color = "#525574"
+light_link_color = "#525574"
+light_link_hover_color = "#5b6094"
 light_nav_logo_color = "#242729"
 light_nav_menu_color = "#242729"
 light_nav_icon_color = "#535a61"

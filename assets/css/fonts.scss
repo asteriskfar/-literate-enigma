@@ -55,7 +55,9 @@ body {
     font-weight: bold;
 }
 
-.theme__dark .single__contents {
+.theme__dark .single__contents,
+.single__contents
+{
     h1, h2, h3 {
         font-family: $title06;
         //letter-spacing: 3pt;

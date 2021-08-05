@@ -86,7 +86,7 @@ body.test2 {
         flex: 0 0 auto;
         svg {
             rect, path {
-                fill: $test2svg;
+                fill: red;
             }
         }
     }
@@ -191,6 +191,10 @@ body.test2 {
                 svg {
                     height: $letterheight;
                     width:  $letterheight;
+                    path {
+                        fill: red;
+                        color: red;
+                    }
                 }
             }
         }
