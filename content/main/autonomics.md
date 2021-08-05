@@ -1,11 +1,11 @@
 ---
-title: "Autonomics"
+title: "Sigchain"
 weight: "125"
 imageurl: /images/screenshot01.png
 videourl: /videos/test-screencast02.mov
 ---
 
-# Autonomics
+# Sigchain
 
 ## a meme of one
 

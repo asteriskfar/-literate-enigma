@@ -14,6 +14,6 @@ We propose a high-level network architecture for an economic system that integra
 
 ## An economic operating system
 
-Autonomics is a new global economic model, that operates as a single global transaction database. It is the world’s first money, governance and reputation engine deployed as a large-scale platform. With its own money tool, it aims to solve the fundamental problems of the current financial mechanism and the inherent limitations of blockchain based financial technology. Autonomics provides the foundation for the world’s first economic operating system and autonomic AI.
+Sigchain is a new global economic model, that operates as a single global transaction database. It is the world’s first money, governance and reputation engine deployed as a large-scale platform. With its own money tool, it aims to solve the fundamental problems of the current financial mechanism and the inherent limitations of blockchain based financial technology. Sigchain provides the foundation for the world’s first economic operating system and autonomic AI.
 
 The Autonomic system operates as a free market prices computer, calculating costs, prices and value pathways using global transaction data. It’s an economic operating system in which humanity can collaborate effectively, and capitalise productive industry. The challenge of generating wealth for humanity, without externalising costs, is the greatest challenge of our day. It is critical to creating a sustainable society and environment.

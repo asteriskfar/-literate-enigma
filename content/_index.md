@@ -32,8 +32,8 @@ footer:
 
     - title: Partner projects
       links:
-        - title: autonomics
-          link: https://www.autonomics.io/
+        - title: sigchain
+          link: https://www.sigchain.io/
         - title: the 'meme of one' foundation
           link: https://www.memeofone.org
 
