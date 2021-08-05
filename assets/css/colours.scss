@@ -17,6 +17,8 @@ $bop2: #5b6094;
 $bop3: #ABB0DE;
 $bop4: #CED3F4;
 
+$sig: #00a5fc;
+
 $bg: #282a36;
 $bg0: #282A36;
 $bg1: #2C2E3B;
@@ -75,33 +77,33 @@ $bg4: #383A47;
 // h colours
 .theme__light .single__contents {
     h1, h2, h3, h4, h5, h6 {
-        color: $bop2;
+        color: $sig;
     }
 }
 .theme__dark .single__contents
 {
     h1, h2, h3, h4, h5, h6 {
-        color: $bop3;
+        color: $sig;
     }
 }
 
 
 // links 
 .theme__dark a {
-    color: $bop4;
+    color: $sig;
     transition: .5s;
 
     &:hover, &:active, &a:focus {
-        color: $bop3;
+        color: $sig;
         transition: .5s;
     }
 }
 
 //footer links
 .theme__dark footer a {
-    color: $bop4;
+    color: $sig;
     &:hover, &:active, &a:focus {
-        color: $bop3;
+        color: $sig;
 
     }
 }
@@ -171,11 +173,19 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
 
 
 .home__landing button.button {
-    background-color: rgba($bop2, 1);
+    background-color: rgba($sig, 1);
     border-radius: 0;
     color: white;
     text-transform: uppercase;
     &:hover {
-        background-color: lighten($bop2, 10%);
+        background-color: lighten($sig, 10%);
     }
+}
+
+.theme__dark .logo-light {
+display: none;
+}
+
+.theme__light .logo-dark {
+    display: none;
 }
