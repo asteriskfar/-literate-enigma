@@ -12,41 +12,32 @@
     {{ $video = .Params.videourl }}
   {{ end }}
   
-  {{ if $video }}
-    <video width="320" height="240" playsinline autoplay muted loop>
-      <source src="{{ $video }}" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-  {{ else }}
-  {{ if .Params.imageurl }}
-    <style>
-      #sideimg {
-        background-image: url('{{.Params.imageurl}}');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-      }
-    </style>
-  <div id="sideimg">
-  </div>
-
-    {{ else }}
-    <style>
-      #xsideimg {
-        {{/*  //background-image: url('/images/green-lights.jpg');  */}}
-        background-image: url("{{ (resources.Get "svg/a/2.svg").Permalink }}") ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: -400px;
-        height: 100%;
-        opacity: 25%;
-      }
-    </style>
-  <div id="sideimg">
-  </div>
+  <div class="toc-media">
+    {{ if $video }}
+    <div class="toc-vid">
+      <video width="320" height="240" playsinline autoplay muted loop>
+        <source src="{{ $video }}" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
     {{ end }}
-  {{ end }}
+    {{ if .Params.imageurl }}
+      <style>
+        #sideimg {
+          background-image: url('{{.Params.imageurl}}');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          max-height:100%;
+        }
+      </style>
+    <div id="sideimg">
+    </div>
+  
+      {{ end }}
+
+  </div>
+  
 
   {{ end }}
 
