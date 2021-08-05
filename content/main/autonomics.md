@@ -7,10 +7,6 @@ videourl: /videos/test-screencast02.mov
 
 # Autonomics
 
-begin video:
-
-![Screenshot](/images/screenshot01.png)
-
 ## a meme of one
 
 A meme is “an idea, behavior, or style that spreads from person to person within a culture”.
