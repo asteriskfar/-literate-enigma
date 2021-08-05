@@ -151,24 +151,24 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
 
 .theme__dark .menu__title {
     &:hover {
-        color: $yellow;
+        color: $sig;
     }
 }
 
 .theme__dark .navbar__menu--item a {
     color: $light;
     &:hover {
-        color: $bop3;
+        color: $sig;
     }
 }
 .theme__dark .navbar__menu--item.active a {
-        color: $bop4;
+        color: $sig;
 }
 
 .theme__dark .toc a:hover, 
 .theme__dark .toc a:active, 
 .theme__dark .toc a:focus {
-    color: $bop4;
+    color: $sig;
 }
 
 
