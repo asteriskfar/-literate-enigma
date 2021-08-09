@@ -1,11 +1,12 @@
 
-$blue : #6272a4;
+$blue : #00a5fc;
 $cyan : #8be9fd;
 $dark1 : #282a36;
 $dark2 : #44475a;
+$sig: #00a5fc;
 
 
-body { background: $dark1; }
+body.theme__dark { background: $dark1; }
 form { 
     max-width:420px; 
     margin:20px auto; 
@@ -25,14 +26,13 @@ form {
     //border: 1px solid $cyan;
 }
 .feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid $blue;
+  border:1px solid $blue;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -52,6 +52,7 @@ $title03: "Space Mono" ;
 
 [type="submit"] {
   //font-family: $title03;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   width: 100%;
   background:$blue;
   border-radius:5px;
@@ -67,3 +68,18 @@ $title03: "Space Mono" ;
   letter-spacing: 2pt;;
 }
 [type="submit"]:hover { background:$dark2; }
+
+
+body.theme__light {
+.feedback-input {
+
+  color:$dark1;
+}
+}
+
+body.theme__dark {
+.feedback-input {
+
+  color:#ffffff;
+}
+}
