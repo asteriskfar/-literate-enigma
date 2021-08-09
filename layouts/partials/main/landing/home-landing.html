@@ -42,10 +42,50 @@
         <div class="home__landing--txt">
           {{ if .title }}
             {{ range .title }}
-            <div class="title">
-              {{ . }}
-            </div>
+            {{/* . */}}
+
             {{ end }}
+            <style>
+              .logos-title {
+                //border: 1px solid red;
+                max-height: 200px;
+                display: flex;
+                flex-direction: column;
+              }
+              .logos-title img {
+                max-height: 200px;
+                display: flex;
+                opacity: 1;
+              }
+              .logos-title img#logo-title1 {
+                animation: opacityPulse 4s ease-out;
+                animation-iteration-count: infinite; 
+                opacity: 1;
+              }
+              .logos-title img#logo-title2 {
+                border: 1px solid yellow;
+                top: -100%;
+                position: absolute;
+                animation: opacityPulse 3s ease-out;
+                animation-iteration-count: infinite; 
+                opacity: 1;
+              }
+              .logos-title img#logo-title3 {
+                border: 1px solid green;
+                top: -100%;
+                position: absolute;
+              }
+              @-webkit-keyframes opacityPulse {
+                  0% {opacity: 0.0;}
+                  50% {opacity: 1.0;}
+                  100% {opacity: 0.0;}
+              }
+            </style>
+            <div class="logos-title">
+              <img id="logo-title1" src="/logos/sigcoin-dark-v2.png">
+              <img id="logo-title2" src="/logos/sigchain-dark-v2.png">
+              <img id="logo-title3" src="/logos/sigledger-dark-v2.png">
+            </div>
           {{ end }}
             {{ if .spaceBetweenTitleText }}
               <div style="height: {{ .spaceBetweenTitleText }}px"></div>
@@ -70,12 +110,7 @@
       {{ end }}
     </div>
 
-    <div class="hero-video-wrapper">
-      <video id="hero-video" playsinline autoplay muted loop>
-        <source src="/videos/hero-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-    </div>
+    
 
   </div>
 </div>
