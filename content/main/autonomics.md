@@ -7,7 +7,7 @@ videourl: /videos/test-screencast02.mov
 
 # Sigchain
 
-![logo](/logo-dark.svg)
+![logo](logos/sigchain-dark-v2.png)
 
 ## a meme of one
 
