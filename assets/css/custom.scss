@@ -76,6 +76,12 @@ body {
         padding: 0 1.5em;
     }
 }
+
+.theme__light {
+    .toc .toc-media {
+        background-color: #f7f8f9;
+    }
+}
 .hero-video-wrapper {
     //border: 1px solid orange;
     height: 100vh;
