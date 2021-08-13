@@ -46,46 +46,93 @@
 
             {{ end }}
             <style>
-              .logos-title {
-                //border: 1px solid red;
-                max-height: 200px;
-                display: flex;
-                flex-direction: column;
+              @keyframes prism {
+                from,23% {
+                  -moz-transform: rotateX(0);
+                  -ms-transform: rotateX(0);
+                  transform: rotateX(0);
+                }
+                33%,56%  {
+                  -moz-transform: rotateX(-120deg);
+                  -ms-transform: rotateX(-120deg);
+                  transform: rotateX(-120deg);
+                }
+                66%,90%  {
+                  -moz-transform: rotateX(-240deg);
+                  -ms-transform: rotateX(-240deg);
+                  transform: rotateX(-240deg);
+                }
+                to {
+                  -moz-transform: rotateX(-360deg);
+                  -ms-transform: rotateX(-360deg);
+                  transform: rotateX(-360deg);
+                }
               }
-              .logos-title img {
-                max-height: 200px;
-                display: flex;
-                opacity: 1;
+              #prism-container{
+                //border: 5px solid pink;
+                height: 200px;
+                width: 500px;
+                margin-bottom: 4em;
               }
-              .logos-title img#logo-title1 {
-                animation: opacityPulse 4s ease-out;
-                animation-iteration-count: infinite; 
-                opacity: 1;
+              #prism {
+
+                height: 100%;
+                width: 100%;
+
+                animation-name: prism;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-duration: 10s;
+
+                transform-style: preserve-3d;
               }
-              .logos-title img#logo-title2 {
-                border: 1px solid yellow;
-                top: -100%;
+              
+              .pface {
                 position: absolute;
-                animation: opacityPulse 3s ease-out;
-                animation-iteration-count: infinite; 
-                opacity: 1;
+                width: 500px;
+                height: 200px;
+                background-color: #292d39;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center left;
+                backface-visibility: hidden;
               }
-              .logos-title img#logo-title3 {
-                border: 1px solid green;
-                top: -100%;
-                position: absolute;
+
+              .theme__light .pface {
+                background-color: #f8f8f2;
               }
-              @-webkit-keyframes opacityPulse {
-                  0% {opacity: 0.0;}
-                  50% {opacity: 1.0;}
-                  100% {opacity: 0.0;}
+              #f1 {
+                transform: translateZ(60px);
+                background-image: url('/logos/sigchain-dark-v2.png');
+              }
+              #f2 {
+                transform:rotateX(-120deg) translateZ(60px);
+                background-image: url('/logos/sigcoin-dark-v2.png');
+              }
+              #f3 {
+                background-image: url('/logos/sigledger-dark-v2.png');
+                transform:rotateX(-240deg) translateZ(60px);
+              }
+
+              .theme__light #f1 {
+                background-image: url('/logos/sigchain-light-v2.png');
+              }
+              .theme__light #f2 {
+                background-image: url('/logos/sigcoin-light-v2.png');
+              }
+              .theme__light #f3 {
+                background-image: url('/logos/sigledger-light-v2.png');
               }
             </style>
-            <div class="logos-title">
-              <img id="logo-title1" src="/logos/sigcoin-dark-v2.png">
-              <img id="logo-title2" src="/logos/sigchain-dark-v2.png">
-              <img id="logo-title3" src="/logos/sigledger-dark-v2.png">
+
+            <div id="prism-container">
+              <div id="prism">
+                <div class="pface" id="f1"></div>
+                <div class="pface" id="f3"></div>
+                <div class="pface" id="f2"></div>
+              </div>
             </div>
+
           {{ end }}
             {{ if .spaceBetweenTitleText }}
               <div style="height: {{ .spaceBetweenTitleText }}px"></div>
@@ -102,7 +149,7 @@
           {{ range .buttons }}
             <a href="{{ .link }}" target="{{ if in .link "http" }}_blank{{ else }}_self{{ end }}" rel="noreferrer" class="home__landing--link">
               <button class="button home__landing--btn2" aria-label="{{ .text }}" data-color="{{ with .color }}{{ . }}{{ end }}">
-                {{ .text }}
+                read more
               </button>
             </a>
           {{ end }}

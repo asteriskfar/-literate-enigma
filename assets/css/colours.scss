@@ -174,9 +174,12 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
 
 .home__landing button.button {
     background-color: rgba($sig, 1);
-    border-radius: 0;
+    border-radius: 5px;
     color: white;
-    text-transform: uppercase;
+    text-transform: lowercase;
+
+  font-size: 18px;
+  font-weight: 400;;
     &:hover {
         background-color: lighten($sig, 10%);
     }
