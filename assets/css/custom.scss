@@ -40,6 +40,18 @@ body {
     }
 }
 
+@media only screen and (max-width: 500px) {
+
+    .home__landing {
+        justify-content: flex-start;
+        //border: 1px solid yellow;
+        padding-top: 5em;;
+    }
+        .home__landing--txt {
+        //margin-bottom: 10em;
+    }
+}
+
 .theme__light .home__landing {
     background-color: rgba($light,0.4);
     .home__landing--txt .text {
@@ -176,6 +188,12 @@ img.navbar__logo {
     .show-mobile {
         display: block;
     }
+
+    .navbar.lmr {
+        //border: 1px solid blue;
+        padding-left: 0;
+    }
+
 }
 
 /** Fixes overflow on firefox **/
@@ -261,4 +279,6 @@ nav.nav {
 
 .navbar__dropdown--title {
     margin: 0 !important;
+    //border: 1px solid red;
+
 }
