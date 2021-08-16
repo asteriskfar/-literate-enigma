@@ -3,7 +3,7 @@ title: "Credit"
 weight: "50"
 ---
 
-# Credit means trust
+# Credit means trust .. yes it does
 
 ![Payments](/images/undraw-payments.png)
 
