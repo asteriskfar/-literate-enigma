@@ -5,6 +5,8 @@ weight: "50"
 
 # Credit means trust
 
+![Payments](/images/undraw-payments.png)
+
 ## Trust means trading reliability
 
 Oh man this is new content for sure .. !!!
