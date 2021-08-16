@@ -70,6 +70,7 @@
               }
               #prism-container{
                 //border: 5px solid pink;
+                display: none;
                 height: 200px;
                 width: 500px;
                 margin-bottom: 4em;
@@ -123,7 +124,145 @@
               .theme__light #f3 {
                 background-image: url('/logos/sigledger-light-v2.png');
               }
+              @keyframes pulse {
+                0% { opacity: 0; }
+                33%   { opacity: 0; }
+                40% { opacity: 1; }
+                56% { opacity: 1; }
+                66% { opacity: 0; }
+                100% { opacity: 0; }
+              }
+              @keyframes rot {
+                from,23% {
+                  -moz-transform: rotateX(0);
+                  -ms-transform: rotateX(0);
+                  transform: rotateX(0);
+                }
+                33%,56%  {
+                  -moz-transform: rotateX(-120deg);
+                  -ms-transform: rotateX(-120deg);
+                  transform: rotateX(-120deg);
+                }
+                66%,90%  {
+                  -moz-transform: rotateX(-240deg);
+                  -ms-transform: rotateX(-240deg);
+                  transform: rotateX(-240deg);
+                }
+                to {
+                  -moz-transform: rotateX(-360deg);
+                  -ms-transform: rotateX(-360deg);
+                  transform: rotateX(-360deg);
+                }
+              }
+              #super-prism-wrapper {
+                //border: 4px solid red;
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                margin: 1em;
+                margin-left: 4em;
+                //z-index: 1000;
+                //border: 1px solid red;
+              }
+              #super-prism-container {
+                height: 100px;
+              }
+              #sig-container {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background-image: url('/logos/super/sig.png');
+                background-position: top left;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: .5em;
+                //border: 1px solid blue;
+              }
+              #super-prism {
+                position: relative;
+                //border: 1px solid green;
+                width: 350px;
+                height: 100%;
+              }
+              .sface {
+                position: absolute;
+                width: 100%;
+                height: 100px;
+                //border: 2px solid orange;
+                background-position: top left;
+                background-repeat: no-repeat;
+                background-size: contain;
+                opacity: 0;
+                
+                animation-name: pulse;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+                animation-duration: 6s;
+              }
+              #sf1 {
+                background-image: url('/logos/super/ledger-light.png');
+              }
+              #sf2 {
+                background-image: url('/logos/super/coin-light.png');
+                animation-delay: 2s;
+              }
+              #sf3 {
+                background-image: url('/logos/super/chain-light.png');
+                animation-delay: 4s;
+              }
+              .theme__dark #sf1 {
+                background-image: url('/logos/super/ledger-dark.png');
+              }
+              .theme__dark #sf2 {
+                background-image: url('/logos/super/coin-dark.png');
+              }
+              .theme__dark #sf3 {
+                background-image: url('/logos/super/chain-dark.png');
+              }
+              .prism #super-prism  {
+                animation-name: rot;
+                animation-duration: 10s;
+                transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+                
+              }
+              .prism .sface  {
+                animation-name: none;
+
+                opacity: 1;
+                position: absolute;
+                width: 350px;
+                height: 100px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: top left;
+                backface-visibility: hidden;
+                background-color: #f8f8f2;;
+              }
+              .prism #sf1 {
+                transform: translateZ(20px);
+              }
+              .prism #sf2 {
+                transform: rotateX(-120deg) translateZ(20px);
+                animation-delay: unset;
+              }
+              .prism #sf3 {
+                transform: rotateX(-240deg) translateZ(20px);
+                animation-delay: unset;
+              }
             </style>
+
+            <div id="super-prism-wrapper" class="xprism">
+              <div id="sig-container" >
+              </div>
+              <div id="super-prism-container">
+              <div id="super-prism">
+                <div class="sface" id="sf1"></div>
+                <div class="sface" id="sf2"></div>
+                <div class="sface" id="sf3"></div>
+              </div>
+              </div>
+            </div>
 
             <div id="prism-container">
               <div id="prism">
