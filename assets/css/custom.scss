@@ -11,6 +11,7 @@ $pink : #ff79c6;
 $purple : #bd93f9;
 $red : #ff5555;
 $yellow : #f1fa8c;
+$sig: #00a5fc;
 
 $title03: "Space Mono" ;
 
@@ -244,10 +245,9 @@ display: none;
     align-items: center;
     .button {
         margin: 30px auto;
-        background:$blue;
+        background:$sig;
         color: white;
         width: 100%;
-        background:$blue;
         border-radius:5px;
         border:0;
         cursor:pointer;
