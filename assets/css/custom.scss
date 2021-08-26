@@ -181,11 +181,31 @@ img.navbar__logo {
     }
 }
 
-.divider {
+@media only screen and (max-width: 769px) {
+    .divider {
+    }
+    
+    .mid > .divider {
+        grid-template-columns: minmax(0,769px);
+        //border: 1px solid blue;
+        
+        .l {
+            display: none;
+
+        }
+    }    
+}
+
+@media only screen and (min-width: 600px) {
+
+.mid > .divider {
+    //border: 1px solid red;
     grid-template-columns: minmax(200px,240px)minmax(350px,769px)minmax(240px,320px);
     .m {
        grid-area: 1/2/2/-1;
    }
+}
+
 }
 
 .switch.switch__rel {
