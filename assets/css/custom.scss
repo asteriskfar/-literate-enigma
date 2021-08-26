@@ -181,6 +181,16 @@ img.navbar__logo {
     }
 }
 
+.divider {
+    grid-template-columns: minmax(200px,240px)minmax(350px,769px)minmax(240px,320px);
+    .m {
+       grid-area: 1/2/2/-1;
+   }
+}
+
+.switch.switch__rel {
+display: none;
+}
 @media only screen and (max-width: 600px) {
     .hide-mobile {
         display: none;

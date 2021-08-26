@@ -8,18 +8,18 @@
         {{ partial "main/sections/single-menu.html" . }}
       {{ end }}
     </nav>
-
     <article id="list-main" class="{{ if $wideViewAsDefault }}mr{{ else }}m{{ end }}" data-dir="{{ $.Param "languagedir" | default "ltr" }}">
       {{ partial "main/sections/list-main.html" . }}
       {{/* partial "main/component/pagination-single.html" . */}}
       {{ partial "comments/comments.html" . }}
     </article>
-    
+    {{ if $.Param "enableside" }}
     <section id="list-side" class="{{ if $wideViewAsDefault }}hide{{ else }}r{{ end }}" data-dir="{{ $.Param "languagedir" | default "ltr" }}">
       {{ if $.Param "enableToc" }}
         {{ partial "main/component/toc.html" . }}
       {{ end }}
     </section>
+    {{ end }}
 
   </div>
 </div>
