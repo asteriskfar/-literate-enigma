@@ -14,16 +14,7 @@ listchildrenmobile: false
 # type: about # this is the value used by navbar menu mobile view
 
 ---
-
-# Welcome
-
-[Continue reading](/main/partners)
-
-{{< next >}}
-
-# Sigchain: an economic engine
-
-## What is Sigchain?
+# Sigchain
 
 Sigchain is a cryptocurrency system built on a distributed serverless network. Rather than the issuer of new credit being a bank, or some version of a centralised authority, Sigchain instead enables producers themselves to issue credit.
 
@@ -52,13 +43,9 @@ To solve this problem we believe humanity needs a back-up system, a plan B, usin
 
 ## Who is behind Sigchain?
 
-Graham Munro and Jules McLachlan have been researching cryptocurrencies and monetary systems for more than five years. Since 2018, they have been developing and refining the conceptual basis of Sigchain, and in early 2019 they started designing the Sigchain transactional messaging schema. Over the past six months they have convened a small group of developers, designers and engineers, as they take steps towards creating the production ready Sigchain software platform.
-
-They have developed a relatively simple “reference implementation” of the Sigchain platform. This prototype allows users to trade between each other, and can issue, transfer and redeem units. The underlying platform is a distributed decentralised network protocol. 
+Our team been researching cryptocurrencies and monetary systems for more than five years. Since 2017 we have been developing and refining the conceptual basis of Sigchain and in early 2019 they started designing the Sigchain transactional messaging schema. Over the past six months we have built a team of developers, designers and engineers and have developed the Sigchain platform. This allows users to trade using the Sigchain digital wallet and payments platform.
 
 ## What’s next for Sigchain?
-
-The immediate goal is to complete the Sigchain platform. This will make it possible to test the stability and robustness of Sigchain at scale and over a long time frame. We’ll explore the feasibility of new business opportunities such as a currency exchange etc.
 
 Our goal is to channel investor funds in two principal directions: firstly, to a team of developers working on the Sigchain platform, interface and modelling environment, and secondly, towards leaders in the open-source development communities that do much of the heavy lifting around ensuring the stability and robustness of the underlying decentralised network that Sigchain is based on. 
 

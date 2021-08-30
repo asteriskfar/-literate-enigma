@@ -9,13 +9,9 @@ enabletoc: true
 
 The sigchain allows proper signing, establishment of identity, and therefore the ability to properly stake reputation .. that is, commensurate with real world market driven value.
 
-## And here's why we do it like that ...
+Graham Munro is Founder and CEO of Sigchain Capital, whose mission is to advance humanity by solving the world’s hardest problems, not as effects, but as cause.
 
-```
-the future is now
-```
-
-We need not be divided my friend.
+Sigchain Capital is a technology holding company that backs breakthrough companies in new applications built in this new market. Our goal is to build
 
 ## Our markets
 

@@ -1,15 +1,12 @@
 ---
-title: "Sigchain"
-weight: "125"
+title: "Philosophy"
+weight: "10"
 imageurl: /images/screenshot01.png
 videourl: /videos/test-screencast02.mov
 ---
-
-# Sigchain
-
 ![logo](logos/sigchain-dark-v2.png)
 
-## a meme of one
+# a meme of one
 
 A meme is “an idea, behavior, or style that spreads from person to person within a culture”.
 A meme acts as a unit for carrying cultural ideas, symbols, or practices that can be transmitted from one mind to another through writing, speech, or gestures.
