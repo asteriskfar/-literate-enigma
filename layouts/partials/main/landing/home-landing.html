@@ -125,6 +125,15 @@
                 background-image: url('/logos/sigledger-light-v2.png');
               }
               @keyframes pulse {
+                0% { opacity: 1; }
+                38%   { opacity: 1; }
+                40% { opacity: 1; }
+                56% { opacity: 0; }
+                66% { opacity: 0; }
+                100% { opacity: 0; }
+              }
+
+              @keyframes pulse2 {
                 0% { opacity: 0; }
                 33%   { opacity: 0; }
                 40% { opacity: 1; }
@@ -214,22 +223,38 @@
                 animation-iteration-count: infinite;
                 animation-duration: 6s;
               }
+              #sf0 {
+                background-image: url('/logos/super/coin-light.png');
+                animation-delay: 0;
+                animation-iteration-count: 1;
+                animation-name: pulse;
+              }
+
               #sf1 {
-                background-image: url('/logos/super/ledger-light.png');
+                background-image: url('/logos/super/coin-light.png');
+                animation-delay: 6s;
+                animation-iteration-count: infinite;
+                animation-name: pulse2;
+
               }
               #sf2 {
-                background-image: url('/logos/super/coin-light.png');
+                background-image: url('/logos/super/ledger-light.png');
+                animation-name: pulse2;
                 animation-delay: 2s;
               }
               #sf3 {
                 background-image: url('/logos/super/chain-light.png');
+                animation-name: pulse2;
                 animation-delay: 4s;
               }
+              .theme__dark #sf0 {
+                background-image: url('/logos/super/coin-dark.png');
+              }
               .theme__dark #sf1 {
-                background-image: url('/logos/super/ledger-dark.png');
+                background-image: url('/logos/super/coin-dark.png');
               }
               .theme__dark #sf2 {
-                background-image: url('/logos/super/coin-dark.png');
+                background-image: url('/logos/super/ledger-dark.png');
               }
               .theme__dark #sf3 {
                 background-image: url('/logos/super/chain-dark.png');
@@ -272,6 +297,7 @@
               </div>
               <div id="super-prism-container">
               <div id="super-prism">
+                <div class="sface" id="sf0"></div>
                 <div class="sface" id="sf1"></div>
                 <div class="sface" id="sf2"></div>
                 <div class="sface" id="sf3"></div>

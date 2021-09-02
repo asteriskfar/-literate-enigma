@@ -7,6 +7,6 @@ _build:
 type: main
 ---
 
-Thanks, we'll get in touch soon.
+<p style="text-align: center">Thanks, we'll get in touch soon.</p>
 
 {{< button "/main/" "return" >}}

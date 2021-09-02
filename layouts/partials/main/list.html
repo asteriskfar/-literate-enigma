@@ -16,10 +16,6 @@
       {{ partial "main/component/pagination-single.html" .context }}
     </article>
 
-    <section id="list-side" class="{{ if $wideViewAsDefault }}hide{{ else }}r{{ end }}" data-dir="{{ $.context.Param "languagedir" | default "ltr" }}">
-        {{ partial "main/component/toc.html" . }}
-
-    </section>
 
   </div>
 </div>
