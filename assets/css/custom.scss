@@ -321,3 +321,16 @@ nav.nav {
     //border: 1px solid red;
 
 }
+
+/** image shortcode **/
+.theme__light {
+    .imgdark {
+        display: none;
+    }
+}
+
+.theme__dark {
+    .imglight {
+        display: none;
+    }
+}
