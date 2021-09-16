@@ -8,14 +8,7 @@ weight: "200"
 
 The sigchain allows proper signing, establishment of identity, and therefore the ability to properly stake reputation .. that is, commensurate with real world market driven value.
 
-## And here's why we do it like that ...
 
-```
-the future is now
-```
+{{< vega >}}
 
-We need not be divided my friend.
-
-## The algorithm is out of the dead-drop.
-
-He has finally delivered the formula.
+The Sigchain network graph shows accounts and transactions between them. 
