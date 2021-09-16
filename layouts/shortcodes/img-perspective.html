@@ -1,0 +1,20 @@
+{{ $img := .Get 0}}
+{{ $id := (first 5 (md5 .Page.Permalink)) }}
+<style>
+    #i{{$id}} {
+        padding: 2em;
+        border: 1px solid red;
+        height: 400px;
+        //background-image: url('{{$img}}');
+        background-size: cover;
+        margin: 2em;
+        transform: perspective(50em);
+
+    }
+    #i{{$id}} img{
+        transform: perspective(20em);
+    }
+</style>
+<div id="i{{ $id }}">
+    <img src="{{$img}}" >
+</div>
