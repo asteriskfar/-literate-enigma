@@ -1,5 +1,5 @@
 ---
-title: "Financial services"
+title: "Fintech and cryptocredit"
 weight: "80"
 ---
 
@@ -10,4 +10,8 @@ There will be thousands of fintech startups and blockchain projects that will co
 
 If we are to optimise humanity’s incredible innovative ability we must create an economic system to generate wealth and meet our productive ability. Sigchain is a world-scale, open source software project that comprises a new kind of money. This world-scale free market prices computer forms the foundation of an intelligent economy.
 
-## Credit as a service
+## Cryptocredit as a service
+
+## Credit means trust and trust means trading reliability
+
+### Transaction history and trading partnerships

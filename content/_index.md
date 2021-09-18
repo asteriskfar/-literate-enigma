@@ -4,7 +4,7 @@ description: Hugo zzo, zdoc theme documentation home page
 landing:
   height: 600
 #  image: images/mountains.jpg
-  xbackgroundImage: 
+  xbackgroundImage:
     src: /images/logosktchng.png
     height: 1500
   title:
@@ -18,7 +18,7 @@ landing:
   buttons:
     - link: main
       text: read more
-footer:
+/footer:
   sections:
     - title: Sigchain Capital group
       links:

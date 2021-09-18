@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Sigchain"
 videourl: "/videos/toc-video.mp4"
 
 #type: Menu

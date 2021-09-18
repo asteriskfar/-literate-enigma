@@ -1,5 +1,5 @@
 ---
-title: "Our vision"
+title: "About us"
 weight: 25
 enabletoc: true
 ---
