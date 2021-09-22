@@ -1,20 +1,110 @@
 {{ $img := .Get 0}}
 {{ $id := (first 5 (md5 .Page.Permalink)) }}
+{{ $imgs := .Params }}
+
 <style>
-    #i{{$id}} {
-        padding: 2em;
-        border: 1px solid red;
+    #stage {
+        /* border: 1px solid red; */
         height: 400px;
-        //background-image: url('{{$img}}');
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
         margin: 2em;
-        transform: perspective(50em);
+        /* transform: perspective(100%) rotateY(-35deg); */
+        position: relative;
+        width: 20em;
+        height: 20em;
+        margin: 4em 2em;
+        /* transform: rotateX(-10deg) rotateY(-40deg) perspective(600px); */
+        transform: perspective(100em) rotateY(-28deg);
+        transform-style: preserve-3d;
+        transition: 0.6s ease;
+    }
+    #stagex:hover {
+        transition: 0.6s ease;
+        /* border: 1px solid blue; */
+        transform: perspective(0em) rotateY(0deg);
 
     }
-    #i{{$id}} img{
-        transform: perspective(20em);
+    #i1,
+    #i2,
+    #i3
+    {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+        text-align: center;
+        line-height: 10em;
+        color: #fff;
+        background-color: rgba(200,100,100,0.5);
+        background-image: url('{{$img}}');
+        background-size: contain;
+        box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
+
+
     }
+    #i1 {
+        transform: translateZ(0px);
+    }
+    #i2 {
+        transform: translateZ(-600px);
+        background-image: url('/images/screenshots/screenshot-app-globaleconomy-FFFFFF.png');
+    }
+    #i3 {
+        transform: translateZ(-1200px);
+        background-image: url('/images/screenshots/screenshot-dark-css-persp.png');
+    }
+
 </style>
-<div id="i{{ $id }}">
-    <img src="{{$img}}" >
+
+<div id="stage">
+    <div id="i1"></div>
+    <div id="i2"></div>
+    <div id="i3"></div>
+</div>
+
+
+<style>
+
+    div#transformtest {
+        transform: scale(0.75) rotateY(-30deg) rotateX(45deg) translateZ(4.5rem);
+        transform-origin: 50% 100%;
+        transform-style: preserve-3d;
+        box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
+        transition: 0.6s ease transform;
+        /* border: 1px solid red; */
+        height: 30em;
+        margin: 4em 2em;
+        background-image: url('{{$img}}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        backgroudn-color: none;
+
+    }
+        div#transformtest:hover {
+          transform: scale(1);
+        /* border: 1px solid blue; */
+
+        }
+      
+        div#transformtest::before {
+          transform: translateZ(4rem);
+        }
+        div#transformtest::before:hover {
+            transform: translateZ(0);
+          }
+      
+          div#transformtest::after {
+          transform: translateZ(-4rem);
+          }
+          div#transformtest::after:hover {
+            transform: translateZ(-1px);
+          }
+
+</style>
+
+<div id="xtransformtest">
 </div>

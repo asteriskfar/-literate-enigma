@@ -10,7 +10,6 @@ The sigchain allows proper signing, establishment of identity, and therefore the
 
 {{< vega >}}
 
-The Sigchain network graph shows accounts and transactions between them.
 
 ## Trading intelligently is the new future
 

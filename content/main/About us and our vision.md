@@ -16,7 +16,8 @@ Sigchain Capital is a technology holding company that backs breakthrough compani
 
 <!-- {{< img-perspective "/images/screenshots/screenshot-dark-css-persp.png" >}} -->
 
-![Screenshot](/images/screenshots/screenshot-dark-perspective.png)
+![Screenshot Mockup](/images/screenshots/export-multidevice-mockup.png)
+
 
 ## Our markets
 

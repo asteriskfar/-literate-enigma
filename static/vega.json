@@ -1,22 +1,20 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "A node-link diagram with force-directed layout.",
-    "width": 700,
-    "height": 500,
-    "padding": 0,
-    "autosize": "none",
-  
+    "height" : 500, 
+    "width": 500,
+    "padding": 50,
+    "autosize":"pad",
     "signals": [
       { "name": "cx", "update": "width / 2" },
       { "name": "cy", "update": "height / 2" },
-      { "name": "nodeRadius", "value": 8,
-        "bind": {"input": "range", "min": 1, "max": 50, "step": 1} },
-      { "name": "nodeCharge", "value": -30,
-        "bind": {"input": "range", "min":-100, "max": 10, "step": 1} },
-      { "name": "linkDistance", "value": 30,
+      { "name": "nodeRadius", "value": 5,
+        "bind": {"input": "range", "min": 1, "max": 10, "step": 1} },
+      { "name": "nodeCharge", "value": -50,
+        "bind": {"input": "range", "min":-150, "max": 100, "step": 1} },
+      { "name": "linkDistance", "value": 50,
         "bind": {"input": "range", "min": 5, "max": 100, "step": 1} },
-      { "name": "static", "value": true,
-        "bind": {"input": "checkbox"} },
+      { "name": "static", "value": false},
       {
         "description": "State variable for active node fix status.",
         "name": "fix", "value": false,
@@ -58,12 +56,12 @@
     "data": [
       {
         "name": "node-data",
-        "url": "/miserables.json",
+        "url": "/vegadata1.json",
         "format": {"type": "json", "property": "nodes"}
       },
       {
         "name": "link-data",
-        "url": "/miserables.json",
+        "url": "/vegadata1.json",
         "format": {"type": "json", "property": "links"}
       }
     ],
