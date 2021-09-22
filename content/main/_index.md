@@ -20,7 +20,7 @@ Sigchain is a cryptocurrency system built on a distributed serverless network. R
 
 There have been thousands of currencies in history which have collapsed and disappeared over time. These unstable currencies have failed to sustain durable markets, and the instability of these currencies lie in their design
 
-![Screenshot Mockup](/images/screenshots/export-multidevices-2.png)
+![Screenshot Mockup](/images/screenshots/export-multidevices-2-smaller.png)
 
 
 ## Banks, fiat currency and conventional cryptocurrencies
