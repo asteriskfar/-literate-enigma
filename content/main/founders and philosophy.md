@@ -1,5 +1,5 @@
 ---
-title: "Founders"
+title: "Founders and philosophy"
 weight: "10"
 imageurl: "/images/mesh.jpg"
 ---
