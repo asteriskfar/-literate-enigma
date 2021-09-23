@@ -3,6 +3,12 @@
 {{ $imgs := .Params }}
 
 <style>
+    #stage-wrapper {
+        /* border: 1px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
     #stage {
         /* border: 1px solid red; */
         height: 400px;
@@ -13,8 +19,9 @@
         /* transform: perspective(100%) rotateY(-35deg); */
         position: relative;
         width: 20em;
-        height: 20em;
+        height: 11em;
         margin: 4em 2em;
+        margin-left: 15%;
         /* transform: rotateX(-10deg) rotateY(-40deg) perspective(600px); */
         transform: perspective(100em) rotateY(-28deg);
         transform-style: preserve-3d;
@@ -38,31 +45,34 @@
         text-align: center;
         line-height: 10em;
         color: #fff;
-        background-color: rgba(200,100,100,0.5);
+        //background-color: rgba(200,100,100,0.5);
         background-image: url('{{$img}}');
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
         box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
 
 
     }
     #i1 {
         transform: translateZ(0px);
+        background-image: url('/images/screenshots/current/ss-light-ge.png');
     }
     #i2 {
         transform: translateZ(-600px);
-        background-image: url('/images/screenshots/screenshot-app-globaleconomy-FFFFFF.png');
+        background-image: url('/images/screenshots/current/ss-dark-tx.png');
     }
     #i3 {
         transform: translateZ(-1200px);
-        background-image: url('/images/screenshots/screenshot-dark-css-persp.png');
+        background-image: url('/images/screenshots/current/ss-light-coin.png');
     }
 
 </style>
-
-<div id="stage">
-    <div id="i1"></div>
-    <div id="i2"></div>
-    <div id="i3"></div>
+<div id="stage-wrapper">
+    <div id="stage">
+        <div id="i1"></div>
+        <div id="i2"></div>
+        <div id="i3"></div>
+    </div>
 </div>
 
 
