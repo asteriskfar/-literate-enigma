@@ -14,9 +14,7 @@ Graham Munro is Founder and CEO of Sigchain Capital, whose mission is to advance
 Sigchain Capital is a technology holding company that backs breakthrough companies in new applications built in this new market. Our goal is to build
 
 
-<!-- {{< img-perspective "/images/screenshots/screenshot-dark-css-persp.png" >}} -->
-
-![Screenshot Mockup](/images/screenshots/export-multidevice-mockup.png)
+![Screenshot Mockup](/images/screenshots/current/mockup.png)
 
 
 ## Our markets

@@ -32,7 +32,7 @@
     
 }
   #view2 canvas.marks,
-  #view canvas.marks {
+  #view svg.marks {
       /* border: 1px solid blue; */
       width: 100%;
       height: 20em;
@@ -41,28 +41,14 @@
       //flex: 1 0;
       
   }
-  .vega-bindings {
-    //max-width: 200px;
-    /* border: 1px solid pink; */
-    flex: 0 0 auto;
-    margin: 0;
-    //margin: auto ;  
-    font-size: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 0 auto;
-  }
-  .vega-bindings .vega-bind {
-    /* border: 1px solid red; */
-    flex: 1 0 auto;
-  }
+  
   .vega-bindings::after {
     flex: 0 1 100%;
     /* border: 1px solid blue; */
     font-size: 150%;;
     margin-top: 1.5em;
     font-weight: bold;;
+    line-height: 1.2em;
     content: "The Sigchain network graph shows accounts and transactions between them."
   }
   #view2 {
@@ -86,13 +72,18 @@
     #view {
     
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     margin: 1em 0;
+    //height: 400px;
   }
-  #view form.vega-bindings {
-    border: 1px solid red;
+  #view form.vega-bindings .vega-bind {
     display: none;
+  }
+  #view form.vega-bindings::after {
+    //border: 1px solid cyan;
+    height: 5em;
+    
   }
 }
 </style>
@@ -110,7 +101,9 @@
   vegaEmbed(
     '#view',
     '/vega.json',
-    {"actions": false}
+    {"actions": false,
+    "renderer":"svg"
+    }
   );
 </script>
 
