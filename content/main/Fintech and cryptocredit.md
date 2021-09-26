@@ -3,17 +3,20 @@ title: "Fintech and cryptocredit"
 weight: "80"
 ---
 
-# What do we really mean by 'Financial Technology'
+# What is 'fintech'?
 
-The goal of any financial system is to support and grow industry, provide purchasing power for labor, create high quality production and wealth. This is the centre of human safety and environmental regeneration.
-There will be thousands of fintech startups and blockchain projects that will come and go over the next few years, but only the sustainable will survive. And sustainability is about design. We believe that an emergent digital market system requires a completely new design, integrated as one scaleable platform on the Internet. While new players emerge in the financial technology industry, we are yet to see what we consider to be a real game changer.
+Through history we've come to think of money as coinage and notes and so we've come to lose the real notion of money being a credit relationship between two trading parties.
+
+Exchange itself is more fundamental than money as exchange only needs a ledger to record it not an object called money as such. In both fiat and cryptocurrency systems the dollar or token is assumed to have value in-and-of itself. Investment models emphasise the buying, owning and trading of tokens, in the hope they go up in price regardless of what they actually represent. That’s the current culture of the token economy. Although exciting this is nonsense and can't be sustained. This tulip mania sentiment is both economically risky and adds to the instability of global markets.
+
+That’s not what Sigchain is about.
+
+Instead of fiddling at the edges with variations of the blockchain template we decided to reconsider the design of money itself at a more fundamental level. This is what Sigchain is all about.
+
+## Crypto-credit as a service
+
+With the advent of blockchain developers gained the ability to exchange digital tokens but no standard way to route credit and maintain the inherent credit relationship. Sigchain is the missing signalling layer for digital currency. It enables credit relationships to be economically meaningful and valuable.
 
 {{< img-perspective "/images/screenshots/screenshot-app-globaleconomy.png" "/images/screenshots/screenshot-app-globaleconomy-FFFFFF.png" >}}
 
-If we are to optimise humanity’s incredible innovative ability we must create an economic system to generate wealth and meet our productive ability. Sigchain is a world-scale, open source software project that comprises a new kind of money. This world-scale free market prices computer forms the foundation of an intelligent economy.
-
-## Cryptocredit as a service
-
-## Credit means trust and trust means trading reliability
-
-### Transaction history and trading partnerships
+Sigchain is the worlds first private, member-based defi banking platform. With a fully integrated suite of payment products our customers can accept payments, make payments, manage risk, manage invoicing and streamline business operations.

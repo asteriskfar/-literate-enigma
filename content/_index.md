@@ -10,7 +10,7 @@ landing:
   title:
     - sigchain capital
   text:
-    - capital as technology
+    - defi credit as a service
   titleColor: 'white'
 
   textColor: 'white'
