@@ -411,11 +411,12 @@ nav.nav {
 #view .vega-bindings::after {
   //flex: 1 1 100%;
   //border: 1px solid blue;
-  font-size: 140%;
+  
   margin-top: 1.5em;
   font-weight: bold;
   line-height: 1.2em;
-  height: 5em;
+      font-size: 20px;
+      height: 5em;
   width: 100%;
   display:block;
   content: 'The Sigchain network graph shows accounts and transactions between them.';
@@ -476,13 +477,38 @@ nav.nav {
       border: 1px solid cyan;
       display: none;
     }
+
+    &::after {
+      //flex: 1 1 100%;
+      // border: 1px solid blue;
+      font-size: 20px;
+      margin-top: 1.5em;
+      font-weight: bold;
+      line-height: 1.2em;
+      height: 1em;
+      width: 100%;
+      display:block;
+      content: 'This is the bar chart caption. The Sigchain network graph shows accounts and transactions between them.';
+    }
   }
 }
 
 @media only screen and (max-width: 500px) {
   #view-bar {
     max-width: 100%;
-    height: 30em;
+    height: 25em;
+    // border: 1px solid pink;
+    flex-direction: column;
+    .vega-bindings {
+    border: 1px solid green;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    
+    .vega-bind {
+      display: none;
+    }
+    }
 
   }
 }
