@@ -449,6 +449,7 @@ nav.nav {
   max-width: 100%;
   display: flex;
   flex-direction: row;
+  margin: 1em;
   //  border: 1px solid green;
   height: 35em;
   svg {
@@ -500,7 +501,7 @@ nav.nav {
     // border: 1px solid pink;
     flex-direction: column;
     .vega-bindings {
-    border: 1px solid green;
+    // border: 1px solid green;
     height: 0;
     margin: 0;
     padding: 0;
