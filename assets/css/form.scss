@@ -8,9 +8,9 @@ $sig: #00a5fc;
 
 body.theme__dark { background: $dark1; }
 form { 
-    max-width:420px; 
+    max-width:400px; 
     margin:20px auto; 
-
+    //border: 1px solid red;
     .hidden {
         display: none;
     }
@@ -34,7 +34,7 @@ form {
   background-color: transparent;
   border:1px solid $blue;
   transition: all 0.3s;
-  padding: 13px;
+  padding: 8px;
   margin-bottom: 15px;
   width:100%;
   box-sizing: border-box;
@@ -59,8 +59,8 @@ $title03: "Space Mono" ;
   border:0;
   cursor:pointer;
   color:white;
-  font-size: 18px;
-  padding-top:10px;
+  font-size: 16px;
+  padding-top:6px;
   padding-bottom:10px;
   transition: all 0.3s;
   margin-top:-4px;

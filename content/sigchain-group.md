@@ -9,8 +9,8 @@ This is the heart of defi.
 
 With early entrant and first mover advantage Sigchain Capital will own and operate the first tier of fintech applications to develop this network. We aim to build and dominate this new market with a suite of applications that allow other business to migrate to the network.
 
+<!-- 
 ---
-
 footer:
   sections:
     - title: Sigchain Capital group
@@ -39,3 +39,4 @@ footer:
       Sigchain Capital 2021
       Copyright © 2021. All rights reserved.
 ---
+-->

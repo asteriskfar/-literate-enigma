@@ -2,7 +2,15 @@
 {{ $dark := .Get "dark" }}
 {{ $alt := "" }}
 {{ with .Get "alt" }}{{ $alt = . }}{{ end }}
-<p class="md__image">
-    <img src="{{$light}}" class="imglight" alt="{{$alt}}">
-    <img src="{{$dark}}" class="imgdark" alt="{{$alt}}">
-</p>
+
+<div class="light-dark-img">
+    <div>
+        <img src="{{$light}}" class="imglight" alt="{{$alt}}">
+        <img src="{{$dark}}" class="imgdark" alt="{{$alt}}">
+    </div>
+    {{ with .Get "caption" }}
+    <div class="img-caption">
+        <p>{{.}}</p>
+    </div>
+    {{ end }}
+</div>

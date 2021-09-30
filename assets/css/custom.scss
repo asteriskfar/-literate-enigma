@@ -16,7 +16,7 @@ $sig: #00a5fc;
 $title03: "Space Mono" ;
 
 body {
-    zoom: 80%;
+    zoom: 90%;
 }
 
 .home__landing {
@@ -36,7 +36,7 @@ body {
         position: relative;
         background-color:rgba($cyan, 0.5) ;
         border-radius: 1em;
-        padding: 0.75em !important;
+        padding: 0.5em 1em !important;
         margin: 0;
     }
 }
@@ -341,4 +341,49 @@ nav.nav {
 .menu__title {
     height: auto;
     margin: 1em 0;
+}
+
+.light-dark-img {
+    // border: 1px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em;
+    align-items: center;
+    .img-caption {
+        // border: 1px solid red;
+        flex: 1 0 30%;;
+        // min-width: 20em;
+        max-width: 30em;;
+
+        p {
+            margin: auto;
+            margin-top: 1em;
+            display: block;
+            font-size: 80%;
+            //font-weight: bold;
+        }
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .light-dark-img {
+        flex-direction: column;
+    }
+}
+
+.single__contents {
+    margin: 0 0 1rem 0;
+
+    h1:first-child,
+    h2:first-child,
+    h3:first-child,
+    h4:first-child,
+    h5:first-child,
+    h6:first-child
+    {
+            //border: 1px solid red;
+            margin-top: .7em;
+        }
+    
 }

@@ -19,7 +19,7 @@
     font-weight: bold;
   }
   
-#view, #view2 {
+#view, #view-bar {
     /* border: 1px solid yellow; */
     width: 100%;
     display: flex;
@@ -28,7 +28,8 @@
     */
     justify-content: stretch;
     align-items: center; 
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
+    margin: 2em;
     
 }
   #view2 canvas.marks,
@@ -42,31 +43,36 @@
       
   }
   
-  .vega-bindings::after {
+  #view.vega-bindings::after {
     flex: 0 1 100%;
-    /* border: 1px solid blue; */
-    font-size: 150%;;
+    border: 1px solid blue;
+    font-size: 140%;;
     margin-top: 1.5em;
     font-weight: bold;;
     line-height: 1.2em;
     content: "The Sigchain network graph shows accounts and transactions between them."
   }
-  #view2 {
+  #view-bar {
     width: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    //justify-content: stretch;
     /* border: 1px solid green; */
+    min-height: 10em;
+  }
+  #view-bar svg {
+    /* border: 1px solid yellow; */
+  }
+  #view-bar form {
+    /* border: 1px solid blue; */
   }
   #view2 canvas.marks {
     /* border: 1px solid hotpink; */
     flex: 1;
     width: 500px;
   }
-  #view2 .vega-bindings {
-    display: none;
-  }
+
 
   @media only screen and (max-width: 500px) {
     #view {
@@ -74,8 +80,13 @@
     flex-direction: column;
     //justify-content: center;
     align-items: center;
-    margin: 1em 0;
+    margin: 1em;
     //height: 400px;
+    /* border: 1px solid red; */
+  }
+  #view form.vega-bindings {
+    flex: 0 1 100%;
+    margin-bottom: 0;
   }
   #view form.vega-bindings .vega-bind {
     display: none;
@@ -86,21 +97,41 @@
     
   }
 }
+#view-bar .vega-bindings {
+  flex: 1 0 auto;
+  justify-self: stretch;
+  width: 100%;
+}
+#view-bar .vega-bindings .vega-bind {
+}
+#view-bar .vega-bindings .vega-bind:nth-child(2) {
+  border: 1px solid cyan;
+  display: none;
+}
 </style>
 
 <div class="vega-wrapper">
   <div id="view"></div>
-  <!-- <div class="chart-title">
-    <p>The Sigchain network graph shows accounts and transactions between them.</p>
-  </div> -->
 </div>
 
-<div id="view2"></div>
+<div class="vega-wrapper">
+  <div id="view-bar"></div>
+</div>
 
 <script>
   vegaEmbed(
     '#view',
     '/vega.json',
+    {"actions": false,
+    "renderer":"svg"
+    }
+  );
+</script>
+<script>
+  vegaEmbed(
+    '#view-bar',
+    '/vega-bar.json',
+
     {"actions": false,
     "renderer":"svg"
     }
