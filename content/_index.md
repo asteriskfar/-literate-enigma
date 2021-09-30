@@ -10,7 +10,7 @@ landing:
   title:
     - sigchain capital
   text:
-    - defi credit as a service
+    - decentralised credit
   titleColor: 'white'
 
   textColor: 'white'
@@ -18,6 +18,7 @@ landing:
   buttons:
     - link: main
       text: read more
+      
 /footer:
   sections:
     - title: Sigchain Capital group
