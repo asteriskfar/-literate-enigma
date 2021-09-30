@@ -1,10 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "A top-k bar chart ranking film directors by revenue.",
-    "width": 500,
-    "height": 350,
-    "padding": 5,
-    "autosize": "fit",
+    "height" : 500, 
+    "width": 300,
+    "padding": 0,
+    "autosize":"pad",
   
     "signals": [
       {
@@ -29,23 +29,19 @@
   
     "data": [
       {
-        "name": "directors",
-        "url": "/vega-bar-data.json",
+        "name": "issuers",
+        "url": "/vega-bar-data-mock.json",
         "transform": [
           {
-            "type": "filter",
-            "expr": "datum.Director != null && datum['Worldwide Gross'] != null"
-          },
-          {
             "type": "aggregate",
-            "groupby": ["Director"],
+            "groupby": ["name"],
             "ops": [{"signal": "op"}],
-            "fields": ["Worldwide Gross"],
-            "as": ["Gross"]
+            "fields": ["amount"],
+            "as": ["amount"]
           },
           {
             "type": "window",
-            "sort": {"field": "Gross", "order": "descending"},
+            "sort": {"field": "amount", "order": "descending"},
             "ops": ["row_number"], "as": ["rank"]
           },
           {
@@ -59,12 +55,12 @@
     "marks": [
       {
         "type": "rect",
-        "from": {"data": "directors"},
+        "from": {"data": "issuers"},
         "encode": {
           "update": {
             "x": {"scale": "x", "value": 0},
-            "x2": {"scale": "x", "field": "Gross"},
-            "y": {"scale": "y", "field": "Director"},
+            "x2": {"scale": "x", "field": "amount"},
+            "y": {"scale": "y", "field": "name"},
             "height": {"scale": "y", "band": 1}
           }
         }
@@ -75,7 +71,7 @@
       {
         "name": "x",
         "type": "linear",
-        "domain": {"data": "directors", "field": "Gross"},
+        "domain": {"data": "issuers", "field": "amount"},
         "range": "width",
         "nice": false
       },
@@ -83,8 +79,8 @@
         "name": "y",
         "type": "band",
         "domain": {
-          "data": "directors", "field": "Director",
-          "sort": {"op": "max", "field": "Gross", "order": "descending"}
+          "data": "issuers", "field": "name",
+          "sort": {"op": "max", "field": "amount", "order": "descending"}
         },
         "range": "height",
         "padding": 0.75

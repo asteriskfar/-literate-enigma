@@ -121,3 +121,7 @@ body {
     .menu__label {
         font-family: $body01;
     }
+
+.theme__dark #view-bar svg text {
+    fill: $light;
+}

@@ -83,7 +83,7 @@ body.theme__dark {
   color:#ffffff;
 }
 }
-.vega-bindings {
+#view .vega-bindings {
   //max-width: 200px;
   // border: 1px solid pink;
   margin: 0;
@@ -120,6 +120,9 @@ body.theme__dark {
     //width: 50px;
     flex: 1 0 7em;
 }
+}
+
+.vega-bindings {
 input[type=range] {
   //width: 100%;
   flex: 1 0 auto;
