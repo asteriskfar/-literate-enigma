@@ -18,12 +18,12 @@ listchildrenmobile: false
 {{< card-list >}}
 ## Peer-to-peer global payments infrastructure
 
-- ![01](/images/vectors/09.svg) <p>Connecting everyone to everyone</p>
-- ![01](/images/vectors/07.svg) <p>Send and spend your credit worldwide</p>
-- ![01](/images/vectors/06.svg) <p>Make and receive payments</p>
-- ![01](/images/vectors/04.svg) <p>Borrowing and lending</p>
-- ![01](/images/vectors/05.svg) <p>Billing and invoicing</p>
-- ![01](/images/vectors/01.svg) <p>Analytics and risk management</p>
+- <p>Connecting anyone to anyone</p>
+- <p>Send and spend credit worldwide</p>
+- <p>Make and receive payments</p>
+- <p>Borrowing and lending</p>
+- <p>Billing and invoicing</p>
+- <p>Analytics and risk management</p>
 {{< /card-list >}}
 
 <!-- ![Screenshot Mockup](/images/screenshots/export-multidevices-2-smaller.png) -->
