@@ -14,19 +14,17 @@ listchildrenmobile: false
 # type: about # this is the value used by navbar menu mobile view
 
 ---
-Peer-to-peer global payments infrastructure
 
-Connecting everyone to everyone
+{{< card-list >}}
+## Peer-to-peer global payments infrastructure
 
-Send and spend your credit worldwide
-
-Make and receive payments
-
-Borrowing and lending
-
-Billing and invoicing
-
-Analytics and risk management
+- Connecting everyone to everyone
+- Send and spend your credit worldwide
+- Make and receive payments
+- Borrowing and lending
+- Billing and invoicing
+- Analytics and risk management
+{{< /card-list >}}
 
 <!-- ![Screenshot Mockup](/images/screenshots/export-multidevices-2-smaller.png) -->
 
