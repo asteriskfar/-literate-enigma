@@ -16,8 +16,6 @@ listchildrenmobile: false
 ---
 
 {{< card-list >}}
-## Peer-to-peer global payments infrastructure
-
 - <p>Connecting anyone to anyone</p>
 - <p>Send and spend credit worldwide</p>
 - <p>Make and receive payments</p>
