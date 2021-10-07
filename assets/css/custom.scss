@@ -397,10 +397,11 @@ nav.nav {
   justify-content: stretch;
   align-items: center;
   margin: 2em;
+  //border: 1px solid red;
 }
 #view2 canvas.marks,
 #view svg.marks {
-  /* border: 1px solid blue; */
+  //border: 1px solid blue;
   width: 100%;
   height: 20em;
   justify-self: stretch;
@@ -408,14 +409,17 @@ nav.nav {
   //flex: 1 0;
 }
 
-#view .vega-bindings::after {
-  //flex: 1 1 100%;
+#view form.vega-bindings {
+  flex: 1 1 10em;
+  max-width: 15em;
+}
+  #view .vega-bindings::after {
   //border: 1px solid blue;
   
   margin-top: 1.5em;
   font-weight: bold;
   line-height: 1.2em;
-      font-size: 20px;
+      font-size: 16px;
       height: 5em;
   width: 100%;
   display:block;
@@ -448,19 +452,27 @@ nav.nav {
   width: 100%;
   max-width: 100%;
   display: flex;
+
   flex-direction: row;
   margin: 1em;
-  //  border: 1px solid green;
-  height: 35em;
+  //border: 1px solid green;
+  height: 30em;
   svg {
-    //   border: 1px solid cyan;
+      //border: 1px solid cyan;
       width: 100%;
       height: 100%;
+
+      .mark-text.role-axis-label text {
+        //fill: red;
+        font-size: 6px;
+      }
   }
   .vega-bindings {
-    flex: 1 0 10em;
+    flex: 1 0 15em;
     justify-self: stretch;
     width: 100%;
+    max-width: 13em;
+
     .vega-bind {
       align-items: center;
       /* border: 1px solid red; */
@@ -482,14 +494,14 @@ nav.nav {
     &::after {
       //flex: 1 1 100%;
       // border: 1px solid blue;
-      font-size: 20px;
+      font-size: 16px;
       margin-top: 1.5em;
       font-weight: bold;
       line-height: 1.2em;
       height: 1em;
       width: 100%;
       display:block;
-      content: 'This is the bar chart caption. The Sigchain network graph shows accounts and transactions between them.';
+      content: 'Ranked credit-worthiness of issuers';
     }
   }
 }

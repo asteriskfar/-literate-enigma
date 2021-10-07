@@ -1,15 +1,15 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "A top-k bar chart ranking film directors by revenue.",
-    "height" : 400, 
+    "height" : 150, 
     "width": 300,
     "padding": 0,
-    "autosize":"pad",
+    "autosize":"fit",
   
     "signals": [
       {
-        "name": "count", "value": 20,
-        "bind": {"input": "range", "min": 10, "max": 30, "step": 1}
+        "name": "count", "value": 10,
+        "bind": {"input": "range", "min": 5, "max": 15, "step": 1}
       },
       {
         "name": "op", "value": "average",
@@ -22,7 +22,7 @@
     ],
   
     "title": {
-      "text": {"signal": "'Ranked credit-worthiness of issuers'"},
+      "text": {"signal": "''"},
       "anchor": "start",
       "frame": "group"
     },
@@ -83,7 +83,7 @@
           "sort": {"op": "max", "field": "amount", "order": "descending"}
         },
         "range": "height",
-        "padding": 0.55
+        "padding": 0.75
       }
     ],
   
