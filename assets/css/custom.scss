@@ -589,3 +589,144 @@ nav.nav {
 
   }
 }
+
+
+/**
+* HOME PAGE STYLES
+*/ 
+
+main .divider.home {
+  //border: 1px solid red;
+  background-color: none;
+
+}
+.theme__light .home__landing {
+  border: 1px solid green;
+  background-color: rgba(#FFFFFF, 0.7);
+}
+
+.theme__dark  .home__landing {
+  background-color: rgba($dark1, 0.7);
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  38%   { opacity: 1; }
+  40% { opacity: 1; }
+  56% { opacity: 0; }
+  66% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes pulse2 {
+  0% { opacity: 0; }
+  33%   { opacity: 0; }
+  40% { opacity: 1; }
+  56% { opacity: 1; }
+  66% { opacity: 0; }
+  100% { opacity: 0; }
+}
+#super-prism-wrapper {
+  //border: 4px solid red;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: 1em;
+  margin-left: 4em;
+  //z-index: 1000;
+  //border: 1px solid red;
+}
+#super-prism-container {
+  height: 100px;
+  //border: 1px solid red;
+}
+#sig-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url('/logos/super/sig.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: .5em;
+  //border: 1px solid blue;
+}
+
+#super-prism {
+  position: relative;
+  //border: 1px solid green;
+  width: 160px;
+  height: 100%;
+}
+@media only screen and (max-width: 500px) {
+  #super-prism {
+  width: 150px;
+  height: 100%;
+}  
+#sig-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-right: .5em;
+  //border: 1px solid blue;
+}
+}
+
+.sface {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  //border: 2px solid orange;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  
+  animation-name: pulse;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+#sf0 {
+  background-image: url('/logos/super/coin-light.png');
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-name: pulse;
+}
+
+#sf1 {
+  background-image: url('/logos/super/coin-light.png');
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-name: pulse2;
+
+}
+#sf2 {
+  background-image: url('/logos/super/ledger-light.png');
+  animation-name: pulse2;
+  animation-delay: 2s;
+}
+#sf3 {
+  background-image: url('/logos/super/chain-light.png');
+  animation-name: pulse2;
+  animation-delay: 4s;
+}
+.theme__dark #sf0 {
+  background-image: url('/logos/super/coin-dark.png');
+}
+.theme__dark #sf1 {
+  background-image: url('/logos/super/coin-dark.png');
+}
+.theme__dark #sf2 {
+  background-image: url('/logos/super/ledger-dark.png');
+}
+.theme__dark #sf3 {
+  background-image: url('/logos/super/chain-dark.png');
+}
+.prism #super-prism  {
+  animation-name: rot;
+  animation-duration: 10s;
+  transform-style: preserve-3d;
+  animation-iteration-count: infinite;
+  
+}

@@ -1,7 +1,30 @@
 {{ with .Params.landing }}
 {{ $landing := . }}
 <div class="divider home">
-  <div class="lmr">
+  <div class="lmr" >
+    <style>
+      #vanta-container {
+          height: 100%;
+          display: block;
+          //border: 1px solid red;
+          width: 100%;
+      }
+      main.main .divider.home .lmr {
+        //border: 1px solid yellow;
+        display: flex;
+        flex-direction: row;
+
+      }
+
+      main.main .divider.home .lmr .home__landing{
+        //border: 1px solid cyan;
+        flex: 1 0 auto;
+        display: flex;
+        width: 50% !important;
+      }
+
+  </style>
+
  
     {{ with .backgroundImage }}
       <div style="background-image: url('{{ .src | relURL }}'); background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: -50px; left: 0; width: 100%; height: {{ .height }}px;"></div>
@@ -40,257 +63,13 @@
         </div>
       {{ else }}
         <div class="home__landing--txt">
+
           {{ if .title }}
             {{ range .title }}
             {{/* . */}}
 
             {{ end }}
-            <style>
-              @keyframes prism {
-                from,23% {
-                  -moz-transform: rotateX(0);
-                  -ms-transform: rotateX(0);
-                  transform: rotateX(0);
-                }
-                33%,56%  {
-                  -moz-transform: rotateX(-120deg);
-                  -ms-transform: rotateX(-120deg);
-                  transform: rotateX(-120deg);
-                }
-                66%,90%  {
-                  -moz-transform: rotateX(-240deg);
-                  -ms-transform: rotateX(-240deg);
-                  transform: rotateX(-240deg);
-                }
-                to {
-                  -moz-transform: rotateX(-360deg);
-                  -ms-transform: rotateX(-360deg);
-                  transform: rotateX(-360deg);
-                }
-              }
-              #prism-container{
-                //border: 5px solid pink;
-                display: none;
-                height: 200px;
-                width: 500px;
-                margin-bottom: 4em;
-              }
-              #prism {
-
-                height: 100%;
-                width: 100%;
-
-                animation-name: prism;
-                animation-timing-function: ease-out;
-                animation-iteration-count: infinite;
-                animation-duration: 10s;
-
-                transform-style: preserve-3d;
-              }
-              
-              .pface {
-                position: absolute;
-                width: 500px;
-                height: 200px;
-                background-color: #292d39;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center left;
-                backface-visibility: hidden;
-              }
-
-              .theme__light .pface {
-                background-color: #f8f8f2;
-              }
-              #f1 {
-                transform: translateZ(60px);
-                background-image: url('/logos/sigchain-dark-v2.png');
-              }
-              #f2 {
-                transform:rotateX(-120deg) translateZ(60px);
-                background-image: url('/logos/sigcoin-dark-v2.png');
-              }
-              #f3 {
-                background-image: url('/logos/sigledger-dark-v2.png');
-                transform:rotateX(-240deg) translateZ(60px);
-              }
-
-              .theme__light #f1 {
-                background-image: url('/logos/sigchain-light-v2.png');
-              }
-              .theme__light #f2 {
-                background-image: url('/logos/sigcoin-light-v2.png');
-              }
-              .theme__light #f3 {
-                background-image: url('/logos/sigledger-light-v2.png');
-              }
-              @keyframes pulse {
-                0% { opacity: 1; }
-                38%   { opacity: 1; }
-                40% { opacity: 1; }
-                56% { opacity: 0; }
-                66% { opacity: 0; }
-                100% { opacity: 0; }
-              }
-
-              @keyframes pulse2 {
-                0% { opacity: 0; }
-                33%   { opacity: 0; }
-                40% { opacity: 1; }
-                56% { opacity: 1; }
-                66% { opacity: 0; }
-                100% { opacity: 0; }
-              }
-              @keyframes rot {
-                from,23% {
-                  -moz-transform: rotateX(0);
-                  -ms-transform: rotateX(0);
-                  transform: rotateX(0);
-                }
-                33%,56%  {
-                  -moz-transform: rotateX(-120deg);
-                  -ms-transform: rotateX(-120deg);
-                  transform: rotateX(-120deg);
-                }
-                66%,90%  {
-                  -moz-transform: rotateX(-240deg);
-                  -ms-transform: rotateX(-240deg);
-                  transform: rotateX(-240deg);
-                }
-                to {
-                  -moz-transform: rotateX(-360deg);
-                  -ms-transform: rotateX(-360deg);
-                  transform: rotateX(-360deg);
-                }
-              }
-              #super-prism-wrapper {
-                //border: 4px solid red;
-                display: flex;
-                flex-direction: row;
-                width: auto;
-                margin: 1em;
-                margin-left: 4em;
-                //z-index: 1000;
-                //border: 1px solid red;
-              }
-              #super-prism-container {
-                height: 100px;
-              }
-              #sig-container {
-                position: relative;
-                width: 200px;
-                height: 200px;
-                background-image: url('/logos/super/sig.png');
-                background-position: top left;
-                background-repeat: no-repeat;
-                background-size: contain;
-                margin-right: .5em;
-                //border: 1px solid blue;
-              }
-
-              #super-prism {
-                position: relative;
-                //border: 1px solid green;
-                width: 350px;
-                height: 100%;
-              }
-              @media only screen and (max-width: 500px) {
-                #super-prism {
-                width: 150px;
-                height: 100%;
-              }  
-              #sig-container {
-                position: relative;
-                width: 120px;
-                height: 120px;
-                margin-right: .5em;
-                //border: 1px solid blue;
-              }
-              }
-
-              .sface {
-                position: absolute;
-                width: 100%;
-                height: 100px;
-                //border: 2px solid orange;
-                background-position: top left;
-                background-repeat: no-repeat;
-                background-size: contain;
-                opacity: 0;
-                
-                animation-name: pulse;
-                animation-timing-function: ease-out;
-                animation-iteration-count: infinite;
-                animation-duration: 6s;
-              }
-              #sf0 {
-                background-image: url('/logos/super/coin-light.png');
-                animation-delay: 0;
-                animation-iteration-count: 1;
-                animation-name: pulse;
-              }
-
-              #sf1 {
-                background-image: url('/logos/super/coin-light.png');
-                animation-delay: 6s;
-                animation-iteration-count: infinite;
-                animation-name: pulse2;
-
-              }
-              #sf2 {
-                background-image: url('/logos/super/ledger-light.png');
-                animation-name: pulse2;
-                animation-delay: 2s;
-              }
-              #sf3 {
-                background-image: url('/logos/super/chain-light.png');
-                animation-name: pulse2;
-                animation-delay: 4s;
-              }
-              .theme__dark #sf0 {
-                background-image: url('/logos/super/coin-dark.png');
-              }
-              .theme__dark #sf1 {
-                background-image: url('/logos/super/coin-dark.png');
-              }
-              .theme__dark #sf2 {
-                background-image: url('/logos/super/ledger-dark.png');
-              }
-              .theme__dark #sf3 {
-                background-image: url('/logos/super/chain-dark.png');
-              }
-              .prism #super-prism  {
-                animation-name: rot;
-                animation-duration: 10s;
-                transform-style: preserve-3d;
-                animation-iteration-count: infinite;
-                
-              }
-              .prism .sface  {
-                animation-name: none;
-
-                opacity: 1;
-                position: absolute;
-                width: 350px;
-                height: 100px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: top left;
-                backface-visibility: hidden;
-                background-color: #f8f8f2;;
-              }
-              .prism #sf1 {
-                transform: translateZ(20px);
-              }
-              .prism #sf2 {
-                transform: rotateX(-120deg) translateZ(20px);
-                animation-delay: unset;
-              }
-              .prism #sf3 {
-                transform: rotateX(-240deg) translateZ(20px);
-                animation-delay: unset;
-              }
-            </style>
+            
 
             <div id="super-prism-wrapper" class="xprism">
               <div id="sig-container" >
@@ -302,14 +81,6 @@
                 <div class="sface" id="sf2"></div>
                 <div class="sface" id="sf3"></div>
               </div>
-              </div>
-            </div>
-
-            <div id="prism-container">
-              <div id="prism">
-                <div class="pface" id="f1"></div>
-                <div class="pface" id="f3"></div>
-                <div class="pface" id="f2"></div>
               </div>
             </div>
 
@@ -341,4 +112,26 @@
 
   </div>
 </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: ".main",
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: '#00a5fc',
+  backgroundColor: '#2c2e3b',
+  points: 4.00,
+  maxDistance: 25.00,
+  spacing: 13.00,
+  backgroundAlpha: 0
+})
+</script>
 {{ end }}
