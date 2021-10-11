@@ -1,0 +1,12 @@
+{{ $icon := .Get 0 }}
+{{ $size := 50 }}{{ with .Get 1 }}{{ $size = . }}{{ end }}
+
+<div class="sc-card-item">
+    <div class="sc-card-icon">
+        {{ $s := resources.Get $icon }}
+        {{ $s.Content | safeHTML }}
+    </div>
+    <span>
+        {{ .Inner | markdownify }}
+    </span>
+</div>
