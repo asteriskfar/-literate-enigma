@@ -46,8 +46,13 @@ body {
     //border: 1px solid yellow;
     padding-top: 5em;
   }
-  .home__landing--txt {
+  .home__landing--txt .text {
     //margin-bottom: 10em;
+  }
+}
+.home__landing {
+  .home__landing--txt .text {
+    font-weight: normal;
   }
 }
 
@@ -55,7 +60,6 @@ body {
   background-color: rgba($light, 0.4);
   .home__landing--txt .text {
     color: $dark1;
-    font-weight: normal;
   }
 }
 
