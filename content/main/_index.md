@@ -15,14 +15,13 @@ listchildrenmobile: false
 
 ---
 
-{{< card-list >}}
-- <p>Connecting anyone to anyone</p>
-- <p>Send and spend credit worldwide</p>
-- <p>Make and receive payments</p>
-- <p>Borrowing and lending</p>
-- <p>Billing and invoicing</p>
-- <p>Analytics and risk management</p>
-{{< /card-list >}}
+# The Sigchain is a decentralised market payments infrastructure
+
+We specialise in scaleable peer to peer financial systems. Driven to meet the demands of an evolving economy our vision is to build large scale financial platforms that can deliver smarter credit products for a changing world.
+
+The goal of efficiently providing credit where it is needed most and managing credit ratings effectively is foremost to our thinking so we have built solutions that enable completely new market models.
+
+### Sigchain enables new markets and provides a new class of credit solutions for businesses.
 
 {{< card-item-wrapper >}}
 {{< card-item "svg/heroicons/user-group.svg" >}}
