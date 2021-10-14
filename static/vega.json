@@ -7,12 +7,9 @@
     "signals": [
       { "name": "cx", "update": "width / 2" },
       { "name": "cy", "update": "height / 2" },
-      { "name": "nodeRadius", "value": 5,
-        "bind": {"input": "range", "min": 1, "max": 9, "step": 1} },
-      { "name": "nodeCharge", "value": -50,
-        "bind": {"input": "range", "min":-250, "max": 150, "step": 1} },
-      { "name": "linkDistance", "value": 50,
-        "bind": {"input": "range", "min": 5, "max": 95, "step": 1} },
+      { "name": "nodeRadius", "value": 5},
+      { "name": "nodeCharge", "value": -50},
+      { "name": "linkDistance", "value": 50},
       { "name": "static", "value": false},
       {
         "description": "State variable for active node fix status.",

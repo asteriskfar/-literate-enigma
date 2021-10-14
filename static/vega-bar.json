@@ -8,12 +8,10 @@
   
     "signals": [
       {
-        "name": "count", "value": 10,
-        "bind": {"input": "range", "min": 5, "max": 15, "step": 1}
+        "name": "count", "value": 10
       },
       {
-        "name": "op", "value": "average",
-        "bind": {"input": "select", "options": ["average", "median", "sum"]}
+        "name": "op", "value": "average"
       },
       {
         "name": "label",

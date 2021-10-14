@@ -383,7 +383,7 @@ nav.nav {
 */
 
 .vega-wrapper {
-// border: 1px solid red; 
+  //border: 1px solid red; 
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -396,8 +396,8 @@ nav.nav {
   flex-direction: row;
   justify-content: stretch;
   align-items: center;
-  margin: 2em;
-  //border: 1px solid red;
+  margin: 1em;
+  //border: 1px solid cyan;
 }
 #view2 canvas.marks,
 #view svg.marks {
@@ -412,6 +412,7 @@ nav.nav {
 #view form.vega-bindings {
   flex: 1 1 10em;
   max-width: 15em;
+  display: none;
 }
   #view .vega-bindings::after {
   //border: 1px solid blue;
@@ -454,9 +455,10 @@ nav.nav {
   display: flex;
 
   flex-direction: row;
-  margin: 1em;
+  margin: 1em 1em 1em 0;
   //border: 1px solid green;
   height: 30em;
+  padding-right: 1em;
   svg {
       //border: 1px solid cyan;
       width: 100%;
@@ -464,7 +466,7 @@ nav.nav {
 
       .mark-text.role-axis-label text {
         //fill: red;
-        font-size: 6px;
+        font-size: 4px;
       }
   }
   .vega-bindings {
@@ -472,7 +474,7 @@ nav.nav {
     justify-self: stretch;
     width: 100%;
     max-width: 13em;
-
+    display: none;
     .vega-bind {
       align-items: center;
       /* border: 1px solid red; */
@@ -601,7 +603,6 @@ main .divider.home {
 
 }
 .theme__light .home__landing {
-  border: 1px solid green;
   background-color: rgba(#FFFFFF, 0.7);
 }
 
