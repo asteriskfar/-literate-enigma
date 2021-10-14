@@ -1,20 +1,17 @@
-
+{{ if eq 0 .ordinal }}
 <script src="https://vega.github.io/vega/vega.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+{{ end }}
 
-<style>
-</style>
 
+{{ $viz := "force" }}
+{{ if eq "bar" (index .params 0)  }}{{ $viz = (index .params 0)}}{{ end}}
+{{ if eq $viz "force" }}
 <div class="vega-wrapper">
   <div id="view"></div>
 </div>
-
-<div class="vega-wrapper">
-  <div id="view-bar"></div>
-</div>
-
 <script>
   vegaEmbed(
     '#view',
@@ -24,6 +21,13 @@
     }
   );
 </script>
+{{ end }}
+
+{{ if eq $viz "bar" }}
+<div class="vega-wrapper">
+  <div id="view-bar"></div>
+</div>
+
 <script>
   vegaEmbed(
     '#view-bar',
@@ -34,3 +38,11 @@
     }
   );
 </script>
+
+{{ end }}
+
+{{ with .inner }}
+<div class="vega-caption-text">
+  {{ . | markdownify }}
+</div>
+{{ end }}

@@ -1,1 +1,1 @@
-{{ partial "vega.html" .Page }}
+{{ partial "vega.html" (dict "page" .Page "params" .Params "ordinal" .Ordinal "inner" .Inner) }}
