@@ -3,16 +3,6 @@ title: "Our purpose and new credit markets"
 weight: 10
 ---
 
-# Hello h1
-
-## Hello h2
-
-### Hello h3
-
-
-![Screenshot Mockup](/images/screenshots/current/mockup.png)
-
-
 Despite fundamental problems with fiat currency, unstable markets and hundreds of trillions of dollars of debt, it’s actually an exciting time for money. The blockchain has started an important conversation about money and now banks, regulators and technology companies are exploring cryptocurrency and new fintech.
 
 With much attention and investment, fintech focus has been almost entirely on wallets, exchanges and various cryptocurrencies. Our increasingly globalised marketplace needs a fundamental design shift to overcome many of the world-scale economic challenges we face today. The blockchain may well have started an important conversation but it is simply one step in money’s evolution.

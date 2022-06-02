@@ -15,7 +15,7 @@ listchildrenmobile: false
 
 ---
 
-# The Sigchain is a decentralised market payments infrastructure
+### The Sigchain is a decentralised market payments infrastructure
 
 We specialise in scaleable peer to peer financial systems. Driven to meet the demands of an evolving economy our vision is to build large scale financial platforms that can deliver smarter credit products for a changing world.
 
@@ -23,29 +23,18 @@ The goal of efficiently providing credit where it is needed most and managing cr
 
 ### Sigchain enables new markets and provides a new class of credit solutions for businesses.
 
-{{< card-item-wrapper >}}
-{{< card-item "svg/heroicons/user-group.svg" >}}
+
 Connecting anyone to anyone
-{{< /card-item >}}
-{{< card-item "svg/heroicons/globe-alt.svg" >}}
+
 Send and spend credit worldwide
-{{< /card-item >}}
-{{< card-item "svg/heroicons/currency-dollar.svg" >}}
+
 Make and receive payments
-{{< /card-item >}}
-{{< card-item "svg/heroicons/switch-horizontal.svg" >}}
+
 Borrowing and lending
-{{< /card-item >}}
-{{< card-item "svg/heroicons/credit-card.svg" >}}
+
 Billing and invoicing
-{{< /card-item >}}
-{{< card-item "svg/heroicons/trending-up.svg" >}}
+
 Analytics and risk management
-{{< /card-item >}}
-{{< /card-item-wrapper >}}
-
-
-<!-- ![Screenshot Mockup](/images/screenshots/export-multidevices-2-smaller.png) -->
 
 Through history we've come to think of money as coinage and notes and so we've come to lose the real notion of money being a credit relationship between two trading parties.
 

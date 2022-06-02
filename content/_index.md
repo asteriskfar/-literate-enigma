@@ -18,8 +18,8 @@ landing:
   buttons:
     - link: main
       text: read more
-      
-/footer:
+
+footer:
   sections:
     - title: Sigchain Capital group
       links:

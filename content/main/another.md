@@ -8,9 +8,6 @@ Sigcoin defi credit is created when individuals or businesses exchange personal 
 
 Members can issue credit within business groups and transact directly with each other.
 
-{{< lightdarkimg light="/images/sig-network-transparent.png" dark="/images/sig-network-transparent-dark.png" caption="This is a caption. Let's try a longer caption. Lorem Ipsum etc. Let's try a longer caption. Lorem Ipsum etc." >}}
-
-
 The blockchain got a lot of people very excited about ledgers and decentralisation. But the traditional blockchain architecture is just one of the ways ledger and financial technology systems can be designed.
 
 “Our findings confirm anecdotal claims from the small business community that relationships are vital to secure greater credit limits"

@@ -8,35 +8,3 @@ menu:
 This is the heart of defi.
 
 With early entrant and first mover advantage Sigchain Capital will own and operate the first tier of fintech applications to develop this network. We aim to build and dominate this new market with a suite of applications that allow other business to migrate to the network.
-
-<!-- 
----
-footer:
-  sections:
-    - title: Sigchain Capital group
-      links:
-        - title: sigchain
-          link: https://www.sigchain.com
-        - title: sigcoin
-          link: https://www.sigcoin.com
-        - title: sigledger
-          link: https://www.sigledger.com
-
-
-    - title: Partner projects
-      links:
-        - title: sigchain
-          link: https://www.sigchain.io/
-        - title: the 'meme of one' foundation
-          link: https://www.memeofone.org
-
-    - title: Our lab
-      links:
-        - title: moneylabs
-          link: https://www.moneylabs.io/
-
-      |
-      Sigchain Capital 2021
-      Copyright © 2021. All rights reserved.
----
--->
