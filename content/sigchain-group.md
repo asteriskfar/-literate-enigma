@@ -31,4 +31,9 @@ footer:
 ---
 This is the heart of defi.
 
+<div style="font-size: 50px; ">
+<p>This is the heart of defi.</p>
+</div>
+
+
 With early entrant and first mover advantage Sigchain Capital will own and operate the first tier of fintech applications to develop this network. We aim to build and dominate this new market with a suite of applications that allow other business to migrate to the network.
