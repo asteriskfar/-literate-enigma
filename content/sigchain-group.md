@@ -29,8 +29,6 @@ footer:
         - title: moneylabs
           link: https://www.moneylabs.io/
 ---
-This is the heart of defi.
-
 <div style="font-size: 50px; ">
 <p>This is the heart of defi.</p>
 </div>

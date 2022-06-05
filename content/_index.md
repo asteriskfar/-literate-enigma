@@ -30,7 +30,6 @@ footer:
         - title: sigledger
           link: https://www.sigledger.com
 
-
     - title: Partner projects
       links:
         - title: sigchain
