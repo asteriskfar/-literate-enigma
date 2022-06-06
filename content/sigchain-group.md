@@ -29,7 +29,7 @@ footer:
         - title: moneylabs
           link: https://www.moneylabs.io/
 ---
-<div style="font-size: 50px; ">
+<div style="font-size: 150px; Color: lightblue">
 <p>This is the heart of defi.</p>
 </div>
 
