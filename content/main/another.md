@@ -2,6 +2,10 @@
 title: "Another"
 weight: "40"
 ---
+<div style="font-size: 50px; color: lightblue">
+<p>Crypto credit</p>
+</div>
+
 With a new class of ‘cryptocredit' built on a member-based peer-to-peer network Sigchain offers the global market access to credit and business tools to capitalise and improve business processes.
 
 Sigcoin defi credit is created when individuals or businesses exchange personal credit obligations for credit obligations issued by a trusted member.
