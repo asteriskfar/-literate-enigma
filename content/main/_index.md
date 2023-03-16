@@ -20,7 +20,7 @@ listchildrenmobile: false
 
 # The Sigchain is a decentralised market payments infrastructure
 
-We specialise in scaleable peer to peer financial systems. Driven to meet the demands of an evolving economy our vision is to build large scale financial platforms that can deliver smarter credit products for a changing world.
+We specialise in scalable peer to peer financial systems. Driven to meet the demands of an evolving economy our vision is to build large scale financial platforms that can deliver smarter credit products for a changing world.
 
 The goal of efficiently providing credit where it is needed most and managing credit ratings effectively is foremost to our thinking so we have built solutions that enable completely new market models.
 
