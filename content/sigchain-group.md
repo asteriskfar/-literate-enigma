@@ -30,7 +30,7 @@ footer:
           link: https://www.moneylabs.io/
 ---
 <div style="font-size: 50px; color: lightblue: font-family:'courier new': ">
-<p>This is the heart of defi.</p>
+<p>DeFi done right.</p>
 </div>
 
 
