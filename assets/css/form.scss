@@ -72,17 +72,31 @@ $title03: "Space Mono" ;
 
 body.theme__light {
 .feedback-input {
-
   color:$dark1;
 }
 }
 
+
+body.theme__light {
+  .contact-bg-wrapper input,textarea {
+    color:$dark1;
+    background-color:white !important;
+  }
+  }
+
+
+body.theme__light {
+  p,h2 {
+    color:$dark1;
+  }
+  }
+
 body.theme__dark {
 .feedback-input {
-
   color:#ffffff;
 }
 }
+
 #view .vega-bindings {
   //max-width: 200px;
   // border: 1px solid pink;
@@ -121,10 +135,12 @@ body.theme__dark {
     flex: 1 0 7em;
 }
 }
+
 $inthumb : 17px;
 $thmargin: 5px;
 $trackwidth: 4px;
 $thwidth : 5px;
+
 .vega-bindings {
 input[type=range] {
   //width: 100%;
