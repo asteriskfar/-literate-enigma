@@ -1,0 +1,606 @@
+{{ define "header" }}
+{{ partial "main/header.html" . }}
+{{ end }}
+{{ define "main" }}
+
+<style>
+    .wrapper {
+        max-width: 1320px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .mt-0 {
+        margin-top: 0;
+    }
+
+    .mb-0 {
+        margin-bottom: 0;
+    }
+
+    .mb-5 {
+        margin-bottom: 48px;
+    }
+
+    .mt-4 {
+        margin-top: 22px;
+    }
+
+    .mt-5 {
+        margin-top: 48px;
+    }
+
+    .mb-3 {
+        margin-bottom: 1rem;
+    }
+
+    .pl-4 {
+        padding-left: 22px;
+    }
+
+    .pr-4 {
+        padding-right: 22px;
+    }
+
+    .px-3 {
+        padding-inline: 12px;
+    }
+
+    .px-4 {
+        padding-inline: 2rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .title {
+        color: #52a7f5;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #efefef;
+    }
+
+    .text-white {
+        color: #ffffff;
+    }
+
+    .row-wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .justify-between {
+        justify-content: space-between;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .col-lg-9 {
+        flex: 0 0 66.66%;
+        max-width: 66.66%;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .object-contain {
+        object-fit: contain;
+    }
+
+    .wrapper svg {
+        fill: #52a7f5;
+        width: 50px;
+    }
+
+    .line {
+        background-color: #dfdfdf;
+        color: #dfdfdf;
+        text-align: center;
+        height: 2px;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .display-7 {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .py-4 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact-bg-wrapper {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        /* background-image: url(/images/gb8581968605a61d714a9cc7bc90e-h_lhlk7e68.jpg); */
+        position: relative;
+    }
+
+    .contact-bg-wrapper:after {
+        content: "";
+        /* background-color: #000000; */
+        opacity: 0.9;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .form-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        max-width: 60%;
+        margin-inline: auto;
+    }
+
+    .form-group-wrapper {
+        flex: 0 0 calc(50% - 30px);
+        padding: 0.5rem;
+    }
+
+    .form-group-wrapper.flex-100 {
+        flex: 0 0 calc(100% - 26px);
+    }
+
+    .contact-bg-wrapper,
+    .contact-bg-wrapper textarea {
+        background-color: #082037;
+        color: #ffffff;
+        border: 1px solid #52a7f5;
+        font-size: 1rem;
+        line-height: 1.6;
+        border-radius: 0;
+        /* background-color: #ffffff; */
+        margin: 0;
+        transition: 0.4s;
+        width: calc(100% - 32px);
+        border: 1px solid #e0e0e0;
+        padding: 11px 1rem;
+    }
+
+    .contact-form-inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .row-wrapper {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-6,
+        .col-lg-9 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .form-wrapper {
+            max-width: 100%;
+        }
+
+        .form-group-wrapper,
+        .form-group-wrapper.flex-100 {
+            flex: 0 0 calc(100% - 0px);
+        }
+    }
+</style>
+
+<div class="container">
+    <section class="wrapper">
+        <h2 class="text-center w-100 mb-5 text-white mt-5">
+            autonomous web & finance
+        </h2>
+        <strong class="title d-block">
+            The Signature Chain, or Sigchain, is a highly scalable Web3 and DeFi
+            platform, with decentralised applications and payments built-in.
+        </strong>
+        <p>
+            SIG marks a radical redesign of distributed ledger technology, by
+            allowing each user to cryptographically sign their own personal
+            blockchain. The Sigchain architecture gives users direct control of
+            their identity, data, and financial relationships allowing them to
+            create, trade and settle assets securely, and without intermediaries.
+        </p>
+        <br />
+        <p>
+            With a unique class of crypto-credit called Sigcoin, SIG offers the
+            market an innovative way to create credit liquidity within business
+            networks.
+        </p>
+        <section class="row-wrapper mt-5">
+            <div class="col-lg-3">
+                <img src="/images/background1-h_lhnuegbl.jpg" alt="producer card imagw" />
+            </div>
+            <div class="col-lg-9">
+                <h2 class="mt-0 text-left w-100 mb-3 title pl-4">
+                    Sigcoin - Producer Credit
+                </h2>
+                <p class="pl-4">
+                    Sigcoin is a hybrid technology combining cryptographic components
+                    with producer credit. Sigchain does what neither banks nor legacy
+                    crypto can do, it enables direct peer-to-peer credit creation. It is
+                    the first digital currency to represent the trade credit
+                    relationship, thereby introducing scalable, trustful credit.
+                    <br /><br />
+                    Reputable businesses can create new credit in the market itself to
+                    fund production. While producers can issue and extend credit to each
+                    other, and settle accounts, only those who honour their credit
+                    obligations will emerge as trusted liquidity providers. <br /><br />
+                    Sigcoin aims to be a genuine 'stable coin' but rather than being
+                    backed by unstable fiat currency, Sigcoins are backed by the
+                    business networks that issue them. Beyond cryptocurrency, producer
+                    credit is the next evolution in decentralised finance.
+                </p>
+            </div>
+        </section>
+        <section class="row-wrapper mt-5">
+            <div class="col-lg-6">
+                <h2 class="mt-0 text-left w-100 mb-3 title pl-4">
+                    Autonomous integration
+                </h2>
+                <p class="pr-4">
+                    Sigchain is the fusion of Web3, finance and market AI that
+                    introduces a new class of fully interoperable apps, with
+                    frictionless integration of payments into the entire application
+                    space.
+                    <br /><br />
+                    Market participants are incentivised to build a reputable credit
+                    history on the network that will afford them the established trust
+                    and relationships they need to be successful. Consumers can
+                    determine if they want to interact based on this immutable evidence.
+                    <br /><br />
+                    Earning reputation results in a system wide imperative to
+                    authenticate through network interactions. This market-based data
+                    provides validity of a persons identity without their data being
+                    owned by an intermediated controlling authority.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img class="object-contain" src="/images/background1-h_lhr34pam.jpg" alt="producer card imagw" />
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="row-wrapper justify-between">
+                <div class="col-lg-3">
+                    <div class="text-center px-4">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                            viewBox="0 0 32 32" fill="currentColor">
+                            <path
+                                d="M4.682 11.995c-0.552 0-1.052 0.254-1.38 0.612s-0.515 0.801-0.607 1.258l-2.661 13.333c-0.122 0.611 0.143 1.191 0.531 1.555s0.901 0.581 1.453 0.581h25.305c0.552 0 1.052-0.259 1.38-0.617s0.515-0.801 0.607-1.258l2.664-13.333c0.113-0.565-0.146-1.191-0.534-1.555s-0.901-0.576-1.453-0.576zM4.682 13.328h25.305c0.186 0 0.412 0.092 0.542 0.214s0.161 0.21 0.138 0.323l-2.664 13.333c-0.164 0.611-0.335 0.802-0.68 0.802h-25.305c-0.54 0-0.759-0.238-0.677-0.542l2.661-13.333c0.053-0.267 0.164-0.49 0.281-0.617s0.213-0.18 0.398-0.18zM2 2.667c-1.096 0-2 0.904-2 2v14.667c0 0.881 1.333 0.886 1.333 0v-14.667c0-0.381 0.286-0.667 0.667-0.667h6.391l5.138 5.138c0.125 0.125 0.295 0.195 0.471 0.195h14v0.667c0 0.907 1.333 0.865 1.333 0v-1.333c-0-0.368-0.299-0.667-0.667-0.667h-14.391l-5.138-5.138c-0.125-0.125-0.295-0.195-0.471-0.195z">
+                            </path>
+                        </svg>
+                        <h2 class="w-100 mb-3 title">Autonomous integration</h2>
+                        <p>
+                            Send and receive credit worldwide. Make and receive payments.
+                            Borrow, lend, exchange. Fast, cheap and secure.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-center px-4">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                            viewBox="0 0 32 32" fill="currentColor">
+                            <path
+                                d="M22.594 10.667c-0.423 0-0.843 0.060-1.224 0.31-0.325 0.213-0.564 0.519-0.701 0.872-0.042 0.109-0.054 0.222-0.076 0.333-0.016-0.006-0.028-0.015-0.044-0.021-0.42-0.143-0.884-0.201-1.354-0.117-0.474 0.084-0.928 0.309-1.273 0.685-0.334 0.363-0.519 0.816-0.573 1.276-0.014 0.115 0.042 0.215 0.044 0.328-0.037-0.012-0.062-0.039-0.099-0.049-0.404-0.116-0.84-0.143-1.271-0.049-0.432 0.094-0.839 0.305-1.161 0.628-0.31 0.31-0.511 0.7-0.609 1.115l-2.583-2.581c-0.23-0.229-0.48-0.48-0.784-0.711s-0.658-0.437-1.063-0.56c-0.407-0.124-0.85-0.158-1.289-0.065-0.441 0.093-0.85 0.311-1.174 0.635s-0.542 0.733-0.635 1.174c-0.093 0.439-0.058 0.882 0.065 1.289 0.123 0.405 0.328 0.758 0.56 1.063s0.481 0.554 0.711 0.784l9.664 9.661h-2.391c-0.344 0-0.719-0.002-1.117 0.052-0.399 0.054-0.813 0.166-1.203 0.375-0.393 0.21-0.744 0.511-1 0.904-0.257 0.394-0.398 0.858-0.398 1.336s0.142 0.942 0.398 1.336c0.256 0.393 0.607 0.694 1 0.904 0.391 0.209 0.804 0.321 1.203 0.375 0.398 0.054 0.773 0.052 1.117 0.052h8c0.902 0.013 0.855-1.333 0-1.333h-8c-0.341 0-0.656-0.003-0.938-0.042-0.28-0.038-0.538-0.112-0.753-0.227-0.212-0.113-0.395-0.276-0.513-0.458-0.117-0.18-0.182-0.399-0.182-0.607s0.065-0.426 0.182-0.607c0.118-0.182 0.301-0.345 0.513-0.458 0.214-0.115 0.472-0.188 0.753-0.227 0.282-0.038 0.596-0.042 0.938-0.042h4c0.594-0 0.881-0.729 0.471-1.138l-10.802-10.799c-0.228-0.228-0.433-0.438-0.594-0.648s-0.279-0.427-0.344-0.641c-0.064-0.211-0.077-0.434-0.036-0.628 0.040-0.191 0.141-0.375 0.273-0.508s0.316-0.233 0.508-0.273c0.193-0.041 0.416-0.028 0.628 0.036 0.214 0.065 0.431 0.184 0.641 0.344s0.421 0.366 0.648 0.594l5.469 5.466c0.582 0.606 1.55-0.36 0.943-0.943l-0.667-0.667c-0.224-0.224-0.425-0.429-0.578-0.635s-0.268-0.422-0.328-0.633c-0.060-0.21-0.070-0.43-0.029-0.622 0.041-0.191 0.14-0.372 0.268-0.5s0.309-0.227 0.5-0.268c0.192-0.042 0.413-0.031 0.622 0.029 0.211 0.060 0.427 0.175 0.633 0.328s0.404 0.362 0.635 0.578l0.727 0.678c0.593 0.553 1.479-0.335 0.877-0.937-0.535-0.535-0.858-0.921-1.031-1.379-0.086-0.227-0.121-0.463-0.096-0.672 0.024-0.205 0.112-0.401 0.232-0.531 0.123-0.134 0.318-0.237 0.526-0.273 0.212-0.038 0.455-0.015 0.69 0.065 0.647 0.272 1.006 0.646 1.409 1.049 0.635 0.635 1.537-0.443 0.943-0.943-0.164-0.138-0.298-0.335-0.404-0.453-0.095-0.136-0.159-0.274-0.182-0.398-0.023-0.122-0.012-0.249 0.026-0.346 0.037-0.097 0.111-0.188 0.19-0.24 0.094-0.062 0.247-0.101 0.406-0.091 0.165 0.011 0.35 0.070 0.536 0.169 0.381 0.204 0.745 0.563 1.151 0.969l6.667 6.667c0.6 0.6 1.54-0.346 0.943-0.943l-6.667-6.667c-0.398-0.398-0.842-0.868-1.464-1.201-0.315-0.168-0.658-0.328-1.081-0.328zM5.979 16c-0.173 0.001-0.338 0.078-0.458 0.203l-1.333 1.333c-0.591 0.567 0.371 1.539 0.943 0.943l1.333-1.333c0.438-0.424 0.131-1.15-0.484-1.146zM12.667 9.333c-0.173 0.005-0.358 0.064-0.479 0.188l-1.333 1.333c-0.582 0.558 0.315 1.571 0.943 0.943l1.333-1.333c0.396-0.388 0.159-1.13-0.464-1.13zM4.667 9.333c-0.599 0-0.886 0.724-0.471 1.125l1.333 1.333c0.61 0.636 1.541-0.369 0.943-0.943l-1.333-1.333c-0.126-0.13-0.291-0.182-0.471-0.182zM2.667 14c0-0.369 0.297-0.667 0.667-0.667h1.333c0.369 0 0.667 0.297 0.667 0.667s-0.297 0.667-0.667 0.667h-1.333c-0.369 0-0.667-0.297-0.667-0.667zM8.667 8c0.369 0 0.667 0.297 0.667 0.667v1.333c0 0.369-0.297 0.667-0.667 0.667s-0.667-0.297-0.667-0.667v-1.333c0-0.369 0.297-0.667 0.667-0.667zM9.335 26c0 0.368-0.298 0.667-0.667 0.667s-0.667-0.298-0.667-0.667c0-0.368 0.298-0.667 0.667-0.667s0.667 0.298 0.667 0.667zM7.335 2.667h2.667c0.369 0 0.667 0.297 0.667 0.667s-0.297 0.667-0.667 0.667h-2.667c-0.369 0-0.667-0.297-0.667-0.667s0.297-0.667 0.667-0.667zM2.002-0c-1.096 0-2 0.904-2 2v25.333c0 1.096 0.904 2 2 2h6.667c0.902 0.013 0.902-1.346 0-1.333h-6.667c-0.381 0-0.667-0.286-0.667-0.667v-25.333c0-0.381 0.286-0.667 0.667-0.667h13.333c0.381 0 0.667 0.286 0.667 0.667v9.333c-0.013 0.902 1.346 0.902 1.333 0v-9.333c0-1.096-0.904-2-2-2z">
+                            </path>
+                        </svg>
+                        <h2 class="w-100 mb-3 title">Super apps</h2>
+                        <p>
+                            Send and receive credit worldwide. Make and receive payments.
+                            Borrow, lend, exchange. Fast, cheap and secure.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-center px-4">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                            viewBox="0 0 32 32" fill="currentColor">
+                            <path
+                                d="M7.333 5.333c-0.451-0.006-0.667 0.33-0.667 0.667s0.216 0.673 0.667 0.667h22.667c0.381 0 0.667 0.286 0.667 0.667v13.333c-0.006 0.451 0.33 0.667 0.667 0.667s0.673-0.216 0.667-0.667v-13.333c0-1.096-0.904-2-2-2zM4.667 8c-0.451-0.006-0.667 0.33-0.667 0.667s0.216 0.673 0.667 0.667h22.667c0.381 0 0.667 0.286 0.667 0.667v13.333c-0.006 0.451 0.33 0.667 0.667 0.667s0.673-0.216 0.667-0.667v-13.333c0-1.096-0.904-2-2-2zM2 10.667c-1.096 0-2 0.904-2 2v13.333c0 1.096 0.904 2 2 2h22.667c1.096 0 2-0.904 2-2v-13.333c0-1.096-0.904-2-2-2zM2 12h22.667c0.381 0 0.667 0.286 0.667 0.667v13.333c0 0.381-0.286 0.667-0.667 0.667h-22.667c-0.381 0-0.667-0.286-0.667-0.667v-13.333c0-0.381 0.286-0.667 0.667-0.667zM3.333 13.333c-0.368 0-0.667 0.299-0.667 0.667v2.667c-0.006 0.451 0.33 0.667 0.667 0.667s0.673-0.216 0.667-0.667v-2h2c0.451 0.006 0.667-0.33 0.667-0.667s-0.216-0.673-0.667-0.667zM12.667 13.333c-3.306 0-6 2.694-6 6s2.694 6 6 6c3.306 0 6-2.694 6-6s-2.694-6-6-6zM20.667 14.667h2v2c-0.006 0.451 0.33 0.667 0.667 0.667s0.673-0.216 0.667-0.667v-2.667c-0-0.368-0.299-0.667-0.667-0.667h-2.667c-0.464 0-0.667 0.279-0.667 0.667s0.182 0.667 0.667 0.667zM12.667 14.667c2.585 0 4.667 2.081 4.667 4.667s-2.081 4.667-4.667 4.667c-2.585 0-4.667-2.081-4.667-4.667s2.081-4.667 4.667-4.667zM12.667 16c-1.094 0-2 0.906-2 2s0.906 2 2 2c0.373 0 0.667 0.283 0.667 0.667s-0.294 0.667-0.667 0.667h-1.333c-0.451-0.006-0.667 0.33-0.667 0.667s0.216 0.673 0.667 0.667h1.333c1.094 0 2-0.906 2-2s-0.906-2-2-2c-0.373 0-0.667-0.283-0.667-0.667s0.294-0.667 0.667-0.667h1.333c0.451 0.006 0.667-0.33 0.667-0.667s-0.216-0.673-0.667-0.667zM3.333 21.333c-0.376-0.006-0.673 0.29-0.667 0.667v2.667c0 0.368 0.298 0.667 0.667 0.667h2.667c0.451 0.006 0.667-0.33 0.667-0.667s-0.216-0.673-0.667-0.667h-2v-2c0.006-0.368-0.298-0.661-0.667-0.667zM23.333 21.333c-0.368 0.006-0.672 0.298-0.667 0.667v2h-2c-0.451-0.006-0.667 0.33-0.667 0.667s0.216 0.673 0.667 0.667h2.667c0.368-0 0.667-0.299 0.667-0.667v-2.667c0.006-0.376-0.29-0.673-0.667-0.667z">
+                            </path>
+                        </svg>
+                        <h2 class="w-100 mb-3 title">NFT exchange</h2>
+                        <p>
+                            SIG is an NFT engine that does not require any 3rd party
+                            integrations. All transactions and messages are
+                            cryptographically signed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-wrapper justify-between mt-4">
+                <div class="col-lg-4 px-3">
+                    <div class="text-center">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                            viewBox="0 0 32 32" fill="currentColor">
+                            <path
+                                d="M21.006 6.76c-0.317-0.188-0.725-0.083-0.913 0.233l-10.661 17.316c-0.435 0.708 0.667 1.461 1.136 0.698l10.661-17.316c0.202-0.317 0.101-0.739-0.223-0.931zM24.178 9.544c0.25-0.269 0.671-0.284 0.94-0.035l6.662 5.995c0.294 0.265 0.294 0.725 0 0.99l-6.66 5.994c-0.631 0.568-1.526-0.421-0.892-0.992l6.11-5.496-6.11-5.501c-0.283-0.247-0.305-0.679-0.050-0.955zM7.822 9.544c-0.25-0.269-0.671-0.284-0.94-0.035l-6.662 5.995c-0.294 0.265-0.294 0.725 0 0.99l6.66 5.994c0.631 0.569 1.54-0.41 0.892-0.992l-6.11-5.496 6.11-5.501c0.283-0.247 0.305-0.679 0.050-0.955z">
+                            </path>
+                        </svg>
+                        <h2 class="w-100 mb-3 title">Autonomous integration</h2>
+                        <p>
+                            Send and receive credit worldwide. Make and receive payments.
+                            Borrow, lend, exchange. Fast, cheap and secure.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 px-3">
+                    <div class="text-center">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                            viewBox="0 0 32 32" fill="currentColor">
+                            <path
+                                d="M10 9.333c-1.705 0-2.95 0.993-3.667 2.201s-1 2.63-1 3.799c0 1.056-0.013 1.669-0.141 2.104s-0.363 0.791-0.997 1.424c-0.42 0.42-0.122 1.138 0.471 1.138 1.105 0 2.256-0.213 3.214-0.667-0.076 0.388-0.193 0.825-0.341 1.102-0.316 0.588-0.692 0.898-1.539 0.898-0.86 0-0.891 1.333 0 1.333 1.267 0 2.224-0.69 2.714-1.602s0.62-2.004 0.62-3.065c-0-0.594-0.718-0.891-1.138-0.471-0.614 0.614-1.359 0.857-2.195 0.99 0.173-0.173 0.401-0.456 0.474-0.706 0.206-0.704 0.193-1.423 0.193-2.479 0-0.942 0.259-2.186 0.813-3.117s1.307-1.549 2.521-1.549c1.214 0 1.968 0.618 2.521 1.549s0.813 2.175 0.813 3.117c0 1.079 0.050 1.869 0.281 2.581 0.081 0.249 0.202 0.478 0.385 0.661-0.789-0.083-1.431-0.283-2.195-1.047-0.42-0.42-1.138-0.122-1.138 0.471 0 1.061 0.131 2.154 0.62 3.065s1.446 1.602 2.714 1.602c0.865 0.012 0.896-1.333 0-1.333-0.847 0-1.223-0.31-1.539-0.898-0.147-0.274-0.291-0.717-0.367-1.102 0.988 0.479 2.15 0.667 3.24 0.667 0.594-0 0.891-0.718 0.471-1.138-0.518-0.517-0.765-0.878-0.922-1.359s-0.216-1.136-0.216-2.169c0-1.17-0.283-2.592-1-3.799s-1.962-2.201-3.667-2.201zM16 0c-8.829 0-16 7.171-16 16s7.171 16 16 16c8.829 0 16-7.171 16-16s-7.171-16-16-16zM16 1.333c8.108 0 14.667 6.559 14.667 14.667s-6.559 14.667-14.667 14.667c-8.108 0-14.667-6.559-14.667-14.667s6.559-14.667 14.667-14.667zM27.756 21.465c-0.709-0.709-1.090-1.176-1.090-1.176v-2.086l1.221-1.833c0.073-0.11 0.112-0.238 0.112-0.37v-2.667c0-3.033-2.506-5.333-5.333-5.333s-5.333 2.3-5.333 5.333v2.667c0 0.132 0.039 0.26 0.112 0.37l1.221 1.833v2.086l-6.344 3.805c-0.201 0.121-0.323 0.338-0.323 0.573v1.333c0 0.875 1.333 0.891 1.333 0v-0.956l6.344-3.805c0.201-0.121 0.323-0.338 0.323-0.573v-2.667c0-0.132-0.039-0.26-0.112-0.37l-1.221-1.833v-2.464c0-2.3 1.894-4 4-4s4 1.7 4 4v2.464l-1.221 1.833c-0.073 0.11-0.112 0.238-0.112 0.37v2.667c-0.001 0.234 0.139 0.389 0.323 0.573 0 0 0.384 0.47 1.090 1.176s1.72-0.241 1.010-0.951z">
+                            </path>
+                        </svg>
+                        <h2 class="w-100 mb-3 title">Super apps</h2>
+                        <p>
+                            Send and receive credit worldwide. Make and receive payments.
+                            Borrow, lend, exchange. Fast, cheap and secure.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 px-3">
+                    <div class="text-center">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                            viewBox="0 0 32 32" fill="currentColor">
+                            <path
+                                d="M27.333 10.667c-0.451-0.006-0.667 0.33-0.667 0.667s0.216 0.673 0.667 0.667h3.333v3.333c-0.006 0.451 0.33 0.667 0.667 0.667s0.673-0.216 0.667-0.667v-4c-0-0.368-0.299-0.667-0.667-0.667zM19.333 22.376l-4.847-4.856c-0.26-0.26-0.682-0.26-0.942 0l-10.659 10.654c-0.635 0.61 0.314 1.595 0.942 0.942l10.174-10.183 4.874 4.856c0.26 0.26 0.682 0.26 0.942 0l9.327-9.322c0.273-0.273 0.238-0.703-0.011-0.952s-0.693-0.212-0.874-0.009zM0.667 0c-0.368 0.006-0.672 0.298-0.667 0.667v30.667c0 0.368 0.298 0.667 0.667 0.667h30.667c0.451 0.006 0.667-0.33 0.667-0.667s-0.216-0.673-0.667-0.667h-30v-30c0.006-0.376-0.29-0.673-0.667-0.667z">
+                            </path>
+                        </svg>
+                        <h2 class="w-100 mb-3 title">NFT exchange</h2>
+                        <p>
+                            SIG is an NFT engine that does not require any 3rd party
+                            integrations. All transactions and messages are
+                            cryptographically signed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row-wrapper mt-5">
+            <div class="col-lg-3">
+                <img src="/images/gf1acd9035a7c0214c7a32989e210-h_lhfvzw5r.jpg" alt="producer card imagw" />
+            </div>
+            <div class="col-lg-9">
+                <h2 class="mt-0 text-left w-100 mb-3 title pl-4">
+                    Market based AI & prediction analytics
+                </h2>
+                <p class="pl-4">
+                    Business value and yield can be analysed using the SG transaction
+                    graph, enabling a new industry of fintech services to predict and
+                    model the new economy.
+                    <br /><br />
+                    Typically blockchain analysis shows transactions between accounts,
+                    but the data is meaningless, because the tokens are all created
+                    using economically arbitrary issuance mechanisms. Current blockchain
+                    platforms can’t determine credit-as-relationships, and are unable to
+                    infer any kind of meaningful reputation data.
+                    <br /><br />
+                    Sigchain is the missing signalling layer for digital currency
+                    allowing credit relationships to be economically meaningful and
+                    valuable.
+                </p>
+            </div>
+        </section>
+        <section class="mt-5">
+            <hr class="line" />
+            <p class="display-7 py-4 text-center">
+                You don’t own “web3.” The VCs and their LPs do. It will never escape
+                their incentives. It’s ultimately a centralized entity with a
+                different label. <br />
+                Know what you’re getting into…Jack Dorsey tweet, Dec 2021
+            </p>
+            <hr class="line" />
+        </section>
+        <section class="mt-5">
+            <h2 class="mt-0 text-left w-100 mb-4 title">The next net</h2>
+            <p class="display-7 text-left">
+                Web 2.0 requires web apps to be hosted on corporate owned servers
+                where all of the users data is stored. In comparison, the definition
+                of Web3 claims to give the user true ownership and control over their
+                data. Yet Jack Dorsey and others raise questions about the viability
+                of that vision.
+                <br /><br />
+                Crypto and DeFi projects such as Ethereum and many more are pitched as
+                fully decentralised Web3 networks, yet several centralised aspects of
+                their implementations compromise their Web3 delivery. Dorsey
+                acknowledges this hybridised reality when explaining his 'Web5'
+                platform as a combination of Web3 and Web 2.0, built on the Bitcoin
+                blockchain.
+                <br /><br />
+                Kevin Werbach, author of The Blockchain and the New Architecture of
+                Trust, also states that 'many so-called 'Web3' solutions are not as
+                decentralised as they seem, while others have yet to show they are
+                scalable, secure and accessible enough for the mass market’.
+                <br /><br />
+                The notion that the blockchain can and will ‘decentralise’ everything
+                and therefore give us back ownership and control of our identity and
+                data is a misconception. The Ethereum blockchain, like any big
+                database hosted on a server, is far too large to run on a local
+                computer or phone, meaning only those that are incentivised, host the
+                'full nodes'. Users of crypto wallets, exchanges and platforms are
+                required to access these nodes via 3rd party integrations and sharing
+                of personal data.
+                <br /><br />
+                SIGs entirely new, highly scalable and secure network architecture has
+                solved the challenge of how to build a decentralised super-app
+                platform with payments built-in. With near-zero infrastructure costs,
+                Sigchain provides access to an autonomous marketplace that will
+                introduce a paradigm shift in future application development and
+                interaction.
+                <br /><br />
+            </p>
+        </section>
+        <section class="row-wrapper mt-5">
+            <div class="col-lg-8">
+                <div class="pr-4">
+                    <h2 class="mt-0 text-left w-100 mb-4 title">
+                        Autonomous integration
+                    </h2>
+                    <p class="display-7 text-left">
+                        As of May 2023, the total value locked in DeFi protocols was
+                        approximately $216 billion USD. While many of todays DeFi projects
+                        are speculating on tokens that are not backed by real-world
+                        assets, Sigchain connects markets to real production by trading
+                        SIG assets that compete to represent market exchange value.
+                        <br />
+                        <br />
+                        The DeFi market includes financial applications such as
+                        decentralised exchanges, lending platforms, derivatives, and
+                        insurance. This industry has been enabled by the advent of
+                        blockchain technology, despite developers gaining the ability to
+                        exchange digital tokens, they still have no standard way to route
+                        credit to maintain the inherent credit relationship. Sigcoin
+                        accounts for the credit relationship, making it the worlds first
+                        digital currency to connect market data with real economic
+                        productivity.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="/images/g6ce558ab9306d66aa82776303e1c-h_lhij9oiz.jpg" alt="" />
+            </div>
+        </section>
+        <section class="mt-5">
+            <h2 class="mt-0 text-left w-100 mb-4 title">Super Apps</h2>
+            <p class="display-7 text-left">
+                Web apps today are siloed, they provide a fragmented experience and
+                require heavy backend development to integrate 3rd party providers or
+                make any meaningful improvements. On the Sigchain platform, trading,
+                decentralised apps (Dapps), NFTs and crypto-credit are natively
+                integrated. With a single-sign-on journey, users can access apps that
+                seamlessly interoperate while retaining ownership and integrity over
+                personal data. Being truly scalable with an unlimited transaction
+                capacity, Sigchain also establishes a messaging and exchange layer
+                that enables frictionless integration of payments into the entire
+                application space.
+                <br /><br />
+                As all transactions and messages are cryptographically signed,
+                Sigchain is essentially an NFT engine that does not require an
+                external wallet or 3rd party integrations. Users will be able to
+                produce, collect and trade NFTs and coins within an intuitive and
+                personally curated social ecosystem. The value of these digital assets
+                is decided by the consumers, based on the reputation of the creator.
+                Because the account and transaction graph is a structured data set,
+                users can see which producers are popular and credible or new and
+                emerging.
+            </p>
+        </section>
+        <section class="row-wrapper mt-5">
+            <div class="col-lg-6">
+                <h2 class="mt-0 text-left w-100 mb-3 title">
+                    Decentralised app development
+                </h2>
+                <p class="pr-4">
+                    As Dapps are simply views on to the users own data, all apps
+                    interoperate to create a customisable, super-app environment with a
+                    unified perspective on to the network.
+
+                    <br /><br />
+                    With no databases to manage, the platform scales for free, making
+                    app development significantly faster, easier to deploy and less
+                    costly. Developers need only provide the presentation layer and
+                    logic, without needing to manage user accounts or servers.
+                    <br /><br />
+                    Earning reputation results in a system wide imperative to
+                    authenticate through network interactions. This market-based data
+                    provides validity of a persons identity without their data being
+                    owned by an intermediated controlling authority.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img class="object-contain" src="/images/background1-h_li1gzkc5.jpg" alt="producer card imagw" />
+            </div>
+        </section>
+        <section class="row-wrapper mt-5">
+            <div class="col-lg-6">
+                <img class="object-contain" src="/images/background5-h_lhzgxa3p.jpg" alt="producer card imagw" />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="mt-0 text-left w-100 mb-3 title pl-4">
+                    Decentralised app development
+                </h2>
+                <p class="pl-4">
+                    As Dapps are simply views on to the users own data, all apps
+                    interoperate to create a customisable, super-app environment with a
+                    unified perspective on to the network.
+
+                    <br /><br />
+                    With no databases to manage, the platform scales for free, making
+                    app development significantly faster, easier to deploy and less
+                    costly. Developers need only provide the presentation layer and
+                    logic, without needing to manage user accounts or servers.
+                    <br /><br />
+                    Earning reputation results in a system wide imperative to
+                    authenticate through network interactions. This market-based data
+                    provides validity of a persons identity without their data being
+                    owned by an intermediated controlling authority.
+                </p>
+            </div>
+        </section>
+    </section>
+    <section class="mt-5" style="padding: 11px 1rem;">
+        <div class="wrapper contact-form-inner">
+            <div class="form-wrapper">
+                <div class="form-group-wrapper">
+                    <input type="text" class="w-100 feedback-input" placeholder="Name" />
+                </div>
+                <div class="form-group-wrapper">
+                    <input type="text" class="w-100 feedback-input" placeholder="Email" />
+                </div>
+                <div class="form-group-wrapper flex-100">
+                    <textarea type="text" class="w-100 feedback-input" placeholder="Message"></textarea>
+                </div>
+                <button style="width:15%" type="submit">send message</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+{{ end }}
