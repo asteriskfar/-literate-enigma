@@ -14,7 +14,7 @@ listchildrenmobile: false
 # type: about # this is the value used by navbar menu mobile view
 
 ---
-<div style="font-size: 110px; color: lightblue: font-family:'courier new': ">
+<div style="font-size: 70px; color: lightblue: font-family:'courier new': ">
 <p>Scalable financial infrastructure for Special Economic Zones</p>
 </div>
 
