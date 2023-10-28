@@ -29,8 +29,8 @@ footer:
         - title: moneylabs
           link: https://www.moneylabs.io/
 ---
-<div style="font-size: 50px; color: lightblue: font-family:'courier new': ">
-<p>DeFi done right.</p>
+<div style="font-size: 70px; color: lightblue: font-family:'courier new': ">
+<p>The future of humanity</p>
 </div>
 
 
