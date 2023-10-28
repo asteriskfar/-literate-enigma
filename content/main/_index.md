@@ -15,10 +15,10 @@ listchildrenmobile: false
 
 ---
 <div style="font-size: 50px; color: lightblue: font-family:'courier new': ">
-<p>Payments</p>
+<p>Scalable financial infrastructure for Special Economic Zones</p>
 </div>
 
-# The Sigchain is a decentralised market payments infrastructure
+# Market payments infrastructure
 
 We specialise in scalable peer to peer financial systems. Driven to meet the demands of an evolving economy our vision is to build large scale financial platforms that can deliver smarter credit products for a changing world.
 
