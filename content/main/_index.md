@@ -1,5 +1,5 @@
 ---
-title: "About Sigchain"
+title: "4lg0r1thm"
 videourl: "/videos/toc-video.mp4"
 
 #type: Menu
@@ -14,7 +14,7 @@ listchildrenmobile: false
 # type: about # this is the value used by navbar menu mobile view
 
 ---
-<div style="font-size: 70px; color: lightblue: font-family:'courier new': ">
+<div style="font-size: 100px; color: lightblue: font-family:'courier new': ">
 <p>Scalable financial infrastructure for Special Economic Zones</p>
 </div>
 
@@ -24,15 +24,20 @@ We specialise in scalable peer to peer financial systems. Driven to meet the dem
 
 The goal of efficiently providing credit where it is needed most and managing credit ratings effectively is foremost to our thinking so we have built solutions that enable completely new market models.
 
-<div style="font-size: 50px; color: lightblue: font-family:'courier new': ">
+<div style="font-size: 40px; color: lightblue; font-family:'courier new'">
 <p>New markets</p>
 </div>
 
 Sigchain enables new markets and provides a new class of credit solutions for businesses.
 
 >Connecting anyone to anyone
+
 >>Send and spend credit worldwide
+
 >>>Make and receive payments
+
 >>>>Borrowing and lending
+
 >>>>>Billing and invoicing
+
 >>>>>>Analytics and risk management

@@ -8,9 +8,9 @@ landing:
     src: /images/logosktchng.png
     height: 1500
   title:
-    - sigchain capital
+    - 4lg0r1thm
   text:
-    - decentralised credit
+    - free market engine
   titleColor: 'white'
 
   textColor: 'white'

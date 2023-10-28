@@ -53,7 +53,7 @@ $bg4: #383A47;
     // this is the left sidebar block
     #list-menu {
         background-color: $bg1;
-        
+
     }
 }
 
@@ -62,7 +62,7 @@ $bg4: #383A47;
     background-color: $bg0;
 }
 
-// navbar 
+// navbar
 .theme__dark .navbar__wrapper[data-bgimg=false] {
     background-color: $dark1;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
@@ -88,7 +88,7 @@ $bg4: #383A47;
 }
 
 
-// links 
+// links
 .theme__dark a {
     color: $sig;
     transition: .5s;
@@ -109,15 +109,15 @@ $bg4: #383A47;
 }
 
 // nav / breadcrumb links
-.theme__dark .breadcrumb li a:hover, 
-.theme__dark .breadcrumb li a:active, 
+.theme__dark .breadcrumb li a:hover,
+.theme__dark .breadcrumb li a:active,
 .theme__dark .breadcrumb li a:focus {
     color: $cyan;
 
 }
 
 // menu mobile
-.theme__dark .navbar__menu--mobile-item:hover, 
+.theme__dark .navbar__menu--mobile-item:hover,
 .theme__dark .navbar__menu--mobile-item:active,
 .theme__dark .navbar__menu--mobile-item:focus {
     background-color: $dark2;
@@ -130,7 +130,7 @@ nav.breadcrumb > ol > li {
 nav.breadcrumb > ol > li:nth-child(2) > a {
     font-weight: bold;
     // color: $orange;
-    
+
 }
 
 nav.breadcrumb > ol > li:nth-child(3) > span {
@@ -165,8 +165,8 @@ nav.breadcrumb > ol > li:nth-child(3) > span {
         color: $sig;
 }
 
-.theme__dark .toc a:hover, 
-.theme__dark .toc a:active, 
+.theme__dark .toc a:hover,
+.theme__dark .toc a:active,
 .theme__dark .toc a:focus {
     color: $sig;
 }
