@@ -99,7 +99,7 @@ body.test2 {
         width: 100vw;
         position:fixed;
         height: 100vh;
-        
+
         background-attachment: fixed;
         background: url($svgtile);
         background-repeat: repeat;
@@ -107,7 +107,7 @@ body.test2 {
         background-size: 80%;
         opacity: 15%;
     }
-    
+
 }
 
 .content {
@@ -140,7 +140,7 @@ body.test2 {
 
 .animation {
     //border: 1px solid red;;
-    
+
     height: $letterheight;
     flex: 1 0 auto;
     width: 100%;;
@@ -166,24 +166,24 @@ body.test2 {
             padding: 0;;
             //border: 1px solid blue;
         }
-        
+
         &__list {
             margin: 0;
             text-align: center;
             list-style: none;
-            
+
             -webkit-animation-duration: 10s;
             -webkit-animation-iteration-count: infinite;
             animation-duration: 10s;
             animation-iteration-count: infinite;
-            
+
             @for $i from 1 to 6 {
                 &.animateletters-#{$i} {
                     -webkit-animation-name: animateletters-#{$i};
                     animation-name: animateletters-#{$i};
                 }
             }
-            
+
             &__item {
                 //border: 1px solid yellow;
                 height: $letterheight;
@@ -204,16 +204,16 @@ body.test2 {
 // stay should be less than (
 @mixin animateletters($items, $frames, $stay, $name) {
     //$animating: (100% - $frames * $stay) / ($frames - 1);
-    
+
     @at-root {
         @keyframes #{$name} {
             @for $i from 0 to $frames {
-                
+
                 $current-frame: ((($i + 0) * (100/$frames))) * 1%;
                 $next-frame: (($i + 1) * (100/$frames)) - $stay * 1%;
-                
+
                 #{$current-frame,
-                $next-frame} 
+                $next-frame}
                 {
                 @if ($i ) < ($items) {
                     transform: translate3d(0, $i * -100% / $items, 0);
@@ -221,14 +221,14 @@ body.test2 {
                     transform: translate3d(0, ($frames - $i ) * -100% / $items, 0);
                 }
                 }
-            
+
             }
             100% {
                 transform: translate3d(0, 0%, 0); }
             }
     }
-    
-    
+
+
 }
 
 @include animateletters(
@@ -291,14 +291,14 @@ body.test2 {
         //border: 1px solid yellow;
         justify-content: start;
         margin: 0;
-        
+
         height: 100px!important;
         .animation__container {
-        
+
             //border: 1px solid red;
             height: 200px;
             margin: 0;
-    
+
             &__list {
             @for $i from 1 to 6 {
                     &.animateletters-#{$i} {
@@ -318,4 +318,3 @@ body.test2 {
     }
 
 }
-

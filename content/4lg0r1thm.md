@@ -29,7 +29,7 @@ footer:
         - title: moneylabs
           link: https://www.moneylabs.io/
 ---
-<div style="font-size: 70px; color: lightblue: font-family:'courier new': ">
+<div style="font-size: 70px; color: lightblue: font-family:'Space Mono' ">
 <p>The future of humanity</p>
 </div>
 

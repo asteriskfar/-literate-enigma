@@ -24,7 +24,7 @@ We specialise in scalable peer to peer financial systems. Driven to meet the dem
 
 The goal of efficiently providing credit where it is needed most and managing credit ratings effectively is foremost to our thinking so we have built solutions that enable completely new market models.
 
-<div style="font-size: 40px; color: lightblue; font-family:'courier new'">
+<div style="font-size: 40px; color: lightblue; font-family:'Space Mono'">
 <p>New markets</p>
 </div>
 
