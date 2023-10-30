@@ -23,13 +23,15 @@ footer:
           link: https://www.sigchain.io/
         - title: the 'meme of one' foundation
           link: https://www.memeofone.org
+        - title: 4lg0r1thm
+          link: https://www.4lg0r1thm.io
 
     - title: Our lab
       links:
         - title: moneylabs
           link: https://www.moneylabs.io/
 ---
-<div style="font-size: 70px; color: lightblue: font-family:'Space Mono' ">
+<div style="font-size: 50px; ">
 <p>The future of humanity</p>
 </div>
 

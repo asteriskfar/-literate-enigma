@@ -36,6 +36,8 @@ footer:
           link: https://www.sigchain.io/
         - title: the 'meme of one' foundation
           link: https://www.memeofone.org
+        - title: 4lg0r1thm
+          link: https://www.4lg0r1thm.io
 
     - title: Our lab
       links:

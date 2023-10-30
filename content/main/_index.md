@@ -14,7 +14,7 @@ listchildrenmobile: false
 # type: about # this is the value used by navbar menu mobile view
 
 ---
-<div style="font-size: 100px; color: lightblue: font-family:'courier new': ">
+<div style="font-size: 50px; ">
 <p>Scalable financial infrastructure for Special Economic Zones</p>
 </div>
 
@@ -24,7 +24,7 @@ We specialise in scalable peer to peer financial systems. Driven to meet the dem
 
 The goal of efficiently providing credit where it is needed most and managing credit ratings effectively is foremost to our thinking so we have built solutions that enable completely new market models.
 
-<div style="font-size: 40px; color: lightblue; font-family:'Space Mono'">
+<div style="font-size: 40px; ">
 <p>New markets</p>
 </div>
 
