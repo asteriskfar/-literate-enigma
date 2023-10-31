@@ -1,5 +1,5 @@
 ---
-title: "main"
+title: "About"
 videourl: "/videos/toc-video.mp4"
 
 #type: Menu
