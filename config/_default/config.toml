@@ -1,7 +1,7 @@
 baseURL = "https://sigchain.netlify.app/"
 
 languageCode = "en-us"
-title = "moneylabs.io"
+title = "SigChain Capital"
 
 theme = "github.com/zzossig/hugo-theme-zdoc"
 

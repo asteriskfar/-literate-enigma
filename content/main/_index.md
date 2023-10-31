@@ -1,5 +1,5 @@
 ---
-title: "Moneylabs"
+title: "main"
 videourl: "/videos/toc-video.mp4"
 
 #type: Menu
