@@ -33,11 +33,11 @@ footer:
     - title: Partner projects
       links:
         - title: sigchain
-          link: https://www.sigchain.io/
+          link: https://www.sigchain.com/
         - title: the 'meme of one' foundation
           link: https://www.memeofone.org
         - title: 4lg0r1thm
-          link: https://www.4lg0r1thm.io
+          link: https://www.4lg0r1thm.com
 
     - title: Our lab
       links:
@@ -49,7 +49,7 @@ footer:
     applySinglePageCss: false
     markdown:
       |
-      ### sigchain capital 2021
+      ### moneylabs.io 2021
       Copyright © 2021. All rights reserved.
 
 

@@ -1,5 +1,5 @@
 ---
-title: "4lg0r1thm"
+title: "moneylabs"
 date: 2021-08-09T12:19:07+10:00
 menu:
   main:
@@ -19,19 +19,19 @@ footer:
 
     - title: Partner projects
       links:
-        - title: sigchain
-          link: https://www.sigchain.io/
+        - title: sigchain and sigcoin
+          link: https://www.sigchain.com/
         - title: the 'meme of one' foundation
           link: https://www.memeofone.org
         - title: 4lg0r1thm
-          link: https://www.4lg0r1thm.io
+          link: https://www.4lg0r1thm.com
 
     - title: Our lab
       links:
         - title: moneylabs
           link: https://www.moneylabs.io/
 ---
-<div style="font-size: 50px; ">
+<div style="font-size: 30px; ">
 <p>The future of humanity</p>
 </div>
 

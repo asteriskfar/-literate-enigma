@@ -1,7 +1,7 @@
 baseURL = "https://sigchain.netlify.app/"
 
 languageCode = "en-us"
-title = "SigChain Capital"
+title = "moneylabs.io"
 
 theme = "github.com/zzossig/hugo-theme-zdoc"
 
@@ -10,7 +10,7 @@ pygmentsCodeFencesGuesSsyntax = false
 pygmentsStyle = "monokai"
 pygmentsUseClasses = false
 
-copyright = "Copyright Sigchain Capital 2021 All rights reserved."
+copyright = "Copyright moneylabs.io 2021 All rights reserved."
 
 [markup]
 [markup.goldmark.renderer]
