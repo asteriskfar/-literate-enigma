@@ -11,3 +11,6 @@ Using a natively structured data set Sigchain provides transparent real time inf
 By replacing traditional blockchain architecture with a signature chain, or ‘sigchain’, we place credit issuance in the hands of market participants themselves. Sigchain is the first digital currency to work this way.
 
 This architecture enables the identity of a tokens issuer to be cryptographically provable wherever it transacts through the graph. As any issuers credit-worthiness can be determined by how much of their previous credit they have repaid it becomes possible to determine both the issuer of a token and their credit rating. The Sigchain transaction graph is a financial data gold mine and will enable a new market of fintech services including analysis and prediction services.
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="tp3208"><a class="LI-simple-link" href='https://www.linkedin.com/in/tp3208?trk=profile-badge'>Tarun Prakash</a></div>
