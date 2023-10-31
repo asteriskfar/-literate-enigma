@@ -26,7 +26,7 @@ form {
     //border: 1px solid $cyan;
 }
 .feedback-input {
-  font-family: 'Space Mono', Helvetica, Arial, sans-serif;
+  font-family: 'Space Mono';
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
@@ -52,7 +52,7 @@ $title03: "Space Mono" ;
 
 [type="submit"] {
   //font-family: $title03;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Space Mono';
   width: 100%;
   background:$blue;
   border-radius:5px;
