@@ -1,8 +1,3 @@
-{{ $style := resources.Get "test/scss/style.scss" | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS }}
-<style>
-{{ $style.Content | safeCSS}}
-</style>
-
 <div class="top">
   <div class="header__wrapper bgcolor__header">
     <div class="divider">
