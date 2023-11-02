@@ -48,7 +48,6 @@ xhtml = false
 [outputs]
   home = ["HTML", "RSS", "SearchIndex"]
   section = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
 
 [outputFormats]
