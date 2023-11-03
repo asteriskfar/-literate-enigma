@@ -10,9 +10,3 @@
   name = "Contact"
   url = "/contact"
   weight = 50
-
-[[main]]
-  identifier = "autonomous"
-  name = "Autonomous Web & Finance"
-  url = "/autonomous"
-  weight = 60
