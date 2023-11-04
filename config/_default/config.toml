@@ -1,7 +1,7 @@
 baseURL = "https://moneylabs.io/"
 
 languageCode = "en-us"
-title = "SigChain Capital"
+title = "Moneylabs"
 
 theme = "github.com/zzossig/hugo-theme-zdoc"
 
