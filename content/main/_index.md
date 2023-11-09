@@ -15,7 +15,7 @@ listchildrenmobile: false
 
 ---
 
-## Scalable financial infrastructure for Special Economic Zones
+## Scalable communication and financial infrastructure
 
 We specialise in scalable peer to peer financial systems. Driven to meet the demands of an evolving economy our vision is to build large scale financial platforms that can deliver smarter credit products for a changing world.
 
