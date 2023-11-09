@@ -31,8 +31,7 @@ footer:
         - title: moneylabs
           link: https://www.moneylabs.io/
 ---
-<div style="font-size: 30px; ">
-<p>The future of humanity</p>
-</div>
 
-With early entrant and first mover advantage Sigchain Capital will own and operate the first tier of fintech applications to develop this network. We aim to build and dominate this new market with a suite of applications that allow other business to migrate to the network.
+## The future of humanity
+
+Moneylabs, in partnership with [Sigchain](https://www.sigchain.com), is pioneering a new class of digital currency for self-organising market systems. With the most advanced fintech systems in the world, we aim to develop extensible financial networks with credit analysis and prediction built in.
