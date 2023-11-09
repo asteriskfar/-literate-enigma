@@ -26,18 +26,18 @@ footer:
         - title: sigchain
           link: https://www.sigchain.com
         - title: sigcoin
-          link: https://www.sigcoin.com
+          link: https://www.sigchain.com
         - title: sigledger
-          link: https://www.sigledger.com
+          link: https://www.sigchain.com
 
     - title: Partner projects
       links:
         - title: sigchain
           link: https://www.sigchain.com/
         - title: the 'meme of one' foundation
-          link: https://www.memeofone.org
+          link:
         - title: 4lg0r1thm
-          link: https://www.4lg0r1thm.com
+          link:
 
     - title: Our lab
       links:
@@ -49,7 +49,7 @@ footer:
     applySinglePageCss: false
     markdown:
       |
-      ### moneylabs.io 2021
+      moneylabs.io 2021
       Copyright © 2021. All rights reserved.
 
 
