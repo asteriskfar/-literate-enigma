@@ -6,4 +6,4 @@ With the advent of blockchain developers gained the ability to exchange digital 
 
 Sigchain is the worlds first private, member-based defi banking platform. With a fully integrated suite of payment products our customers can accept payments, make payments, manage risk, manage invoicing and streamline business operations.
 
-built on [sigcoin](http://sigcoin.com)
+built on [sigcoin](http://sigchain.com)
